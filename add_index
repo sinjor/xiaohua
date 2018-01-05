@@ -1,0 +1,8 @@
+select event_ipCity,
+       row_number() over(
+                         order by rand()) as event_ipCity_code
+from
+    (select distinct event_ipCity
+     from behavior_data_source_useful_flatten_2
+     where event_name = 'app_loan'
+         and event_ipCity is not null ) t ;
