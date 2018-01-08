@@ -1,0 +1,924 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"train_da",
+				"train_data_2"
+			],
+			[
+				"cid_deri",
+				"cid_derived_hs_1m"
+			],
+			[
+				"DIs",
+				"Distance"
+			],
+			[
+				"Dis",
+				"Distance"
+			],
+			[
+				"user",
+				"user_count_coupon"
+			],
+			[
+				"discount_man",
+				"discount_man_class"
+			],
+			[
+				"discou",
+				"discount_jian"
+			],
+			[
+				"dis",
+				"discount_man_class"
+			],
+			[
+				"discoun",
+				"discount_man_class"
+			],
+			[
+				"Uer",
+				"User_id"
+			],
+			[
+				"la",
+				"lambda"
+			],
+			[
+				"test_Da",
+				"test_data_1"
+			],
+			[
+				"xiaohua",
+				"xiaohua_data_1"
+			],
+			[
+				"test_da",
+				"test_data_1"
+			],
+			[
+				"train_data",
+				"train_data_1"
+			],
+			[
+				"event_bankC",
+				"event_bankCardMobile"
+			],
+			[
+				"even",
+				"event_mobile"
+			],
+			[
+				"event_cer",
+				"event_certNo"
+			],
+			[
+				"event",
+				"event_cid"
+			],
+			[
+				"read",
+				"read_csv"
+			],
+			[
+				"plo",
+				"plt_continuous_kde"
+			],
+			[
+				"wri",
+				"write\tfunction"
+			],
+			[
+				"event_cen",
+				"event_certNo"
+			],
+			[
+				"event_c",
+				"event_cid"
+			],
+			[
+				"cid_lo",
+				"cid_loan_before_30m"
+			],
+			[
+				"cid",
+				"cid_derived_abn_all"
+			],
+			[
+				"ipco",
+				"ipcity_count_3m_abn"
+			],
+			[
+				"ip",
+				"ipcity_count_1d_abn"
+			],
+			[
+				"ipc",
+				"ipcity_count_7d_abn"
+			],
+			[
+				"evetn",
+				"event_cid"
+			],
+			[
+				"ipci",
+				"ipcity_count_derived_1m_abn"
+			],
+			[
+				"event_ipc",
+				"event_ipcity"
+			],
+			[
+				"mobil",
+				"mobile_count_bankcardno_1m_hf"
+			],
+			[
+				"mobi",
+				"mobile_count_bankcardno_1m_hf"
+			],
+			[
+				"mobile",
+				"mobile_bankcardNo_1m"
+			],
+			[
+				"mobile_bank",
+				"mobile_bankcardNo_1m"
+			],
+			[
+				"mo",
+				"mobile"
+			],
+			[
+				"event_bank",
+				"event_bankcardmobile"
+			],
+			[
+				"event_",
+				"event_bankcardno"
+			],
+			[
+				"event_ban",
+				"event_bankcardno"
+			],
+			[
+				"event_bankcar",
+				"event_bankcardno"
+			],
+			[
+				"colloc",
+				"collector_tstamp"
+			],
+			[
+				"event_cent",
+				"event_certno"
+			],
+			[
+				"collect",
+				"collector_tstamp"
+			],
+			[
+				"event_certno",
+				"event_certno"
+			],
+			[
+				"bankCardMobilie",
+				"bankCardMobile_dist_imei_1m_am"
+			],
+			[
+				"bankCardMobli",
+				"bankCardMobile_dist_idfa_1m_am"
+			],
+			[
+				"bankCardMoblie",
+				"bankCardMobile_dist_idfa_1m_am"
+			],
+			[
+				"bankCardMobile",
+				"bankCardMobile_dist_bankCardNo_1m_am"
+			],
+			[
+				"bankCard",
+				"bankcardMobile_dist_deviceId_1m_am"
+			],
+			[
+				"bankCardM",
+				"bankCardMobile_dist_centNo_1m_am"
+			],
+			[
+				"bankm",
+				"bankcardmobile_dist_centNo_1m_am"
+			],
+			[
+				"tbank",
+				"t_bankCardMobile"
+			],
+			[
+				"eventID",
+				"event_id"
+			],
+			[
+				"cid_bank",
+				"cid_bankCardMobile_derived_1m"
+			],
+			[
+				"bankCem",
+				"bankCardNo_dist_imei_1m_am"
+			],
+			[
+				"bankC",
+				"bankCardNo_dist_deviceId_1m_am"
+			],
+			[
+				"mobile_dis",
+				"mobile_dist_idfa_1m_am"
+			],
+			[
+				"mobile_di",
+				"mobile_dist_deviceId_1m_am"
+			],
+			[
+				"cid_dist",
+				"cid_dist_imei_1m_am"
+			],
+			[
+				"cid_d",
+				"cid_dist_1m_am"
+			],
+			[
+				"cer",
+				"certno_dist_bankCardNo_1m_am"
+			],
+			[
+				"cert",
+				"certno_dist_bankCardMobile_1m_am"
+			],
+			[
+				"certno",
+				"certno_dist_mobile_1m_am"
+			],
+			[
+				"behavior",
+				"behavior_data_source_useful_flatten_2"
+			],
+			[
+				"event_bak",
+				"event_bankCardMobile"
+			],
+			[
+				"bank",
+				"event_bankCardNo"
+			],
+			[
+				"fil",
+				"fillna"
+			],
+			[
+				"fea",
+				"feature_header"
+			],
+			[
+				"lab",
+				"label_1_count"
+			],
+			[
+				"user_id",
+				"user_id_feature"
+			],
+			[
+				"date",
+				"datetime"
+			],
+			[
+				"value",
+				"value_counts"
+			],
+			[
+				"Data",
+				"DataFrame"
+			],
+			[
+				"sor",
+				"sort_index"
+			],
+			[
+				"sort",
+				"sort_values"
+			],
+			[
+				"colu",
+				"columns\tparam"
+			],
+			[
+				"Da",
+				"DataFrame"
+			],
+			[
+				"c",
+				"columns"
+			],
+			[
+				"clou",
+				"columns\tstatement"
+			],
+			[
+				"feat",
+				"feature_data"
+			],
+			[
+				"train",
+				"train_data"
+			],
+			[
+				"Di",
+				"Discount_rate"
+			],
+			[
+				"C",
+				"Coupon_id"
+			],
+			[
+				"auto",
+				"autoplot\tmodule"
+			],
+			[
+				"plt",
+				"plt_continuous_kde"
+			],
+			[
+				"r",
+				"rindex\tfunction"
+			],
+			[
+				"FA",
+				"False"
+			],
+			[
+				"entity_process",
+				"entity_process_sql"
+			],
+			[
+				"entity",
+				"entity_process"
+			],
+			[
+				"print",
+				"print('普通索引：通过索引值或索引标签获取数据"
+			],
+			[
+				"IM",
+				"import\tkeyword"
+			],
+			[
+				"pd",
+				"pdFrame1"
+			],
+			[
+				"ran",
+				"randn"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "Packages/Default/Syntax Tests.sublime-build",
+	"build_system_choices":
+	[
+		[
+			[
+				[
+					"Packages/Default/Syntax Tests.sublime-build",
+					""
+				],
+				[
+					"Packages/Default/Syntax Tests.sublime-build",
+					"All Syntaxes"
+				],
+				[
+					"Packages/Default/Syntax Tests.sublime-build",
+					"Performance"
+				],
+				[
+					"Packages/Default/Syntax Tests.sublime-build",
+					"Regex Compatibility"
+				]
+			],
+			[
+				"Packages/Default/Syntax Tests.sublime-build",
+				""
+			]
+		],
+		[
+			[
+				[
+					"Packages/Python/Python.sublime-build",
+					""
+				],
+				[
+					"Packages/Python/Python.sublime-build",
+					"Syntax Check"
+				]
+			],
+			[
+				"Packages/Python/Python.sublime-build",
+				"Syntax Check"
+			]
+		]
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 161.0,
+		"last_filter": "Package Control: in",
+		"selected_items":
+		[
+			[
+				"Package Control: in",
+				"Package Control: Install Package"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: ",
+				"Package Control: Upgrade/Overwrite All Packages→升级/覆盖所有插件"
+			],
+			[
+				"install package  ",
+				"Package Control: Install Package→安装插件"
+			],
+			[
+				"install ",
+				"Package Control: Install Package→安装插件"
+			],
+			[
+				"in",
+				"Package Control: Install Package→安装插件"
+			],
+			[
+				"i",
+				"Package Control: Install Package→安装插件"
+			]
+		],
+		"width": 410.0
+	},
+	"console":
+	{
+		"height": 146.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/G/taodata/project/xiaohua_finance/xiaohua"
+	],
+	"file_history":
+	[
+		"/G/program_monkey/ML/tianchi/O2O-Coupon-Usage-Forecast-4ec68dab5ef6ca68131fd2e31f1a2021a5e4e633/O2O-Coupon-Usage-Forecast-4ec68dab5ef6ca68131fd2e31f1a2021a5e4e633/code/wepon/season two/blending/level1_gbdt1.sql",
+		"/C/Users/Administrator/Desktop/xiaohua/xiaohua_other.sql",
+		"/C/Users/Administrator/Desktop/compare.sql",
+		"/C/Users/Administrator/Desktop/myhive.sql",
+		"/G/program_monkey/ML/tianchi/O2O-Coupon-Usage-Forecast-4ec68dab5ef6ca68131fd2e31f1a2021a5e4e633/O2O-Coupon-Usage-Forecast-4ec68dab5ef6ca68131fd2e31f1a2021a5e4e633/code/wepon/season two/blending/process.sql",
+		"/C/Users/Administrator/Desktop/module/o2o.sql",
+		"/C/Users/Administrator/Desktop/module/deal.py",
+		"/C/Users/Administrator/Desktop/module/test.py",
+		"/C/Users/Administrator/Desktop/module/数据说明.txt",
+		"/G/program_monkey/ML/tianchi/O2O-Coupon-Usage-Forecast-4ec68dab5ef6ca68131fd2e31f1a2021a5e4e633/O2O-Coupon-Usage-Forecast-4ec68dab5ef6ca68131fd2e31f1a2021a5e4e633/code/wepon/season two/extract_feature.sql",
+		"/C/Users/Administrator/Desktop/myhive",
+		"/E/Sublime_Text3_Stable_Build_3143_x64_Chs/Sublime Text/Data/Packages/User/Preferences.sublime-settings",
+		"/G/taodata/project/xiaohua_finance/Atom6.3exe/code/AtomConf_Learn.xml",
+		"/G/taodata/project/xiaohua_finance/Atom6.3exe_win/conf/learn.xml",
+		"/C/Users/Administrator/Desktop/csm.sql",
+		"/C/Users/Administrator/Desktop/hive_xiaohua_high_freq_1m.sql",
+		"/C/Users/Administrator/Desktop/hive_xiaohua_abnormal.sql",
+		"/G/program_monkey/ML/tianchi/O2O/main_o2o.py",
+		"/C/Users/Administrator/Desktop/python_pandas.py",
+		"/C/Users/Administrator/Desktop/module/xiaohua.py",
+		"/C/Users/Administrator/Desktop/module/autoplot.py",
+		"/G/program_monkey/ML/tianchi/O2O-Coupon-Usage-Forecast-4ec68dab5ef6ca68131fd2e31f1a2021a5e4e633/O2O-Coupon-Usage-Forecast-4ec68dab5ef6ca68131fd2e31f1a2021a5e4e633/code/wepon/season one/extract_feature.py",
+		"/G/taodata/project/xiaohua_finance/new_path/LR/change.py",
+		"/G/taodata/project/xiaohua_finance/data_0104_d1/tmp_test/change.py",
+		"/G/taodata/project/xiaohua_finance/data_0104_d2/input/xh_dict.csv",
+		"/C/Users/Administrator/Desktop/add_index",
+		"/C/Users/Administrator/Desktop/xiaohua/hive_m3.sql",
+		"/C/Users/Administrator/Desktop/xiaohua/hive_m1.sql",
+		"/C/Users/Administrator/Desktop/xiaohua/hive_xiaohua_high_freq_1m.sql",
+		"/C/Users/Administrator/Desktop/xiaohua/hive_join.sql",
+		"/C/Users/Administrator/Desktop/a.bat",
+		"/G/taodata/project/xiaohua_finance/input/xh_dict.csv",
+		"/D/用户目录/我的文档/WeChat Files/fang_sheng_jie/Files/xh_dict.csv",
+		"/C/Users/Administrator/Desktop/hive_xiaohua_high_freq_3m.sql",
+		"/C/Users/Administrator/Desktop/python_taodata.py",
+		"/G/taodata/project/xiaohua_finance/Atom6.3exe_win/conf/act.xml",
+		"/G/taodata/project/xiaohua_finance/Atom6.3exe_win/report_Act.Rmd",
+		"/G/taodata/project/小花金融/Atom6.3exe_win/conf/act.xml",
+		"/G/taodata/project/小花金融/Atom6.3exe_win/conf/learn.xml",
+		"/C/Users/Administrator/Desktop/hive_xiaohua_high_freq _3m.sql",
+		"/C/Users/Administrator/Desktop/hive_xiaohua_high_freq.sql",
+		"/C/Users/Administrator/Desktop/hive_xiaohua_abnormal",
+		"/C/Users/Administrator/Desktop/hive_xiaohua_high_freq",
+		"/C/Users/Administrator/Desktop/hive_xiaohua_HF",
+		"/E/Sublime_Text3_Stable_Build_3143_x64_Chs/Sublime Text/Data/Packages/User/Default (Windows).sublime-keymap",
+		"/E/Sublime_Text3_Stable_Build_3143_x64_Chs/Sublime Text/Data/Packages/Jedi - Python autocompletion/Default.sublime-mousemap",
+		"/C/Users/Administrator/Desktop/hive_sql.txt",
+		"/C/Users/Administrator/Desktop/sql.sql",
+		"/E/Sublime_Text3_Stable_Build_3143_x64_Chs/Sublime Text/Data/Packages/User/SQL Beautifier.sublime-settings",
+		"/E/Sublime_Text3_Stable_Build_3143_x64_Chs/Sublime Text/Data/Packages/SqlBeautifier/SQL Beautifier.sublime-settings",
+		"/E/Sublime_Text3_Stable_Build_3143_x64_Chs/Sublime Text/Data/Packages/Default/Preferences.sublime-settings",
+		"/C/Users/Administrator/Desktop/xiaohua",
+		"/C/Users/Administrator/Desktop/hive_m3.sql",
+		"/C/Users/Administrator/Desktop/hive",
+		"/C/Users/Administrator/Desktop/hive2",
+		"/C/Users/Administrator/Desktop/hive_join.sql",
+		"/C/Users/Administrator/Desktop/hive_m1.sql",
+		"/C/Users/Administrator/Desktop/hive_m3.txt",
+		"/C/Users/Administrator/Desktop/hive_m1.txt",
+		"/C/Users/Administrator/Desktop/hive.txt",
+		"/C/Users/Administrator/Desktop/hive.sql.txt",
+		"/C/Users/Administrator/Desktop/hive.sql",
+		"/E/Sublime_Text3_Stable_Build_3143_x64_Chs/Sublime Text/Data/Packages/User/SublimeREPL.sublime-settings",
+		"/E/Sublime_Text3_Stable_Build_3143_x64_Chs/Sublime Text/Data/Packages/SublimeREPL/SublimeREPL.sublime-settings",
+		"/E/Sublime_Text3_Stable_Build_3143_x64_Chs/Sublime Text/Data/Packages/Default/Default (Windows).sublime-keymap",
+		"/C/Users/Administrator/Desktop/module/deal",
+		"/C/Users/Administrator/Desktop/test.py",
+		"/C/Users/Administrator/Desktop/autoplot.py",
+		"/C/Users/Administrator/Desktop/plt.py",
+		"/G/taodata/robotx/pure/pack.bat",
+		"/G/taodata/robotx/pure/robotx.py",
+		"/E/Sublime_Text3_Stable_Build_3143_x64_Chs/Sublime Text/Data/Packages/SublimeCodeIntel/Default (Windows).sublime-keymap",
+		"/E/Sublime_Text3_Stable_Build_3143_x64_Chs/Sublime Text/Data/Packages/Jedi - Python autocompletion/Default.sublime-keymap",
+		"/E/Sublime_Text3_Stable_Build_3143_x64_Chs/Sublime Text/Data/Packages/Anaconda/Default (Windows).sublime-keymap",
+		"/E/Sublime_Text3_Stable_Build_3143_x64_Chs/Sublime Text/Data/Packages/User/sublime_jedi.sublime-settings",
+		"/E/Sublime_Text3_Stable_Build_3143_x64_Chs/Sublime Text/Data/Packages/User/Default.sublime-keymap",
+		"/E/Sublime_Text3_Stable_Build_3143_x64_Chs/Sublime Text/Data/Packages/User/Anaconda.sublime-settings",
+		"/E/Sublime_Text3_Stable_Build_3143_x64_Chs/Sublime Text/Data/Packages/User/Python.sublime-settings",
+		"/E/Sublime_Text3_Stable_Build_3143_x64_Chs/Sublime Text/Data/Packages/User/Default (Windows).sublime-mousemap",
+		"/E/Sublime_Text3_Stable_Build_3143_x64_Chs/Sublime Text/Data/Packages/Anaconda/README.md",
+		"/G/taodata/robotx/pure/config_gupiao.json",
+		"/E/Sublime_Text3_Stable_Build_3143_x64_Chs/Sublime Text/Data/Packages/Anaconda/Anaconda.sublime-settings",
+		"/E/Sublime_Text3_Stable_Build_3143_x64_Chs/Sublime Text/Data/Packages/Jedi - Python autocompletion/sublime_jedi.sublime-settings",
+		"/G/taodata/robotx/pure/run1.py",
+		"/E/Sublime_Text3_Stable_Build_3143_x64_Chs/Sublime Text/Data/Packages/User/SublimeCodeIntel.sublime-settings",
+		"/E/Sublime_Text3_Stable_Build_3143_x64_Chs/Sublime Text/Data/Packages/SublimeCodeIntel/SublimeCodeIntel.sublime-settings",
+		"/E/Sublime_Text3_Stable_Build_3143_x64_Chs/Sublime Text/Data/Packages/User/Default.sublime-mousemap",
+		"/F/迅雷下载/sublimetext/Sublime_Text3_Stable_Build_3143_x64_Chs/Sublime Text/Data/Packages/Jedi - Python autocompletion/Default.sublime-keymap",
+		"/F/迅雷下载/sublimetext/Sublime_Text3_Stable_Build_3143_x64_Chs/Sublime Text/Data/Packages/Jedi - Python autocompletion/sublime_jedi.sublime-settings",
+		"/F/迅雷下载/sublimetext/Sublime_Text3_Stable_Build_3143_x64_Chs/Sublime Text/Data/Packages/SublimeCodeIntel/SublimeCodeIntel.sublime-settings",
+		"/F/迅雷下载/sublimetext/Sublime_Text3_Stable_Build_3143_x64_Chs/Sublime Text/Data/Packages/User/sublime_jedi.sublime-settings",
+		"/F/迅雷下载/sublimetext/Sublime_Text3_Stable_Build_3143_x64_Chs/Sublime Text/Data/Packages/User/Anaconda.sublime-settings",
+		"/F/迅雷下载/sublimetext/Sublime_Text3_Stable_Build_3143_x64_Chs/Sublime Text/Data/Packages/User/SublimeCodeIntel.sublime-settings",
+		"/F/迅雷下载/sublimetext/Sublime_Text3_Stable_Build_3143_x64_Chs/Sublime Text/Data/Packages/SublimeCodeIntel/Default (Windows).sublime-keymap",
+		"/F/迅雷下载/sublimetext/Sublime_Text3_Stable_Build_3143_x64_Chs/Sublime Text/Data/Packages/User/Default (Windows).sublime-keymap",
+		"/F/迅雷下载/sublimetext/Sublime_Text3_Stable_Build_3143_x64_Chs/Sublime Text/Data/Packages/Anaconda/Anaconda.sublime-settings",
+		"/F/迅雷下载/sublimetext/Sublime_Text3_Stable_Build_3143_x64_Chs/Sublime Text/Data/Packages/Anaconda/README.md",
+		"/F/迅雷下载/sublimetext/Sublime_Text3_Stable_Build_3143_x64_Chs/Sublime Text/Data/Packages/User/anaconda3_python.sublime-build",
+		"/F/迅雷下载/sublimetext/Sublime_Text3_Stable_Build_3143_x64_Chs/Sublime Text/Data/Packages/User/anaconda3_python",
+		"/E/python/lib/site-packages/pandas/core/frame.py",
+		"/E/python/lib/site-packages/pandas/core/base.py",
+		"/G/taodata/robotx/pure/ff/relational_features.py",
+		"/G/taodata/robotx/pure/ff/function_create.py",
+		"/G/taodata/robotx/pure/qe/query_executor.py",
+		"/G/taodata/robotx/pure/ff/entity_features.py",
+		"/E/python/lib/copy.py",
+		"/G/taodata/robotx/pure/cfg/cfg_parser.py",
+		"/G/taodata/robotx/pure/cfg/data_source.py",
+		"/G/taodata/robotx/pure/cfg/data_describe.py",
+		"/G/taodata/robotx/pure/cfg/process.py",
+		"/G/taodata/robotx/pure/db/dbload.py",
+		"/G/taodata/robotx/pure/qe/__init__.py",
+		"/G/taodata/robotx/pure/ap/EntityFeatureGenerator.py",
+		"/G/taodata/robotx/pure/ff/util.py",
+		"/E/python/Lib/pickle.py",
+		"/F/迅雷下载/sublimetext/Sublime_Text3_Stable_Build_3143_x64_Chs/Sublime Text/Data/Packages/Jedi - Python autocompletion/Default.sublime-mousemap",
+		"/F/迅雷下载/sublimetext/Sublime_Text3_Stable_Build_3143_x64_Chs/Sublime Text/Data/Packages/Default/Default (Windows).sublime-keymap"
+	],
+	"find":
+	{
+		"height": 26.0
+	},
+	"find_in_files":
+	{
+		"height": 100.0,
+		"where_history":
+		[
+			"G:\\taodata\\robotx\\pure"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"centNo",
+			",int",
+			"factor",
+			"numeric",
+			"30",
+			"1m",
+			"t6",
+			"t5",
+			"t4",
+			"t3",
+			"t2",
+			"file",
+			"30",
+			"1m",
+			" ",
+			"30",
+			"1m",
+			"cid_count_bankcardno_1m_hf",
+			"mobile_count_bankcardno_1m_hf",
+			"certno_bind_1m_hf",
+			"bankcardno_bind_1m_hf",
+			"cid_bankcardno_derived_1m_hf",
+			"bankcardno_bind_1m_hf",
+			"bankcardno_bind_derived_1m_hf",
+			"certno_bind_derived_1m_hf",
+			"mobile_bankcardno_derived_1m_hf",
+			"event_certno",
+			"1m",
+			"6",
+			"5",
+			"4",
+			"3",
+			"2",
+			"30",
+			"1m",
+			"bankCardMobile_dist_centNo_1m_am",
+			"certno_dist_bankCardNo_1m_am",
+			"certno_dist_mobile_1m_am",
+			"bankCardNo_dist_deviceId_1m_am",
+			"bankcardMobile_dist_deviceId_1m_am",
+			"bankcardmobile_dist",
+			"t_bankCardNo",
+			"t_cid",
+			"t_centno",
+			"t_cid",
+			"t_centno",
+			"t_4",
+			"t_mobile",
+			"t3",
+			"t2",
+			"dist",
+			"cid_first_loan",
+			"event_centNo",
+			"event_imei",
+			"event_imii",
+			"event_certNo",
+			"dist",
+			"event_deviCeId",
+			"event_certNo",
+			"dist",
+			"event_certNo",
+			"dist",
+			"cid_certNo_derived_1m",
+			"event_certNo",
+			"event_cid",
+			"cid_bankCardNo_derived_1m",
+			"dist_cid_",
+			"event_im",
+			"cid_certNo_derived_1m",
+			"cid_first_loan",
+			"get_label",
+			"&",
+			"tab",
+			"interpreter",
+			"out_put_path",
+			"feature",
+			"complete",
+			"param",
+			"complete",
+			"”",
+			"“",
+			"bar_file_path",
+			"feature_name",
+			"label_name",
+			"pdCloumns",
+			"strCloumns",
+			"pdTrain",
+			"strFileName",
+			"strTime",
+			"strLabelName",
+			"dicFactors",
+			"strFactorName",
+			"listFactors",
+			"pdSample",
+			"pdFactors",
+			"strFeatureName",
+			"EntityFeatureProcess",
+			"entity_process_mapping",
+			"OneHot",
+			"FUNCTION_SQL",
+			"Inter",
+			"csv_mapping",
+			"OneHot",
+			"Wma",
+			"OneHot",
+			"self",
+			"OneHot"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": true,
+		"regex": false,
+		"replace_history":
+		[
+			"certNo",
+			" int,",
+			"int",
+			"90",
+			"3m",
+			"t5",
+			"t4",
+			"t3",
+			"t2",
+			"t1",
+			"file_xml",
+			"90",
+			"3m",
+			"",
+			"90",
+			"3m",
+			"cid_bind_bankcardno_1m_hf",
+			"mobile_bind_bankcardno_1m_hf",
+			"certno_bind_cid_1m_hf",
+			"bankcardno_bind_cid_1m_hf",
+			"cid_bind_bankcardno_derived_1m_hf",
+			"bankcardno_bind_cid_1m_hf",
+			"bankcardno_bind_cid_derived_1m_hf",
+			"certno_bind_cid_derived_1m_hf",
+			"mobile_bind_bankcardno_derived_1m_hf",
+			"event_bankcardno",
+			"3m",
+			"11",
+			"10",
+			"9",
+			"8",
+			"7",
+			"90",
+			"3m",
+			"bankCardmobile_dist",
+			"t5",
+			"t3",
+			"t2",
+			"t4",
+			"t_4",
+			"t_cid",
+			"t_centNo",
+			"certNo_dist",
+			"event_certNo",
+			"event_imei",
+			"event_imii",
+			"imei_dist",
+			"event_devieId",
+			"event_deviceId",
+			"deviceId_dist",
+			"event_bankCardMobile",
+			"bankCardMobile_dist",
+			"event_bankCardNo",
+			"fsj",
+			"cid_dist_",
+			"cid_certNo_derived_1m2",
+			"cid_first_loan2",
+			"output_graph_path",
+			"self.feature",
+			"\"",
+			"graph_file_path",
+			"feature_header",
+			"label_header",
+			"cloumns_data",
+			"cloumns_header",
+			"train_data",
+			"bar_file_path",
+			"current_time",
+			"label_name",
+			"factor_dic",
+			"factor_name",
+			"factor_name_list",
+			"sample",
+			"factors",
+			"feature_name"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 26.0
+	},
+	"input":
+	{
+		"height": 38.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 65.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "Anaconda Python Builder",
+	"project": "xiaohua.sublime-project",
+	"replace":
+	{
+		"height": 48.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"C:\\Users\\Administrator\\Desktop\\module\\deal.py"
+			],
+			[
+				"pross",
+				"cfg\\process.py"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 190.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

@@ -37,12 +37,13 @@ select t1.event_cid,
            else 0
        end as event_contactsMobile_flag,
        t6.event_contactsRelationship_code,
-       t1.event_bankCardType,
-       t1.event_bankCardCode,
+       cast(t1.event_bankCardType as int) as event_bankCardType,
+       cast(t1.event_bankCardCode as int) as event_bankCardCode,
        t7.event_bankCardName_code,
-       t1.event_srcChannel,
-       t1.event_fpTokenID,
-       t1.event_fingerprint,
+       cast(t1.event_srcChannel as int) as event_srcChannel,
+       cast(t1.event_fpTokenID as int) as event_fpTokenID,
+       cast(t1.event_fingerprint as int) as event_fingerprint,
+
        t8.event_ipCity_code,
        t9.event_mobileCity_code,
        t10.event_ipProvince_code,
@@ -79,9 +80,10 @@ select t1.event_cid,
                 and floor(cast(t1.event_latitude as float) * 1000.0) = floor(cast(t1.event_ipLatitude as float) * 1000.0) then 1
            else 0
        end event_gps_ip_longitude_latitude_flag,
-       t1.event_loanAmount,
-       t1.event_loanTerm,
-       t1.event_productType
+       cast(t1.event_loanAmount as int) as event_loanAmount,
+       cast(t1.event_loanTerm as int) as event_loanTerm,
+       cast(t1.event_productType as int) as event_productType
+
 from cid_first_loan t1
 left outer join
     (select *
