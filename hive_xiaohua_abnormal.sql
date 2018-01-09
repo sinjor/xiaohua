@@ -1,3 +1,5 @@
+use ${hiveconf:source_database};
+
 /* 1.异地登录（近一天、一周、一个月、三个月，ip所属城市个数）*/ /* 1.异地登录（近三个月，ip所属城市个数）*/
 drop table if exists ipcity_count_derived_3m_abn;
 
@@ -13,7 +15,7 @@ left outer join
     (select event_cid,
             event_ipcity,
             collector_tstamp
-     from behavior_data_source_useful_flatten_2
+     from ${hiveconf:source_table}
      where event_ipcity is not null
          and length(event_ipcity) >0
          and collector_tstamp is not null
@@ -37,7 +39,7 @@ left outer join
     (select event_cid,
             event_ipcity,
             collector_tstamp
-     from behavior_data_source_useful_flatten_2
+     from ${hiveconf:source_table}
      where event_ipcity is not null
          and length(event_ipcity) >0
          and collector_tstamp is not null
@@ -61,7 +63,7 @@ left outer join
     (select event_cid,
             event_ipcity,
             collector_tstamp
-     from behavior_data_source_useful_flatten_2
+     from ${hiveconf:source_table}
      where event_ipcity is not null
          and length(event_ipcity) >0
          and collector_tstamp is not null
@@ -85,7 +87,7 @@ left outer join
     (select event_cid,
             event_ipcity,
             collector_tstamp
-     from behavior_data_source_useful_flatten_2
+     from ${hiveconf:source_table}
      where event_ipcity is not null
          and length(event_ipcity) >0
          and collector_tstamp is not null

@@ -1,6 +1,9 @@
 /*
   获取客户首次借款的时间点
  */
+use ${hiveconf:source_database};
+
+
 drop table if exists cid_first_loan;
 
 
@@ -60,7 +63,7 @@ from
             event_name,
             event_id,
             collector_tstamp
-     from behavior_data_source_useful_flatten_2
+     from ${hiveconf:source_table}
      where event_name='app_loan'
          and event_cid is not null
          and length(event_cid) > 0
@@ -120,7 +123,7 @@ left outer join
                           event_deviceId,
                           event_imei,
                           event_idfa
-          from behavior_data_source_useful_flatten_2
+          from ${hiveconf:source_table}
           where event_certNo is not null
               and length(event_certNo) > 0
               and collector_tstamp is not null
@@ -163,7 +166,7 @@ left outer join
                      event_deviceId,
                      event_imei,
                      event_idfa
-     from behavior_data_source_useful_flatten_2
+     from ${hiveconf:source_table}
      where event_cid is not null
          and length(event_cid) > 0
          and collector_tstamp is not null
@@ -221,7 +224,7 @@ left outer join
                           event_deviceId,
                           event_imei,
                           event_idfa
-          from behavior_data_source_useful_flatten_2
+          from ${hiveconf:source_table}
           where event_mobile is not null
               and length(event_mobile) > 0
               and collector_tstamp is not null
@@ -277,7 +280,7 @@ left outer join
                           event_deviceId,
                           event_imei,
                           event_idfa
-          from behavior_data_source_useful_flatten_2
+          from ${hiveconf:source_table}
           where event_bankCardNo is not null
               and length(event_bankCardNo) > 0
               and collector_tstamp is not null
@@ -338,7 +341,7 @@ left outer join
                      event_deviceId,
                      event_imei,
                      event_idfa
-     from behavior_data_source_useful_flatten_2
+     from ${hiveconf:source_table}
      where event_bankCardMobile is not null
          and length(event_bankCardMobile) > 0
          and collector_tstamp is not null

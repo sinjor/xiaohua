@@ -1,9 +1,10 @@
+use ${hiveconf:source_database};
+
+
 drop table if exists xiaohua_feature_extract_all;
 
 create table xiaohua_feature_extract_all as
-select row_number() over(order by rand()) as rand_id,*
-from 
-(select t0.cid,
+select t0.cid,
        t0.label,
 
        t1.cid_apply_1m_hf,
@@ -111,9 +112,7 @@ from
        t6.event_gps_ip_longitude_latitude_flag,
        t6.event_loanAmount,
        t6.event_loanTerm,
-       t6.event_productType,
-
-       t7.collector_tstamp
+       t6.event_productType
 from
     ml_labels t0 
 right outer join cid_derived_hs_1m as t1 on t0.cid = t1.event_cid
@@ -121,13 +120,4 @@ left outer join cid_derived_hs_3m as t2 on t1.event_cid = t2.event_cid
 left outer join cid_derived_1m_am_all as t3 on t1.event_cid = t3.event_cid
 left outer join cid_derived_3m_am_all as t4 on t1.event_cid = t4.event_cid
 left outer join cid_derived_abn_all as t5 on t1.event_cid = t5.event_cid
-left outer join cid_first_loan_source_features as t6 on t1.event_cid = t6.event_cid
-left outer join cid_first_loan as t7 on t1.event_cid = t7.event_cid)t;
-
-
-hive -e "set hive.cli.print.header=true;select * from xiaohua_feature_extract_all where rand_id < 70000 ;"|sed -e 's/xiaohua_feature_extract_all.//g' -e 's/\t/,/g' >> "sinjor_train_1.csv"
-hive -e "set hive.cli.print.header=true;select * from xiaohua_feature_extract_all where rand_id >= 70000 ;"|sed -e 's/xiaohua_feature_extract_all.//g' -e 's/\t/,/g' >> "sinjor_test_1.csv"
-hive -e "show columns in xiaohua_feature_extract_all"|sed -e 's/ //g' -e 's/$/,numeric/g' >> "dict.csv"
-
-hive -e "set hive.cli.print.header=true;select * from xiaohua_feature_extract_all where collector_tstamp <= '2017-10-01 0:0:0';"|sed -e 's/xiaohua_feature_extract_all.//g' -e 's/\t/,/g' >> "sinjor_train_2.csv"
-hive -e "set hive.cli.print.header=true;select * from xiaohua_feature_extract_all where collector_tstamp > '2017-10-01 0:0:0';"|sed -e 's/xiaohua_feature_extract_all.//g' -e 's/\t/,/g' -e '1s/cid' >> "sinjor_test_2.csv"
+left outer join cid_first_loan_source_features as t6 on t1.event_cid = t6.event_cid;
