@@ -2,6 +2,7 @@
 --set train_database=bbbbbbbbbb;
 --set test_table=tttttttt;
 --set test_database=eeeeeeeeee;
+--set original_database=default;
 --set original_table=behavior_data_source_useful_flatten_2;
 
 drop database if exists ${hiveconf:train_database} cascade;
@@ -18,9 +19,9 @@ create database ${hiveconf:test_database};
 use ${hiveconf:train_database};
 
 
-create table ${hiveconf:original_table} as
-select *
-from default.${hiveconf:original_table};
+--create table ${hiveconf:original_table} as
+--select *
+--from default.${hiveconf:original_table};
 
 
 drop table if exists ${hiveconf:train_table};
@@ -42,10 +43,9 @@ where rand_id <70000;
 use ${hiveconf:test_database};
 
 
-create table ${hiveconf:original_table} as
-select *
-from default.${hiveconf:original_table};
-
+--create table ${hiveconf:original_table} as
+--select *
+--from default.${hiveconf:original_table};
 
 drop table if exists ${hiveconf:test_table};
 
