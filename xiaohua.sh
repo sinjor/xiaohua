@@ -1,10 +1,10 @@
 #!/bin/sh
 set -x
 table_original=behavior_data_source_useful_flatten_2 #原始数据集
-table_train_src=sinjor_train_data_1              #训练集表格
-table_test_src=sinjor_test_data_1                #测试集表格
-database_train=sinjor_db_train                   #训练集数据库
-database_test=sinjor_db_test                     #测试集数据库
+table_train_src=sinjor_train_data_time              #训练集表格
+table_test_src=sinjor_test_data_time                #测试集表格
+database_train=sinjor_db_train_time                   #训练集数据库
+database_test=sinjor_db_test_time                     #测试集数据库
 table_feature_dest=xiaohua_feature_extract_all   #合并了label之后的特征变量总表
 database_label=default                           #label所在数据库
 database_original=default                        #原始数据所在数据库
