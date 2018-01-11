@@ -1,114 +1,4 @@
--- education_code
--- position_code
--- workYears_code
--- contactsRelationship_code
--- bankCardName_code
--- ipCity_code
--- mobileCity_code
--- ipProvince_code
-
-drop table if exists education_code;
-
-
-create table education_code as
-select t.event_education,
-       row_number() over(
-                         order by t.event_education) as event_education_code
-from
-    (select distinct event_education as event_education
-     from behavior_data_source_useful_flatten_2
-     where event_education is not null) t;
-
-
-drop table if exists position_code;
-
-
-create table position_code as
-select t.event_position,
-       row_number() over(
-                         order by t.event_position) as event_position_code
-from
-    (select distinct event_position as event_position
-     from behavior_data_source_useful_flatten_2
-     where event_position is not null) t;
-
-
-drop table if exists workYears_code;
-
-
-create table workYears_code as
-select t.event_workyears,
-       row_number() over(
-                         order by t.event_workyears) as event_workyears_code
-from
-    (select distinct event_workyears as event_workyears
-     from behavior_data_source_useful_flatten_2
-     where event_workyears is not null) t;
-
-
-drop table if exists contactsRelationship_code;
-
-
-create table contactsRelationship_code as
-select t.event_contactsrelationship,
-       row_number() over(
-                         order by t.event_contactsrelationship) as event_contactsrelationship_code
-from
-    (select distinct event_contactsrelationship as event_contactsrelationship
-     from behavior_data_source_useful_flatten_2
-     where event_contactsrelationship is not null) t;
-
-
-drop table if exists bankCardName_code;
-
-
-create table bankCardName_code as
-select t.event_bankCardName,
-       row_number() over(
-                         order by t.event_bankcardname) as event_bankcardname_code
-from
-    (select distinct event_bankcardname as event_bankcardname
-     from behavior_data_source_useful_flatten_2
-     where event_bankcardname is not null) t;
-
-
-drop table if exists ipCity_code;
-
-
-create table ipCity_code as
-select t.event_ipCity,
-       row_number() over(
-                         order by t.event_ipcity) as event_ipcity_code
-from
-    (select distinct event_ipcity as event_ipcity
-     from behavior_data_source_useful_flatten_2
-     where event_ipcity is not null) t;
-
-
-drop table if exists mobileCity_code;
-
-
-create table mobileCity_code as
-select t.event_mobileCity,
-       row_number() over(
-                         order by t.event_mobilecity) as event_mobilecity_code
-from
-    (select distinct event_mobilecity as event_mobilecity
-     from behavior_data_source_useful_flatten_2
-     where event_mobilecity is not null) t;
-
-
-drop table if exists ipProvince_code;
-
-
-create table ipProvince_code as
-select t.event_ipprovince,
-       row_number() over(
-                         order by t.event_ipprovince) as event_ipprovince_code
-from
-    (select distinct event_ipprovince as event_ipprovince
-     from behavior_data_source_useful_flatten_2
-     where event_ipprovince is not null) t;
+use ${hiveconf:source_database};
 
 
 drop table if exists cid_first_loan_source_features;
@@ -152,11 +42,11 @@ select t1.event_cid,
        t6.event_contactsRelationship_code,
        t1.event_bankCardType,
 
-       cast(t1.event_bankCardCode as int) as event_bankCardCode,
+       t1.event_bankCardCode,
        t7.event_bankCardName_code,
-       cast(t1.event_srcChannel as int) as event_srcChannel,
-       cast(t1.event_fpTokenID as int) as event_fpTokenID,
-       cast(t1.event_fingerprint as int) as event_fingerprint,
+       t1.event_srcChannel,
+       t1.event_fpTokenID,
+       t1.event_fingerprint,
 
        t8.event_ipCity_code,
        t9.event_mobileCity_code,
@@ -214,7 +104,7 @@ left outer join
                  event_contactsName,
                  event_contactsMobile,
                  event_contactsRelationship
-          from behavior_data_source_useful_flatten_2
+          from ${hiveconf:source_table}
           where event_name='app_apply'
               and event_cid is not null
               and length(event_cid) > 0

@@ -1,7 +1,13 @@
+use ${hiveconf:source_database};
+
+
 drop table if exists xiaohua_feature_extract_all;
 
 create table xiaohua_feature_extract_all as
-select t1.event_cid,
+select row_number() over(order by rand()) as cid,*
+from 
+(select t0.cid as event_cid,
+       t0.label,
 
        t1.cid_apply_1m_hf,
        t1.cid_bind_bankcardno_1m_hf,
@@ -110,9 +116,10 @@ select t1.event_cid,
        t6.event_loanTerm,
        t6.event_productType
 from
-    cid_derived_hs_1m t1
+    ${hiveconf:label_database}.${hiveconf:label_table} t0 
+right outer join cid_derived_hs_1m as t1 on t0.cid = t1.event_cid
 left outer join cid_derived_hs_3m as t2 on t1.event_cid = t2.event_cid
 left outer join cid_derived_1m_am_all as t3 on t1.event_cid = t3.event_cid
 left outer join cid_derived_3m_am_all as t4 on t1.event_cid = t4.event_cid
 left outer join cid_derived_abn_all as t5 on t1.event_cid = t5.event_cid
-left outer join cid_first_loan_source_features as t6 on t1.event_cid = t6.event_cid;
+left outer join cid_first_loan_source_features as t6 on t1.event_cid = t6.event_cid) t;

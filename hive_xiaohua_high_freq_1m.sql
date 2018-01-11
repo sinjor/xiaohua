@@ -1,4 +1,7 @@
 /* 1.客户号短期多次获额 */
+use ${hiveconf:source_database};
+
+
 drop table if exists cid_apply_derived_1m_hf;
 
 
@@ -12,7 +15,7 @@ from
 left outer join
     (select event_cid,
             collector_tstamp
-     from behavior_data_source_useful_flatten_2
+     from ${hiveconf:source_table}
      where collector_tstamp is not null
          and length(collector_tstamp) > 0
          and event_name = "app_apply") t2 on t1.event_cid = t2.event_cid
@@ -35,7 +38,7 @@ left outer join
     (select event_cid,
             event_bankcardno,
             collector_tstamp
-     from behavior_data_source_useful_flatten_2
+     from ${hiveconf:source_table}
      where event_bankcardno is not null
          and length(event_bankcardno) >0
          and collector_tstamp is not null
@@ -71,7 +74,7 @@ left outer join
          (select event_cid,
                  event_mobile,
                  collector_tstamp
-          from behavior_data_source_useful_flatten_2
+          from ${hiveconf:source_table}
           where event_mobile is not null
               and length(event_mobile) >0
               and collector_tstamp is not null
@@ -109,7 +112,7 @@ left outer join
          (select event_cid,
                  event_mobile,
                  collector_tstamp
-          from behavior_data_source_useful_flatten_2
+          from ${hiveconf:source_table}
           where event_mobile is not null
               and length(event_mobile) >0
               and collector_tstamp is not null
@@ -147,7 +150,7 @@ left outer join
          (select event_cid,
                  event_certno,
                  collector_tstamp
-          from behavior_data_source_useful_flatten_2
+          from ${hiveconf:source_table}
           where event_certno is not null
               and length(event_certno) >0
               and collector_tstamp is not null
@@ -185,7 +188,7 @@ left outer join
          (select event_cid,
                  event_bankcardno,
                  collector_tstamp
-          from behavior_data_source_useful_flatten_2
+          from ${hiveconf:source_table}
           where event_bankcardno is not null
               and length(event_bankcardno) >0
               and collector_tstamp is not null
