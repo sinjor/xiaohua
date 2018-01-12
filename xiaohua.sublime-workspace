@@ -4,8 +4,24 @@
 		"selected_items":
 		[
 			[
-				"sinjor",
+				"sinjor_tri",
 				"sinjor_train_data_time"
+			],
+			[
+				"sinjor",
+				"sinjor_db_time"
+			],
+			[
+				"databa",
+				"database_label"
+			],
+			[
+				"xiaoh",
+				"xiaohua_feature_extract_all"
+			],
+			[
+				"database",
+				"database_original"
 			],
 			[
 				"eventbankcard",
@@ -495,7 +511,7 @@
 			"file": "xiaohua_feature_extract_all.sql",
 			"settings":
 			{
-				"buffer_size": 4371,
+				"buffer_size": 5582,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -531,9 +547,18 @@
 			"file": "/C/Users/Administrator/Desktop/myhive.sql",
 			"settings":
 			{
-				"buffer_size": 44567,
+				"buffer_size": 44715,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/C/Users/Administrator/Desktop/数据划分对特征提取的影响.sql",
+			"settings":
+			{
+				"buffer_size": 3185,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
 			}
 		},
 		{
@@ -591,15 +616,6 @@
 			}
 		},
 		{
-			"file": "hive_xiaohua_abnormal.sql",
-			"settings":
-			{
-				"buffer_size": 3773,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
 			"file": "hive_xiaohua_am_1m.sql",
 			"settings":
 			{
@@ -609,13 +625,10 @@
 			}
 		},
 		{
-			"contents": "/*\n\t获取客户首次借款的时间点\n */\n\ndrop table if exists cid_first_loan;\n\n\ncreate table cid_first_loan as\nselect *\nfrom\n    (select row_number() over(partition by event_cid\n                              order by collector_tstamp asc) as cid_loan_order,\n            event_mobile,\n            event_cid,\n            event_cli_name,\n            event_certNo,\n            event_residence,\n            event_education,\n            event_organization,\n            event_companyPhone,\n            event_position,\n            event_workYears,\n            event_contactsName,\n            event_contactsMobile,\n            event_contactsRelationship,\n            event_openid,\n            event_wechatNickname,\n            event_bankBin,\n            event_bankCardNo,\n            event_bankCardType,\n            event_bankCardCode,\n            event_bankCardName,\n            event_bankCardMobile,\n            event_srcChannel,\n            event_platform,\n            event_deviceId,\n            event_smartId,\n            event_fpTokenID,\n            event_fingerprint,\n            event_userAgent,\n            event_isEmulator,\n            event_idfa,\n            event_mac,\n            event_imei,\n            event_ip,\n            event_longitude,\n            event_latitude,\n            event_gpsCity,\n            event_mobileCity,\n            event_trueIP,\n            event_ipProvince,\n            event_ipCity,\n            event_ipLongitude,\n            event_ipLatitude,\n            event_deviceBssid,\n            event_loanAmount,\n            event_loanTerm,\n            event_loanDate,\n            event_loanResult,\n            event_productType,\n            event_name,\n            event_id,\n            collector_tstamp\n     from behavior_data_source_useful_flatten_2\n     where event_name='app_loan'\n         and event_cid is not null\n         and length(event_cid) > 0\n         and collector_tstamp is not null\n         and length(collector_tstamp) > 0) t\nwhere cid_loan_order = 1 ;\n\n\n /*\n1.身份证号对应的客户号\n2.身份证号对应的注册手机号\n3.身份证号对应的绑定银行卡\n4.身份证号对应的银行卡预留手机号\n5.身份证号对应的设备id\n6.身份证号对应的imei\n7.身份证号对应的idfa\n */\n\ndrop table if exists cid_certNo_derived_1m ;\n\ncreate table cid_certNo_derived_1m as\nselect t1.event_cid,\n       t1.event_certNo,\n       size(collect_set(t2.event_cid)) as certno_dist_cid_1m_am,\n       size(collect_set(t2.event_mobile)) as certno_dist_mobile_1m_am,\n       size(collect_set(t2.event_bankCardNo)) as certno_dist_bankCardNo_1m_am,\n       size(collect_set(t2.event_bankCardMobile)) as certno_dist_bankCardMobile_1m_am,\n       size(collect_set(t2.event_deviceId)) as certno_dist_deviceId_1m_am,\n       size(collect_set(t2.event_imei)) as certno_dist_imei_1m_am,\n       size(collect_set(t2.event_idfa)) as certno_dist_idfa_1m_am\nfrom\n    (select event_cid,\n            event_certNo,\n            collector_tstamp\n     from cid_first_loan) t1\nleft outer join\n    (select distinct event_certNo,\n                     collector_tstamp,\n                     event_cid ,\n                     event_mobile,\n                     event_bankCardNo,\n                     event_bankCardMobile,\n                     event_deviceId,\n                     event_imei,\n                     event_idfa\n     from behavior_data_source_useful_flatten_2\n     where event_certNo is not null\n         and length(event_certNo) > 0\n         and collector_tstamp is not null\n         and length(collector_tstamp) > 0) t2 on t1.event_certNo = t2.event_certNo\nwhere (t1.collector_tstamp >= t2.collector_tstamp)\n    and (date_sub(t1.collector_tstamp,30) <= substring(t2.collector_tstamp, 1,10))\ngroup by t1.event_cid,\n         t1.event_certNo ;\n\n/*\n \n 8.客户号对应绑定银行卡\n9.客户号对应的银行预留手机号\n10.客户号对应的设备id\n11.客户号对应的imei地址\n12.客户号对应的idfa地址\n\n */\n \ndrop table if exists cid_derived_1m ;\ncreate table cid_derived_1m as\nselect t1.event_cid,\n       size(collect_set(t2.event_bankCardNo)) as cid_dist_bankCardNo_1m_am,\n       size(collect_set(t2.event_bankCardMobile)) as cid_dist_bankCardMobile_1m_am,\n       size(collect_set(t2.event_deviceId)) as cid_dist_deviceId_1m_am,\n       size(collect_set(t2.event_imei)) as cid_dist_imei_1m_am,\n       size(collect_set(t2.event_idfa)) as cid_dist_idfa_1m_am\nfrom\n    (select event_cid,\n            collector_tstamp\n     from cid_first_loan) t1\nleft outer join\n    (select distinct event_cid,\n                     collector_tstamp,\n                     event_mobile,\n                     event_bankCardNo,\n                     event_bankCardMobile,\n                     event_deviceId,\n                     event_imei,\n                     event_idfa\n     from behavior_data_source_useful_flatten_2\n     where event_cid is not null\n         and length(event_cid) > 0\n         and collector_tstamp is not null\n         and length(collector_tstamp) > 0) t2 on t1.event_cid = t2.event_cid\nwhere (t1.collector_tstamp >= t2.collector_tstamp)\n    and (date_sub(t1.collector_tstamp,30) <= substring(t2.collector_tstamp, 1,10))\ngroup by t1.event_cid ;\n\n\n/*\n20.手机号对应的身份证号\n21.手机号对应的客户号\n/////////22.手机号对应的绑定微信\n23.手机号对应的绑定银行卡\n24.手机号对应的设备id\n25.手机号对应的imei地址\n26.手机号对应的idfa地址\n */\ndrop table if exists cid_mobile_derived_1m ;\n\n\ncreate table cid_mobile_derived_1m as\nselect t1.event_cid,\n       t1.event_mobile,\n       size(collect_set(t2.event_certNo)) as mobile_dist_certNo_1m_am,\n       size(collect_set(t2.event_cid)) as mobile_dist_cid_1m_am,\n       size(collect_set(t2.event_bankCardNo)) as mobile_dist_bankCardNo_1m_am,\n       size(collect_set(t2.event_deviceId)) as mobile_dist_deviceId_1m_am,\n       size(collect_set(t2.event_imei)) as mobile_dist_imei_1m_am,\n       size(collect_set(t2.event_idfa)) as mobile_dist_idfa_1m_am\nfrom\n    (select event_cid,\n            event_mobile,\n            collector_tstamp\n     from cid_first_loan) t1\nleft outer join\n    (select distinct event_mobile,\n                     collector_tstamp,\n                     event_certNo,\n                     event_cid ,\n                     event_bankCardNo,\n                     event_deviceId,\n                     event_imei,\n                     event_idfa\n     from behavior_data_source_useful_flatten_2\n     where event_mobile is not null\n         and length(event_mobile) > 0\n         and collector_tstamp is not null\n         and length(collector_tstamp) > 0) t2 on t1.event_mobile = t2.event_mobile\nwhere (t1.collector_tstamp >= t2.collector_tstamp)\n    and (date_sub(t1.collector_tstamp,30) <= substring(t2.collector_tstamp, 1,10))\ngroup by t1.event_cid,\n         t1.event_mobile ;\n\n/*\n27.银行卡对应的客户号\n////28.银行卡对应的微信\n29.银行卡对应的手机号\n30.银行卡对应的设备id\n31.银行卡对应的imei地址\n32.银行卡对应的idfa地址\n*/\n\ndrop table if exists cid_bankCardNo_derived_1m ;\n\ncreate table cid_bankCardNo_derived_1m as\nselect t1.event_cid,\n       t1.event_bankCardNo,\n       size(collect_set(t2.event_cid)) as bankCardNo_dist_cid_1m_am,\n       size(collect_set(t2.event_mobile)) as bankCardNo_dist_mobile_1m_am,\n       size(collect_set(t2.event_deviceId)) as bankCardNo_dist_deviceId_1m_am,\n       size(collect_set(t2.event_imei)) as bankCardNo_dist_imei_1m_am,\n       size(collect_set(t2.event_idfa)) as bankCardNo_dist_idfa_1m_am\nfrom\n    (select event_cid,\n            event_bankCardNo,\n            collector_tstamp\n     from cid_first_loan2) t1\nleft outer join\n    (select distinct event_bankCardNo,\n                     collector_tstamp,\n                     event_cid ,\n                     event_mobile,\n                     event_deviceId,\n                     event_imei,\n                     event_idfa\n     from behavior_data_source_useful_flatten_2\n     where event_bankCardNo is not null\n         and length(event_bankCardNo) > 0\n         and collector_tstamp is not null\n         and length(collector_tstamp) > 0) t2 on t1.event_bankCardNo = t2.event_bankCardNo\nwhere (t1.collector_tstamp >= t2.collector_tstamp)\n    and (date_sub(t1.collector_tstamp,30) <= substring(t2.collector_tstamp, 1,10))\ngroup by t1.event_cid,\n         t1.event_bankCardNo ;\n\n/*\n33.银行预留手机号对应的身份证\n34.银行预留手机号对应的客户号\n///////35.银行预留手机号对应的微信\n36.银行预留手机号对应的银行卡\n37.银行预留手机号对应的设备id\n38.银行预留手机号对应的imei地址\n39.银行预留手机号对应的idfa地址\n\n */\n\ndrop table if exists cid_bankCardMobile_derived_1m ;\n\n\ncreate table cid_bankCardMobile_derived_1m as\nselect t1.event_cid,\n       t1.event_bankCardMobile,\n       size(collect_set(t2.event_certNo)) as bankCardMobile_dist_centNo_1m_am,\n       size(collect_set(t2.event_cid)) as bankCardMobile_dist_cid_1m_am,\n       size(collect_set(t2.event_bankCardNo)) as bankCardMobile_dist_bankCardNo_1m_am,\n       size(collect_set(t2.event_deviceId)) as bankCardMobile_dist_deviceId_1m_am,\n       size(collect_set(t2.event_imei)) as bankCardMobile_dist_imei_1m_am,\n       size(collect_set(t2.event_idfa)) as bankCardMobile_dist_idfa_1m_am\nfrom\n    (select event_cid,\n            event_bankCardMobile,\n            collector_tstamp\n     from cid_first_loan) t1\nleft outer join\n    (select distinct event_bankCardMobile,\n                     collector_tstamp,\n                     event_certNo,\n                     event_cid ,\n                     event_bankCardNo,\n                     event_deviceId,\n                     event_imei,\n                     event_idfa\n     from behavior_data_source_useful_flatten_2\n     where event_bankCardMobile is not null\n         and length(event_bankCardMobile) > 0\n         and collector_tstamp is not null\n         and length(collector_tstamp) > 0) t2 on t1.event_bankCardMobile = t2.event_bankCardMobile\nwhere (t1.collector_tstamp >= t2.collector_tstamp)\n    and (date_sub(t1.collector_tstamp,30) <= substring(t2.collector_tstamp, 1,10))\ngroup by t1.event_cid,\n         t1.event_bankCardMobile ;\n\ndrop table if exists cid_derived_all_1m ;\n\n\ncreate table cid_derived_all_1m as\nselect t1.event_cid,\n       t2.certno_dist_cid_1m_am,\n       t2.certno_dist_mobile_1m_am,\n       t2.certno_dist_bankCardNo_1m_am,\n       t2.certno_dist_bankCardMobile_1m_am,\n       t2.certno_dist_deviceId_1m_am,\n       t2.certno_dist_imei_1m_am,\n       t2.certno_dist_idfa_1m_am,\n       t3.cid_dist_bankCardNo_1m_am,\n       t3.cid_dist_bankCardMobile_1m_am,\n       t3.cid_dist_deviceId_1m_am,\n       t3.cid_dist_idfa_1m_am,\n       t3.cid_dist_imei_1m_am,\n       t4.mobile_dist_cid_1m_am,\n       t4.mobile_dist_certNo_1m_am,\n       t4.mobile_dist_bankCardNo_1m_am,\n       t4.mobile_dist_deviceId_1m_am,\n       t4.mobile_dist_idfa_1m_am,\n       t4.mobile_dist_imei_1m_am,\n       t5.bankCardNo_dist_cid_1m_am,\n       t5.bankCardNo_dist_mobile_1m_am,\n       t5.bankCardNo_dist_deviceId_1m_am,\n       t5.bankCardNo_dist_idfa_1m_am,\n       t5.bankCardNo_dist_imei_1m_am,\n       t6.bankCardMobile_dist_cid_1m_am,\n       t6.bankCardMobile_dist_centNo_1m_am,\n       t6.bankCardMobile_dist_bankCardNo_1m_am,\n       t6.bankCardMobile_dist_deviceId_1m_am,\n       t6.bankCardMobile_dist_idfa_1m_am,\n       t6.bankCardMobile_dist_imei_1m_am\nfrom\n    (select event_cid\n     from cid_first_loan) t1\nleft outer join cid_certNo_derived_1m as t2 on t1.event_cid = t2.event_cid\nleft outer join cid_derived_1m as t3 on t1.event_cid = t3.event_cid\nleft outer join cid_mobile_derived_1m as t4 on t1.event_cid = t4.event_cid\nleft outer join cid_bankCardNo_derived_1m as t5 on t1.event_cid = t5.event_cid\nleft outer join cid_bankCardMobile_derived_1m as t6 on t1.event_cid = t6.event_cid;\n\n",
-			"file": "hive.sql",
-			"file_size": 12194,
-			"file_write_time": 131598483368032516,
+			"file": "hive_xiaohua_abnormal.sql",
 			"settings":
 			{
-				"buffer_size": 11193,
+				"buffer_size": 3773,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -624,7 +637,7 @@
 			"file": "xiaohua.sh",
 			"settings":
 			{
-				"buffer_size": 4157,
+				"buffer_size": 2875,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
@@ -751,6 +764,7 @@
 	],
 	"file_history":
 	[
+		"/G/taodata/project/xiaohua_finance/xiaohua/hive_xiaohua_am_1m.sql",
 		"/G/program_monkey/ML/tianchi/O2O-Coupon-Usage-Forecast-4ec68dab5ef6ca68131fd2e31f1a2021a5e4e633/O2O-Coupon-Usage-Forecast-4ec68dab5ef6ca68131fd2e31f1a2021a5e4e633/code/wepon/season two/blending/level1_gbdt1.sql",
 		"/C/Users/Administrator/Desktop/xiaohua/xiaohua_other.sql",
 		"/C/Users/Administrator/Desktop/compare.sql",
@@ -871,7 +885,7 @@
 	],
 	"find":
 	{
-		"height": 38.0
+		"height": 26.0
 	},
 	"find_in_files":
 	{
@@ -886,6 +900,9 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"test_data_train",
+			"table_data_train",
+			"2",
 			"int",
 			",",
 			"factor",
@@ -1010,17 +1027,16 @@
 			"listFactors",
 			"pdSample",
 			"pdFactors",
-			"strFeatureName",
-			"EntityFeatureProcess",
-			"entity_process_mapping",
-			"OneHot"
+			"strFeatureName"
 		],
 		"highlight": true,
-		"in_selection": true,
+		"in_selection": false,
 		"preserve_case": true,
 		"regex": false,
 		"replace_history":
 		[
+			"table_test_data",
+			"table_train_data",
 			"int,",
 			" ",
 			"int",
@@ -1134,7 +1150,7 @@
 	"groups":
 	[
 		{
-			"selected": 4,
+			"selected": 8,
 			"sheets":
 			[
 				{
@@ -1143,15 +1159,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 4371,
+						"buffer_size": 5582,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								3919,
-								3919
+								5200,
+								5200
 							]
 						],
 						"settings":
@@ -1160,10 +1176,10 @@
 							"syntax": "Packages/SQL/SQL.sublime-syntax"
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 2115.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 13,
+					"stack_index": 2,
 					"type": "text"
 				},
 				{
@@ -1190,10 +1206,10 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 360.0,
+						"translation.y": 83.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 16,
+					"stack_index": 10,
 					"type": "text"
 				},
 				{
@@ -1223,7 +1239,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 15,
+					"stack_index": 9,
 					"type": "text"
 				},
 				{
@@ -1254,7 +1270,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 14,
+					"stack_index": 8,
 					"type": "text"
 				},
 				{
@@ -1263,15 +1279,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 44567,
+						"buffer_size": 44715,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								39208,
-								35373
+								39267,
+								35374
 							]
 						],
 						"settings":
@@ -1282,14 +1298,45 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 19916.0,
+						"translation.y": 19408.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 4,
 					"type": "text"
 				},
 				{
 					"buffer": 5,
+					"file": "/C/Users/Administrator/Desktop/数据划分对特征提取的影响.sql",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3185,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1895,
+								1895
+							]
+						],
+						"settings":
+						{
+							"origin_encoding": "UTF-8",
+							"syntax": "Packages/SQL/SQL.sublime-syntax",
+							"tab_size": 7,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
 					"file": "divide.sql",
 					"semi_transient": false,
 					"settings":
@@ -1301,23 +1348,24 @@
 						"selection":
 						[
 							[
-								1687,
-								1687
+								325,
+								325
 							]
 						],
 						"settings":
 						{
+							"origin_encoding": "ASCII",
 							"syntax": "Packages/SQL/SQL.sublime-syntax"
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 270.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 3,
 					"type": "text"
 				},
 				{
-					"buffer": 6,
+					"buffer": 7,
 					"file": "/G/taodata/project/xiaohua_finance/data_0110_sinjor_d2time/input/xh_dict - 副本.csv",
 					"semi_transient": false,
 					"settings":
@@ -1339,14 +1387,14 @@
 							"syntax": "Packages/Text/Plain text.tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 1458.0,
+						"translation.y": 270.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 8,
+					"stack_index": 7,
 					"type": "text"
 				},
 				{
-					"buffer": 7,
+					"buffer": 8,
 					"file": "/C/Users/Administrator/Desktop/compare.sql",
 					"semi_transient": false,
 					"settings":
@@ -1370,14 +1418,14 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 1674.0,
+						"translation.y": 1890.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 6,
+					"stack_index": 0,
 					"type": "text"
 				},
 				{
-					"buffer": 8,
+					"buffer": 9,
 					"file": "hive_xiaohua_high_freq_3m.sql",
 					"semi_transient": false,
 					"settings":
@@ -1404,11 +1452,11 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 11,
+					"stack_index": 15,
 					"type": "text"
 				},
 				{
-					"buffer": 9,
+					"buffer": 10,
 					"file": "hive_xiaohua_am_3m.sql",
 					"semi_transient": false,
 					"settings":
@@ -1435,11 +1483,11 @@
 						"translation.y": 4138.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 7,
+					"stack_index": 14,
 					"type": "text"
 				},
 				{
-					"buffer": 10,
+					"buffer": 11,
 					"file": "hive_xiaohua_high_freq_1m.sql",
 					"semi_transient": false,
 					"settings":
@@ -1466,11 +1514,42 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 5,
+					"stack_index": 12,
 					"type": "text"
 				},
 				{
-					"buffer": 11,
+					"buffer": 12,
+					"file": "hive_xiaohua_am_1m.sql",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 13720,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								7865,
+								7852
+							]
+						],
+						"settings":
+						{
+							"origin_encoding": "UTF-8",
+							"syntax": "Packages/SQL/SQL.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 4290.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 11,
+					"type": "text"
+				},
+				{
+					"buffer": 13,
 					"file": "hive_xiaohua_abnormal.sql",
 					"semi_transient": false,
 					"settings":
@@ -1497,69 +1576,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 10,
-					"type": "text"
-				},
-				{
-					"buffer": 12,
-					"file": "hive_xiaohua_am_1m.sql",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 13720,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								9294,
-								9306
-							]
-						],
-						"settings":
-						{
-							"origin_encoding": "UTF-8",
-							"syntax": "Packages/SQL/SQL.sublime-syntax",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 3541.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 13,
-					"file": "hive.sql",
-					"semi_transient": true,
-					"settings":
-					{
-						"buffer_size": 11193,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"origin_encoding": "UTF-8",
-							"syntax": "Packages/SQL/SQL.sublime-syntax",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 9,
+					"stack_index": 6,
 					"type": "text"
 				},
 				{
@@ -1568,15 +1585,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 4157,
+						"buffer_size": 2875,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								735,
-								735
+								2171,
+								2187
 							]
 						],
 						"settings":
@@ -1585,10 +1602,10 @@
 							"syntax": "Packages/ShellScript/Shell-Unix-Generic.sublime-syntax"
 						},
 						"translation.x": 0.0,
-						"translation.y": 108.0,
+						"translation.y": 432.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
+					"stack_index": 1,
 					"type": "text"
 				},
 				{
@@ -1619,7 +1636,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 4,
+					"stack_index": 13,
 					"type": "text"
 				},
 				{
@@ -1649,7 +1666,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 12,
+					"stack_index": 16,
 					"type": "text"
 				}
 			]
@@ -1698,7 +1715,7 @@
 	"project": "xiaohua.sublime-project",
 	"replace":
 	{
-		"height": 68.0
+		"height": 48.0
 	},
 	"save_all_on_build": true,
 	"select_file":
@@ -1744,7 +1761,7 @@
 	"show_open_files": true,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 230.0,
+	"side_bar_width": 257.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{
