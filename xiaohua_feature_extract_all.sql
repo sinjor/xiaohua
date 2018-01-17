@@ -1,9 +1,9 @@
---set source_database=sinjor_db_time;
---set label_database=default;
---set label_table=ml_labels;
---set train_table=sinjor_train_data_time;
---set test_table=sinjor_test_data_time;
---set feature_table=xiaohua_feature_extract_all;
+set source_database=sinjor_db_time;
+set label_database=default;
+set label_table=ml_labels;
+set train_table=sinjor_train_data_rand_v3;
+set test_table=sinjor_test_data_rand_v3;
+set feature_table=xiaohua_feature_extract_all_v3;
 use ${hiveconf:source_database};
 
 
@@ -121,7 +121,41 @@ from
        t6.event_loanAmount,
        t6.event_loanTerm,
        t6.event_productType,
-       t7.collector_tstamp
+
+       t7.register_count,
+       t7.login_count,
+       t7.app_apply_count,
+       t7.app_bindcard_count,
+       t7.app_resetpwd_count,
+       t7.cid_dis_deviceid_1m,
+       t7.cid_dis_event_imei_1m,
+       t7.cid_dis_event_idfa_1m,
+       t7.cid_dis_event_useragent_1m,
+       t7.cid_dis_event_trueip_1m,
+       t7.cid_dis_event_id_1m,
+       t7.cid_dis_id_div_dis_trueip_1m,--2
+       t7.cid_dis_deviceid_3m,
+       t7.cid_dis_event_imei_3m,
+       t7.cid_dis_event_idfa_3m,
+       t7.cid_dis_event_useragent_3m,
+       t7.cid_dis_event_trueip_3m,
+       t7.cid_dis_event_id_3m,
+       t7.cid_dis_id_div_dis_trueip_3m,--2
+       t7.apply_ipcity_same_gpscity_flag,
+       t7.apply_ipcity_same_mobilecity_flag,
+       t7.apply_gpscity_same_mobilecity_flag,
+       t7.trueip_dist_cid_1day,
+       t7.trueip_dist_cid_7day,
+       t7.trueip_dist_cid_1m,
+       t7.trueip_dist_cid_3m,
+       t7.mobile_same_bankcardmobile_flag,
+       t7.loan_ipcity_same_mobilecity_flag,--2
+       t7.loan_first_without_apply_flag,--2
+       t7.loan_apply_time_interval_day,--2
+       t7.loan_apply_time_interval_second,--2
+       t7.loan_register_time_interval_day,--2
+
+       t8.collector_tstamp
 from
     ${hiveconf:label_database}.${hiveconf:label_table} t0 
 right outer join cid_derived_hs_1m as t1 on t0.cid = t1.event_cid
@@ -130,22 +164,15 @@ left outer join cid_derived_1m_am_all as t3 on t1.event_cid = t3.event_cid
 left outer join cid_derived_3m_am_all as t4 on t1.event_cid = t4.event_cid
 left outer join cid_derived_abn_all as t5 on t1.event_cid = t5.event_cid
 left outer join cid_first_loan_source_features as t6 on t1.event_cid = t6.event_cid
-left outer join cid_first_loan as t7 on t1.event_cid = t7.event_cid) t;
-
-
-set source_database=sinjor_db_rand;
-set label_database=default;
-set label_table=ml_labels;
-set train_table=sinjor_train_data_rand;
-set test_table=sinjor_test_data_rand;
-use ${hiveconf:source_database};
+left outer join default.cid_new_feature_derived_all as t7 on t1.event_cid = t7.event_cid
+left outer join cid_first_loan as t8 on t1.event_cid = t8.event_cid) t;
 
 drop table if exists ${hiveconf:train_table};
 
 
 create table ${hiveconf:train_table} as
 select *
-from xiaohua_feature_extract_all
+from ${hiveconf:feature_table}
 where cid < 70000;
 
 
@@ -154,8 +181,14 @@ drop table if exists ${hiveconf:test_table};
 
 create table ${hiveconf:test_table} as
 select *
-from xiaohua_feature_extract_all
+from ${hiveconf:feature_table}
 where cid >= 70000;
+
+hive -e "set hive.cli.print.header=true;select * from sinjor_db_time.sinjor_train_data_rand_v3;" | sed -e 's/sinjor_train_data_rand_v3.//g' -e 's/\t/,/g' >>sinjor_train_data_rand_v3.csv
+hive -e "set hive.cli.print.header=true;select * from sinjor_db_time.sinjor_test_data_rand_v3;" | sed -e 's/sinjor_test_data_rand_v3.//g' -e 's/\t/,/g' >>sinjor_test_data_rand_v3.csv
+
+hive -e "set hive.cli.print.header=true;select * from sinjor_db_time.sinjor_train_data_rand_v2;" | sed -e 's/sinjor_train_data_rand_v2.//g' -e 's/\t/,/g' >>sinjor_train_data_rand_v2.csv
+hive -e "set hive.cli.print.header=true;select * from sinjor_db_time.sinjor_test_data_rand_v2;" | sed -e 's/sinjor_test_data_rand_v2.//g' -e 's/\t/,/g' >>sinjor_test_data_rand_v2.csv
 
 hive -e "set hive.cli.print.header=true;select * from sinjor_db_time.sinjor_train_data_rand;" | sed -e 's/sinjor_train_data_rand.//g' -e 's/\t/,/g' >>sinjor_train_data_rand.csv
 hive -e "set hive.cli.print.header=true;select * from sinjor_db_time.sinjor_test_data_rand;" | sed -e 's/sinjor_test_data_rand.//g' -e 's/\t/,/g' >>sinjor_test_data_rand.csv
