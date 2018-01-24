@@ -4,6 +4,150 @@
 		"selected_items":
 		[
 			[
+				"event_useragent",
+				"event_useragent"
+			],
+			[
+				"moblie",
+				"mobileCity_code"
+			],
+			[
+				"event_mobileci",
+				"event_mobilecity"
+			],
+			[
+				"event_mobile",
+				"event_mobilecity"
+			],
+			[
+				"coll",
+				"collector_tstamp"
+			],
+			[
+				"event_mobilec",
+				"event_mobilecity"
+			],
+			[
+				"event_mobilecity",
+				"event_mobilecity_code,factor"
+			],
+			[
+				"label",
+				"label_1"
+			],
+			[
+				"na",
+				"na_rep"
+			],
+			[
+				"event_mobilecity_code_fla",
+				"event_mobilecity_code_sum_flag"
+			],
+			[
+				"event_mobi",
+				"event_mobilecity_code_label"
+			],
+			[
+				"label_1_",
+				"label_1_div_data"
+			],
+			[
+				"label_1",
+				"label_1_div_all"
+			],
+			[
+				"event_mobili",
+				"event_mobilecity_code_summary"
+			],
+			[
+				"labe",
+				"label_1"
+			],
+			[
+				"to",
+				"to_csv"
+			],
+			[
+				"event_mobil",
+				"event_mobilecity_code_summary"
+			],
+			[
+				"event_mo",
+				"event_mobilecity_code_summary"
+			],
+			[
+				"event_ombil",
+				"event_mobilecity_code"
+			],
+			[
+				"cid_apply_",
+				"cid_apply_1m_hf"
+			],
+			[
+				"group",
+				"groupby"
+			],
+			[
+				"cid_app",
+				"cid_apply_1m_hf"
+			],
+			[
+				"N",
+				"None"
+			],
+			[
+				"as",
+				"astype"
+			],
+			[
+				"con",
+				"concat\tfunction"
+			],
+			[
+				"event_mobilecity_code_",
+				"event_mobilecity_code_label_1"
+			],
+			[
+				"evnet_mo",
+				"event_mobilecity_code"
+			],
+			[
+				"event_fptoken",
+				"event_fptokenid"
+			],
+			[
+				"drop",
+				"drop_duplicates\tfunction"
+			],
+			[
+				"d",
+				"drop_duplicates"
+			],
+			[
+				"dict_variable",
+				"dict_variable_used_columns"
+			],
+			[
+				"NU",
+				"NumberOfMissingValues"
+			],
+			[
+				"sinjor",
+				"sinjor_train_data_v3"
+			],
+			[
+				"read",
+				"read_csv\tfunction"
+			],
+			[
+				"sinjor_tr",
+				"sinjor_train_data_rand_v3"
+			],
+			[
+				"sinjor_db",
+				"sinjor_db_train_time"
+			],
+			[
 				"event",
 				"event_deviceid"
 			],
@@ -64,10 +208,6 @@
 				"event_bankcardmobile"
 			],
 			[
-				"event_mobile",
-				"event_mobile"
-			],
-			[
 				"true",
 				"trueip_dist_cid_1day"
 			],
@@ -96,10 +236,6 @@
 				"event_contactsname"
 			],
 			[
-				"event_mobil",
-				"event_mobile"
-			],
-			[
 				"event_id",
 				"event_idfa"
 			],
@@ -110,10 +246,6 @@
 			[
 				"event_contactsmobl",
 				"event_contactsmobile"
-			],
-			[
-				"read",
-				"read_csv\tfunction"
 			],
 			[
 				"event_gps",
@@ -146,10 +278,6 @@
 			[
 				"sinjor_tri",
 				"sinjor_train_data_time"
-			],
-			[
-				"sinjor",
-				"sinjor_db_time"
 			],
 			[
 				"databa",
@@ -386,255 +514,43 @@
 			[
 				"mo",
 				"mobile"
-			],
-			[
-				"event_",
-				"event_bankcardno"
-			],
-			[
-				"event_bankcar",
-				"event_bankcardno"
-			],
-			[
-				"colloc",
-				"collector_tstamp"
-			],
-			[
-				"event_cent",
-				"event_certno"
-			],
-			[
-				"collect",
-				"collector_tstamp"
-			],
-			[
-				"event_certno",
-				"event_certno"
-			],
-			[
-				"bankCardMobilie",
-				"bankCardMobile_dist_imei_1m_am"
-			],
-			[
-				"bankCardMobli",
-				"bankCardMobile_dist_idfa_1m_am"
-			],
-			[
-				"bankCardMoblie",
-				"bankCardMobile_dist_idfa_1m_am"
-			],
-			[
-				"bankCardMobile",
-				"bankCardMobile_dist_bankCardNo_1m_am"
-			],
-			[
-				"bankCard",
-				"bankcardMobile_dist_deviceId_1m_am"
-			],
-			[
-				"bankCardM",
-				"bankCardMobile_dist_centNo_1m_am"
-			],
-			[
-				"bankm",
-				"bankcardmobile_dist_centNo_1m_am"
-			],
-			[
-				"tbank",
-				"t_bankCardMobile"
-			],
-			[
-				"eventID",
-				"event_id"
-			],
-			[
-				"cid_bank",
-				"cid_bankCardMobile_derived_1m"
-			],
-			[
-				"bankCem",
-				"bankCardNo_dist_imei_1m_am"
-			],
-			[
-				"bankC",
-				"bankCardNo_dist_deviceId_1m_am"
-			],
-			[
-				"mobile_dis",
-				"mobile_dist_idfa_1m_am"
-			],
-			[
-				"mobile_di",
-				"mobile_dist_deviceId_1m_am"
-			],
-			[
-				"cid_dist",
-				"cid_dist_imei_1m_am"
-			],
-			[
-				"cid_d",
-				"cid_dist_1m_am"
-			],
-			[
-				"cer",
-				"certno_dist_bankCardNo_1m_am"
-			],
-			[
-				"cert",
-				"certno_dist_bankCardMobile_1m_am"
-			],
-			[
-				"certno",
-				"certno_dist_mobile_1m_am"
-			],
-			[
-				"behavior",
-				"behavior_data_source_useful_flatten_2"
-			],
-			[
-				"event_bak",
-				"event_bankCardMobile"
-			],
-			[
-				"bank",
-				"event_bankCardNo"
-			],
-			[
-				"fil",
-				"fillna"
-			],
-			[
-				"fea",
-				"feature_header"
-			],
-			[
-				"lab",
-				"label_1_count"
-			],
-			[
-				"user_id",
-				"user_id_feature"
 			]
 		]
 	},
 	"buffers":
 	[
 		{
-			"file": "xiaohua_feature_extract_all.sql",
+			"file": "/G/taodata/scripe/python/atom_like.py",
 			"settings":
 			{
-				"buffer_size": 8279,
+				"buffer_size": 1611,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "/G/taodata/project/xiaohua_finance/data_0116_sinjor_rand_v3/input/xh_dict.csv",
+			"file": "/C/Users/Administrator/Desktop/behavior_data_source_useful_flatten_2.sql",
 			"settings":
 			{
-				"buffer_size": 4359,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "xiaohua_other.sql",
-			"settings":
-			{
-				"buffer_size": 4787,
+				"buffer_size": 8153,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "/C/Users/Administrator/Desktop/module/o2o.sql",
+			"file": "/C/Users/Administrator/Desktop/python_pandas.py",
 			"settings":
 			{
-				"buffer_size": 4860,
+				"buffer_size": 5449,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"contents": "/*\ncol_name\tdata_type\tcomment\napp_derived_mobile  \tstring\napp_derived_certno  \tstring\napp_derived_name    \tstring\nevent_mobile        \tstring\nevent_cid           \tstring\nevent_cli_name      \tstring\nevent_certno        \tstring\nevent_residence     \tstring\nevent_education     \tstring\nevent_organization  \tstring\nevent_companyphone  \tstring\nevent_position      \tstring\nevent_workyears     \tstring\nevent_contactsname  \tstring\nevent_contactsmobile\tstring\nevent_contactsrelationship\tstring\nevent_openid        \tstring\nevent_wechatnickname\tstring\nevent_bankbin       \tstring\nevent_bankcardno    \tstring\nevent_bankcardtype  \tstring\nevent_bankcardcode  \tstring\nevent_bankcardname  \tstring\nevent_bankcardmobile\tstring\nevent_srcchannel    \tstring\nevent_platform      \tstring\nevent_deviceid      \tstring\nevent_smartid       \tstring\nevent_fptokenid     \tstring\nevent_fingerprint   \tstring\nevent_useragent     \tstring\nevent_isemulator    \tstring\nevent_idfa          \tstring\nevent_mac           \tstring\nevent_imei          \tstring\nevent_ip            \tstring\nevent_longitude     \tstring\nevent_latitude      \tstring\nevent_gpscity       \tstring\nevent_mobilecity    \tstring\nevent_trueip        \tstring\nevent_ipprovince    \tstring\nevent_ipcity        \tstring\nevent_iplongitude   \tstring\nevent_iplatitude    \tstring\nevent_devicebssid   \tstring\nevent_loanamount    \tstring\nevent_loanterm      \tstring\nevent_loandate      \tstring\nevent_loanresult    \tstring\nevent_producttype   \tstring\napp_id              \tstring\ncollector_tstamp    \tstring\nevent_name          \tstring\nnetwork_userid      \tstring\nuser_ipaddress      \tstring\ncollector_date      \tstring\ndvce_created_tstamp \tstring\netl_tstamp          \tstring\nderived_tstamp      \tstring\ncollector_time      \tstring\nantifraud_dataenrich_version\tstring\nevent_id            \tstring\n\n*/\nselect event_name,\n       count(*) as num,\n       count(distinct collector_date) as date_count,\n       min(collector_date) as date_min,\n       max(collector_date) as date_max\nfrom behavior_data_source_useful_flatten_2\ngroup by event_name;\n\n\nselect count(distinct event_cid) as dis_count_cid,\n       count(event_cid) as count_cid\nfrom behavior_data_source_useful_flatten_2;\n\n#不同事件中一些重要数据的分布：贷款额度 客户id 身份证，银行卡，电话\nselect event_name,\n       count(*) as c_event,\n       count(event_loanamount) as c_amount,\n       count(event_cid) as c_cid,\n       count(event_certno) as c_certno,\n       count(event_bankcardno) as c_bankcardno,\n       count(event_mobile) as c_mobile\nfrom behavior_data_source_useful_flatten_2\ngroup by event_name;\n\n''' result: event_name c_event c_amount c_cid c_certno c_bankcardno c_mobile register 93546 0 93546 0 0 93546 app_bindidcard 106401 0 106401 106401 0 106401 app_loan 137355 137355 137355 137355 137355 137355 null 2 0 0 0 0 0 app_resetpwd 1185 0 1185 0 0 1185 app_bindcard 50858 0 50858 50858 50858 50858 app_apply 132098 0 132098 132098 132098 132098 login 2252703 0 2252703 0 0 2252703 ''' #2.客户号短期多次借款 10月\nselect event_cid as cid,\n       count(*) as count_cid,\n       min(collector_date) as min_cid,\n       max(collector_date) as max_cid\nfrom behavior_data_source_useful_flatten_2\nwhere event_cid is not null\n    and event_name = \"event\"\n    and collector_date >= \"2017-10-01\"\n    and collector_date <= \"2017-10-31\"\ngroup by event_cid\nlimit 10;\n\n#3.客户号短期多张绑卡 10月\nselect event_name,\n       count(event_bankcardno) as count_cardno,\n       count(distinct event_bankcardno) as count_dis_cardno\nfrom behavior_data_source_useful_flatten_2\ngroup by event_name;\n\n\nselect event_cid as cid,\n       count(distinct event_bankcardno) as count_dis_cardno\nfrom behavior_data_source_useful_flatten_2\nwhere event_cid is not null\n    and collector_date > \"2017-10-01\"\n    and collector_date < \"2017-10-31\"\ngroup by event_cid\nhaving count(distinct event_bankcardno) > 1\nlimit 10;\n\n#5.手机号短期多次借款\nselect event_mobile as mobile,\n       count(*) as count_mobile\nfrom behavior_data_source_useful_flatten_2\nwhere event_mobile is not null\n    and event_name = \"event\"\n    and collector_date >= \"2017-10-01\"\n    and collector_date <= \"2017-10-31\"\ngroup by event_mobile\nlimit 10;\n\n#6.手机号短期多张绑卡\nselect event_mobile as mobile,\n       count(distinct event_bankcardno) as count_dis_cardno\nfrom behavior_data_source_useful_flatten_2\nwhere event_mobile is not null\n    and collector_date > \"2017-10-01\"\n    and collector_date < \"2017-10-31\"\ngroup by event_mobile\nhaving count(distinct event_bankcardno) > 1\nlimit 10;\n\n\nselect collector_date\nfrom behavior_data_source_useful_flatten_2\nwhere collector_date = \"200170901\"\nlimit 10;\n\n7.身份证号短期多次绑定账户\nselect event_name,\n       count(event_certno),\n       count(distinct event_certno)\nfrom behavior_data_source_useful_flatten_2\ngroup by event_name;\n\n/* 3.客户号短期多张绑卡 */\nselect t1.event_cid,\n       count(distinct t2.event_bankcardno) as cid_count_event_bankcardno_1m_hf\nfrom\n    (select event_cid,\n            collector_tstamp\n     from cid_first_loan) t1\nleft outer join\n    (select event_cid,\n            event_bankcardno,\n            collector_tstamp\n     from behavior_data_source_useful_flatten_2\n     where event_bankcardno is not null\n         and length(event_bankcardno) >0\n         and collector_tstamp is not null\n         and length(collector_tstamp) > 0\n         and event_name = \"app_bindcard\") t2 on t1.event_cid = t2.event_cid\nwhere (t1.collector_tstamp >= t2.collector_tstamp)\n    and (date_sub(t1.collector_tstamp,30) <= substring(t2.collector_tstamp, 1,10))\ngroup by t1.event_cid\nlimit 10;\n\n/* 6.手机号短期多张绑卡 */\nselect t1.event_cid,\n       count(distinct t2.event_bankcardno) as mobile_count_bankcardno_1m_hf\nfrom\n    (select event_cid,\n            event_mobile,\n            collector_tstamp\n     from cid_first_loan) t1\nleft outer join\n    (select event_cid,\n            event_bankcardno,\n            collector_tstamp\n     from behavior_data_source_useful_flatten_2\n     where event_bankcardno is not null\n         and length(event_bankcardno) >0\n         and collector_tstamp is not null\n         and length(collector_tstamp) > 0\n         and event_name = \"app_bindcard\") t2 on t1.event_cid = t2.event_cid\nwhere (t1.collector_tstamp >= t2.collector_tstamp)\n    and (date_sub(t1.collector_tstamp,30) <= substring(t2.collector_tstamp, 1,10))\ngroup by t1.event_mobile,\n         t1.event_cid\nlimit 10;\n\n\nselect t3.event_cid,\n       t3.event_mobile,\n       t4.mobile_count_bankcardno_1m_hf\nfrom\n    (select event_cid,\n            event_mobile\n     from cid_first_loan) t3\nleft outer join\n    (select t1.event_mobile,\n            count(distinct t2.event_bankcardno) as mobile_count_bankcardno_1m_hf\n     from\n         (select event_cid,\n                 event_mobile,\n                 collector_tstamp\n          from cid_first_loan) t1\n     left outer join\n         (select event_cid,\n                 event_bankcardno,\n                 collector_tstamp\n          from behavior_data_source_useful_flatten_2\n          where event_bankcardno is not null\n              and length(event_bankcardno) >0\n              and collector_tstamp is not null\n              and length(collector_tstamp) > 0\n              and event_name = \"app_bindcard\") t2 on t1.event_cid = t2.event_cid\n     where (t1.collector_tstamp >= t2.collector_tstamp)\n         and (date_sub(t1.collector_tstamp,30) <= substring(t2.collector_tstamp, 1,10))\n     group by t1.event_mobile) t4 on t3.event_mobile = t4.event_mobile\nlimit 10;\n\n\nselect event_bankcardno,\n       collector_tstamp\nfrom behavior_data_source_useful_flatten_2\nwhere event_name = \"app_bindcard\"\n    and event_cid = \"20170801000012728165\"\n    create table mobile_bankcardNo_1m as\n    select t1.event_mobile,\n           count(distinct t2.event_bankcardno) as mobile_count_bankcardno_1m_hf\n    from\n        (select event_cid,\n                event_mobile,\n                collector_tstamp\n         from cid_first_loan) t1\n    left outer join\n        (select event_cid,\n                event_bankcardno,\n                collector_tstamp\n         from behavior_data_source_useful_flatten_2\n         where event_bankcardno is not null\n             and length(event_bankcardno) >0\n             and collector_tstamp is not null\n             and length(collector_tstamp) > 0\n             and event_name = \"app_bindcard\") t2 on t1.event_cid = t2.event_cid where (t1.collector_tstamp >= t2.collector_tstamp)\n    and (date_sub(t1.collector_tstamp,30) <= substring(t2.collector_tstamp, 1,10))\ngroup by t1.event_mobile;\n\n\nselect count(distinct event_mobile)\nfrom cid_first_loan;\n\n\ncreate table mobile_derived as\nselect t1.event_cid,\n       t1.event_mobile,\n       t2.mobile_count_bankcardno_1m_hf\nfrom\n    (select event_cid,\n            event_mobile\n     from cid_first_loan) t1\nleft outer join\n    (select event_mobile,\n            mobile_count_bankcardno_1m_hf\n     from mobile_bankcardNo_1m)t2 on t1.event_mobile = t2.event_mobile\nlimit 10;\n\n\nselect mobile_count_bankcardno_1m_hf\nfrom mobile_bankcardNo_1m\ngroup by mobile_count_bankcardno_1m_hf;\n\n\nselect event_mobile,\n       collector_tstamp,\n       event_name\nfrom behavior_data_source_useful_flatten_2\nwhere event_mobile = \"1df7f8c6c1d53d4db2596ad8a9408f74\"\n    and event_cid = \"20170801000012728075\";\n\n20170801000012728165 04b9fda81da206a1c177d097da6afc49 null 20170801000012728178 4f744ef94f4ee147ad07546c7e2f8ce5 4 20170801000012728199 823fe7c8bccd8459960dd0b4d15f316a 1 20170801000012728242 a23da0c3b4327804669fdf27d6a17503 4 20170801000012728253 07a0e02992d5c1cc8bbe902fc58d3e09 null 20170801000012728277 f5ccc2ee1ce5a70a49af9f78bbb14317 null 20170801000012728315 ad1362793d2606b6a72e38b5321ad2f4 null 20170801000012728444 5df6880d58b4137b1734adc3925b5257 null 20170801000012728478 8e3ab7cc00612176ca27339624963460 1 20170801000012728511 0bec64f40b47ac5c75e70e6f9a828678 null 20170801000012728075 null null 1 null 20170801000012728093 null null 1 null 20170801000012728112 null null 1 null 20170801000012728165 null null 1 null 20170801000012728178 18 18 1 18 20170801000012728186 null null null null 20170801000012728199 1 1 1 1 20170801000012728242 6 6 1 6 20170801000012728253 null null 1 null 20170801000012728277 null null null null\nselect distinct event_name\nfrom behavior_data_source_useful_flatten_2;\n\n\nselect *\nfrom behavior_data_source_useful_flatten_2\nwhere event_cid = \"20170801000012728178\"\n    select count(distinct event_cid),\n           count(distinct event_mobile)\n    from cid_first_loan;\n\n\ncreate table test like cid_first_loan;\n\n\ncreate table test2\nfrom\n    (select event_cid,\n            event_bankcardno,\n            event_mobile\n     from test);\n\n\ncreate table test3 as\nselect event_cid,\n       event_bankcardno,\n       event_mobile,\n       event_name\nfrom behavior_data_source_useful_flatten_2\nwhere event_mobile is not null\n    and event_name = \"app_loan\"\nlimit 50;\n\n\nselect *\nfrom (test3\n      left outer join\n          (select event_name,\n                  count(distinct event_mobile) as count_event_mobile\n           from test3\n           group by event_name) t2 on test3.event_name = t2.event_name) ;\n\n\nselect event_cid,\n       event_bankcardno count(distinct event_mobile)\nfrom test2\ngroup by event_cid,\n         event_bankcardno;\n\n\nselect distinct event_name\nfrom behavior_data_source_useful_flatten_2;\n\nOK event_name register app_bindidcard app_loan null app_resetpwd app_bindcard app_apply login\ndrop table if exists cid_loan_before_30m;\n\n\ncreate table cid_loan_before_30m as\nselect t1.event_cid,\nselect event_cid,\n       event_mobile,\n       collector_tstamp\nfrom cid_first_loan) t1\nleft outer join\n    (select event_cid,\n            event_bankcardno,\n            collector_tstamp\n     from behavior_data_source_useful_flatten_2\n     where event_bankcardno is not null\n         and length(event_bankcardno) >0\n         and collector_tstamp is not null\n         and length(collector_tstamp) > 0\n         and event_name = \"app_bindcard\") t2 on t1.event_cid = t2.event_cid\nwhere (t1.collector_tstamp >= t2.collector_tstamp)\n    and (date_sub(t1.collector_tstamp,30) <= substring(t2.collector_tstamp, 1,10))\n    drop table if exists cid_certNo_derived_1m ;\n\n\ncreate table cid_certNo_derived_1m as\nselect t0.event_cid,\n       t0.event_certNo,\n       t3.certNo_dist_cid_1m_am,\n       t3.certNo_dist_mobile_1m_am,\n       t3.certNo_dist_bankCardNo_1m_am,\n       t3.certNo_dist_bankCardMobile_1m_am,\n       t3.certNo_dist_deviceId_1m_am,\n       t3.certNo_dist_imei_1m_am,\n       t3.certNo_dist_idfa_1m_am\nfrom\n    (select event_cid,\n            event_certNo,\n            collector_tstamp\n     from cid_first_loan) t0\nleft outer join\n    (select t1.event_certNo,\n            t1.collector_tstamp,\n            size(collect_set(t2.event_cid)) as certNo_dist_cid_1m_am,\n            size(collect_set(t2.event_mobile)) as certNo_dist_mobile_1m_am,\n            size(collect_set(t2.event_bankCardNo)) as certNo_dist_bankCardNo_1m_am,\n            size(collect_set(t2.event_bankCardMobile)) as certNo_dist_bankCardMobile_1m_am,\n            size(collect_set(t2.event_deviceId)) as certNo_dist_deviceId_1m_am,\n            size(collect_set(t2.event_imei)) as certNo_dist_imei_1m_am,\n            size(collect_set(t2.event_idfa)) as certNo_dist_idfa_1m_am\n     from\n         (select event_certNo,\n                 collector_tstamp\n          from cid_first_loan) t1\n     left outer join\n         (select distinct event_certNo,\n                          collector_tstamp,\n                          event_cid,\n                          event_mobile,\n                          event_bankCardNo,\n                          event_bankCardMobile,\n                          event_deviceId,\n                          event_imei,\n                          event_idfa\n          from behavior_data_source_useful_flatten_2\n          where event_certNo is not null\n              and length(event_certNo) > 0\n              and collector_tstamp is not null\n              and length(collector_tstamp) > 0 ) t2 on t1.event_certNo = t2.event_certNo\n     where (t1.collector_tstamp >= t2.collector_tstamp)\n         and (date_sub(t1.collector_tstamp,30) <= substring(t2.collector_tstamp, 1,10))\n     group by t1.event_certNo,\n              t1.collector_tstamp) t3 on t0.event_certNo = t3.event_certNo\nand t0.collector_tstamp = t3.collector_tstamp ;\n\n\nselect event_name,\n       collector_tstamp,\n       event_bankcardno,\n       event_mobile,\n       event_certno\nfrom behavior_data_source_useful_flatten_2\nwhere event_cid = \"20170801000012728178\";\n\nselect event_name,\n       collector_tstamp,\n       event_bankcardno,\n       event_mobile,\n       event_certno\nfrom behavior_data_source_useful_flatten_2\nwhere event_bankcardno = \"4a4a1f4f69fb406f4436910129b7f43f\";\n\nselect * from bankcardno_bind_cid_derived_3m_hf where event_cid = \"20170801000012728178\";\n\nselect t1.event_cid,\nt2.collector_tstamp,\nt2.event_bankcardno\nfrom\n    (select event_cid,\n            collector_tstamp\n     from cid_first_loan) t1\nleft outer join\n    (select event_cid,\n            event_bankcardno,\n            collector_tstamp\n     from behavior_data_source_useful_flatten_2\n     where event_bankcardno is not null\n         and length(event_bankcardno) >0\n         and collector_tstamp is not null\n         and length(collector_tstamp) > 0\n         and event_name = \"app_bindcard\") t2 on t1.event_cid = t2.event_cid\nwhere (t1.collector_tstamp >= t2.collector_tstamp)\n    and (date_sub(t1.collector_tstamp,30) <= substring(t2.collector_tstamp, 1,10)\n    and t1.event_cid = \"20170801000012728178\");\n\nselect collector_tstamp from cid_first_loan where event_cid = \"20170801000012728178\";\n\nselect collector_tstamp, event_name, event_bankcardno from behavior_data_source_useful_flatten_2 where collector_tstamp <= \"2017-08-03 03:47:13\" and event_cid = \"20170801000012728178\";\n\nselect t1.event_bankcardno,\n       t1.event_cid,\n       t2.event_bankcardno,\n       t2.collector_tstamp\nfrom\n    (select event_cid,\n            event_bankcardno,\n            collector_tstamp\n     from cid_first_loan) t1\nleft outer join\n    (select event_cid,\n            event_bankcardno,\n            collector_tstamp\n     from behavior_data_source_useful_flatten_2\n     where event_bankcardno is not null\n         and length(event_bankcardno) >0\n         and collector_tstamp is not null\n         and length(collector_tstamp) > 0) t2 on t1.event_cid = t2.event_cid --and event_name = \"app_bindcard\") t2 on t1.event_cid = t2.event_cid\n\nwhere (t1.collector_tstamp >= t2.collector_tstamp)\n    and (date_sub(t1.collector_tstamp,90) <= substring(t2.collector_tstamp, 1,10))\n    and t1.event_bankcardno = \"4a4a1f4f69fb406f4436910129b7f43f\";\n         t1 cid t2 \n         t1中的event_bankcardno唯一对应cid，但是t2的cid对应了多个event_bankcardno\nOK\n4a4a1f4f69fb406f4436910129b7f43f\t20170801000012728178\t4a4a1f4f69fb406f4436910129b7f43f\n4a4a1f4f69fb406f4436910129b7f43f\t20170801000012728178\t08fd4c7fccc901333581cdbbac1697b0\n4a4a1f4f69fb406f4436910129b7f43f\t20170801000012728178\t08fd4c7fccc901333581cdbbac1697b0\n4a4a1f4f69fb406f4436910129b7f43f\t20170801000012728178\te6d68089b2c7eaf722e2bbe997f9117a\n4a4a1f4f69fb406f4436910129b7f43f\t20170801000012728178\t12b82b15026ddae744b7dee01a63e905\n4a4a1f4f69fb406f4436910129b7f43f\t20170801000012728178\t08fd4c7fccc901333581cdbbac1697b0\n4a4a1f4f69fb406f4436910129b7f43f\t20170801000012728178\t08fd4c7fccc901333581cdbbac1697b0\n4a4a1f4f69fb406f4436910129b7f43f\t20170801000012728178\t12b82b15026ddae744b7dee01a63e905\n4a4a1f4f69fb406f4436910129b7f43f\t20170801000012728178\t08fd4c7fccc901333581cdbbac1697b0\n4a4a1f4f69fb406f4436910129b7f43f\t20170801000012728178\t08fd4c7fccc901333581cdbbac1697b0\n4a4a1f4f69fb406f4436910129b7f43f\t20170801000012728178\t08fd4c7fccc901333581cdbbac1697b0\n4a4a1f4f69fb406f4436910129b7f43f\t20170801000012728178\t12b82b15026ddae744b7dee01a63e905\n4a4a1f4f69fb406f4436910129b7f43f\t20170801000012728178\t08fd4c7fccc901333581cdbbac1697b0\n4a4a1f4f69fb406f4436910129b7f43f\t20170801000012728178\t08fd4c7fccc901333581cdbbac1697b0\n4a4a1f4f69fb406f4436910129b7f43f\t20170801000012728178\t08fd4c7fccc901333581cdbbac1697b0\n4a4a1f4f69fb406f4436910129b7f43f\t20170801000012728178\te6d68089b2c7eaf722e2bbe997f9117a\n4a4a1f4f69fb406f4436910129b7f43f\t20170801000012728178\t08fd4c7fccc901333581cdbbac1697b0\n4a4a1f4f69fb406f4436910129b7f43f\t20170801000012728178\t08fd4c7fccc901333581cdbbac1697b0\n4a4a1f4f69fb406f4436910129b7f43f\t20170801000012728178\td41d8cd98f00b204e9800998ecf8427e\n4a4a1f4f69fb406f4436910129b7f43f\t20170801000012728178\td41d8cd98f00b204e9800998ecf8427e\n4a4a1f4f69fb406f4436910129b7f43f\t20170801000012728178\t4a4a1f4f69fb406f4436910129b7f43f\n\n\n\nselect --t1.event_bankcardno, --t1.collector_tstamp,\nt1.event_bankcardno,\n--t2.event_cid,\ncount(t2.event_bankcardno) as bankcardno_bind_cid_3m_hf\nfrom\n    (select event_cid,\n            event_bankcardno,\n            collector_tstamp\n     from cid_first_loan) t1\nleft outer join\n    (select event_cid,\n            event_bankcardno,\n            collector_tstamp\n     from behavior_data_source_useful_flatten_2\n     where event_bankcardno is not null\n         and length(event_bankcardno) >0\n         and collector_tstamp is not null\n         and length(collector_tstamp) > 0\n         and event_name = \"app_bindcard\") t2 on t1.event_bankcardno = t2.event_bankcardno\nwhere (t1.collector_tstamp >= t2.collector_tstamp)\n    and (date_sub(t1.collector_tstamp,90) <= substring(t2.collector_tstamp, 1,10))\ngroup by t1.event_bankcardno,\n         t1.collector_tstamp\nhaving event_bankcardno = \"4a4a1f4f69fb406f4436910129b7f43f\";\n\n\nselect event_name, count(event_name) from behavior_data_source_useful_flatten_2 group by event_name having event_name = \"app_bindcard\";\n\nselect event_name, event_cid from behavior_data_source_useful_flatten_2 where event_bankcardno = \"4a4a1f4f69fb406f4436910129b7f43f\"\n\nselect t1.event_bankcardno,\n            t1.collector_tstamp,\n            count(t1.event_bankcardno) as bankcardno_bind_cid_1m_hf\n     from\n         (select event_cid,\n                 event_bankcardno,\n                 collector_tstamp\n          from cid_first_loan) t1\n     left outer join\n         (select event_cid,\n                 event_bankcardno,\n                 collector_tstamp\n          from behavior_data_source_useful_flatten_2\n          where event_bankcardno is not null\n              and length(event_bankcardno) >0\n              and collector_tstamp is not null\n              and length(collector_tstamp) > 0\n              and event_name = \"app_bindcard\") t2 on t1.event_bankcardno = t2.event_bankcardno\n     where (t1.collector_tstamp >= t2.collector_tstamp)\n         and (date_sub(t1.collector_tstamp,30) <= substring(t2.collector_tstamp, 1,10))\n     group by t1.event_bankcardno having t1.collector_tstamp >\n\ndrop table if exists train_data_2;\ncreate table train_data_2 (\ndand_id int,\nevent_cid string,\nlabel int,\ncertNo_dist_cid_1m_am int,\ncertNo_dist_mobile_1m_am int,\ncertNo_dist_bankCardNo_1m_am int,\ncertNo_dist_bankCardMobile_1m_am int,\ncertNo_dist_deviceId_1m_am int,\ncertNo_dist_imei_1m_am int,\ncertNo_dist_idfa_1m_am int,\ncertNo_dist_cid_3m_am int,\ncertNo_dist_mobile_3m_am int,\ncertNo_dist_bankCardNo_3m_am int,\ncertNo_dist_bankCardMobile_3m_am int,\ncertNo_dist_deviceId_3m_am int,\ncertNo_dist_imei_3m_am int,\ncertNo_dist_idfa_3m_am int,\ncid_dist_bankCardNo_1m_am int,\ncid_dist_bankCardMobile_1m_am int,\ncid_dist_deviceId_1m_am int,\ncid_dist_imei_1m_am int,\ncid_dist_idfa_1m_am int,\ncid_dist_bankCardNo_3m_am int,\ncid_dist_bankCardMobile_3m_am int,\ncid_dist_deviceId_3m_am int,\ncid_dist_imei_3m_am int,\ncid_dist_idfa_3m_am int,\nmobile_dist_cid_1m_am int,\nmobile_dist_certNo_1m_am int,\nmobile_dist_bankCardNo_1m_am int,\nmobile_dist_deviceId_1m_am int,\nmobile_dist_imei_1m_am int,\nmobile_dist_idfa_1m_am int,\nmobile_dist_cid_3m_am int,\nmobile_dist_certNo_3m_am int,\nmobile_dist_bankCardNo_3m_am int,\nmobile_dist_deviceId_3m_am int,\nmobile_dist_imei_3m_am int,\nmobile_dist_idfa_3m_am int,\nbankCardNo_dist_cid_1m_am int,\nbankCardNo_dist_certNo_1m_am int,\nbankCardNo_dist_mobile_1m_am int,\nbankCardNo_dist_deviceId_1m_am int,\nbankCardNo_dist_imei_1m_am int,\nbankCardNo_dist_idfa_1m_am int,\nbankCardNo_dist_cid_3m_am int,\nbankCardNo_dist_certNo_3m_am int,\nbankCardNo_dist_mobile_3m_am int,\nbankCardNo_dist_deviceId_3m_am int,\nbankCardNo_dist_imei_3m_am int,\nbankCardNo_dist_idfa_3m_am int,\nbankCardMobile_dist_cid_1m_am int,\nbankCardMobile_dist_certNo_1m_am int,\nbankCardMobile_dist_bankCardNo_1m_am int,\nbankCardMobile_dist_deviceId_1m_am int,\nbankCardMobile_dist_imei_1m_am int,\nbankCardMobile_dist_idfa_1m_am int,\nbankCardMobile_dist_cid_3m_am int,\nbankCardMobile_dist_certNo_3m_am int,\nbankCardMobile_dist_bankCardNo_3m_am int,\nbankCardMobile_dist_deviceId_3m_am int,\nbankCardMobile_dist_imei_3m_am int,\nbankCardMobile_dist_idfa_3m_am int,\ndeviceId_dist_cid_1m_am int,\ndeviceId_dist_certNo_1m_am int,\ndeviceId_dist_bankCardNo_1m_am int,\ndeviceId_dist_mobile_1m_am int,\ndeviceId_dist_bankCardMobile_1m_am int,\ndeviceId_dist_cid_3m_am int,\ndeviceId_dist_certNo_3m_am int,\ndeviceId_dist_bankCardNo_3m_am int,\ndeviceId_dist_mobile_3m_am int,\ndeviceId_dist_bankCardMobile_3m_am int,\ncid_apply_1m_hf int,\nmobile_apply_1m_hf int,\ncid_bind_bankcardno_1m_hf int,\nmobile_bind_bankcardno_1m_hf int,\ncertno_bind_cid_1m_hf int,\nbankcardno_bind_cid_1m_hf int,\ncid_apply_3m_hf int,\nmobile_apply_3m_hf int,\ncid_bind_bankcardno_3m_hf int,\nmobile_bind_bankcardno_3m_hf int,\ncertno_bind_cid_3m_hf int,\nbankcardno_bind_cid_3m_hf int,\nevent_certNo_flag int,\nevent_residence_flag int,\nevent_education_code int,\nevent_organization_flag int,\nevent_companyPhone_flag int,\nevent_position_code int,\nevent_workYears_code int,\nevent_contactsName_flag int,\nevent_contactsMobile_flag int,\nevent_contactsRelationship_code int,\nevent_bankCardType int,\nevent_bankCardCode int,\nevent_bankCardName_code int,\nevent_srcChannel int,\nevent_fpTokenID int,\nevent_fingerprint int,\nevent_ipCity_code int,\nevent_mobileCity_code int,\nevent_ipProvince_code int,\nevent_longitude_flag int,\nevent_latitude_flag int,\nevent_ipLongitude_flag int,\nevent_ipLatitude_flag int,\nevent_gps_ip_longitude_latitude_flag int,\nevent_loanAmount int,\nevent_loanTerm int,\nevent_productType int)\n row format delimited fields terminated by \",\" stored as textfile;\n\n load data local inpath \"/home/hadoop/fsj/xiaohua/train/000000_0\"into table train_data_2;\n\ncreate table test_data_2 like train_data_2;\n\nload data local inpath \"/home/hadoop/fsj/xiaohua/test/000000_0\" into table test_data_2;\n\ncreate table xiaohua_data_2 as select * from train_data_2 union all select * from test_data_2;\n\nselect * from test_data_1 minus select * from xiaohua_data_1;\n\n\nselect certno_dist_cid_1m_am,\n       certno_dist_mobile_1m_am,\n       certno_dist_bankCardNo_1m_am,\n       certno_dist_bankCardMobile_1m_am,\n       certno_dist_deviceId_1m_am,\n       certno_dist_imei_1m_am,\n       certno_dist_idfa_1m_am,\n       cid_dist_bankCardNo_1m_am,\n       cid_dist_bankCardMobile_1m_am,\n       cid_dist_deviceId_1m_am,\n       cid_dist_idfa_1m_am,\n       cid_dist_imei_1m_am,\n       mobile_dist_cid_1m_am,\n       mobile_dist_certNo_1m_am,\n       mobile_dist_bankCardNo_1m_am,\n       mobile_dist_deviceId_1m_am,\n       mobile_dist_idfa_1m_am,\n       mobile_dist_imei_1m_am,\n       bankCardNo_dist_cid_1m_am,\n       bankCardNo_dist_mobile_1m_am,\n       bankCardNo_dist_deviceId_1m_am,\n       bankCardNo_dist_idfa_1m_am,\n       bankCardNo_dist_imei_1m_am,\n       bankCardMobile_dist_cid_1m_am,\n       bankCardMobile_dist_certNo_1m_am,\n       bankCardMobile_dist_bankCardNo_1m_am,\n       bankCardMobile_dist_deviceId_1m_am,\n       bankCardMobile_dist_idfa_1m_am,\n       bankCardMobile_dist_imei_1m_am\nfrom xiaohua_data_2 minus\nselect certno_dist_cid_1m_am,\n       certno_dist_mobile_1m_am,\n       certno_dist_bankCardNo_1m_am,\n       certno_dist_bankCardMobile_1m_am,\n       certno_dist_deviceId_1m_am,\n       certno_dist_imei_1m_am,\n       certno_dist_idfa_1m_am,\n       cid_dist_bankCardNo_1m_am,\n       cid_dist_bankCardMobile_1m_am,\n       cid_dist_deviceId_1m_am,\n       cid_dist_idfa_1m_am,\n       cid_dist_imei_1m_am,\n       mobile_dist_cid_1m_am,\n       mobile_dist_certNo_1m_am,\n       mobile_dist_bankCardNo_1m_am,\n       mobile_dist_deviceId_1m_am,\n       mobile_dist_idfa_1m_am,\n       mobile_dist_imei_1m_am,\n       bankCardNo_dist_cid_1m_am,\n       bankCardNo_dist_mobile_1m_am,\n       bankCardNo_dist_deviceId_1m_am,\n       bankCardNo_dist_idfa_1m_am,\n       bankCardNo_dist_imei_1m_am,\n       bankCardMobile_dist_cid_1m_am,\n       bankCardMobile_dist_certNo_1m_am,\n       bankCardMobile_dist_bankCardNo_1m_am,\n       bankCardMobile_dist_deviceId_1m_am,\n       bankCardMobile_dist_idfa_1m_am,\n       bankCardMobile_dist_imei_1m_am\nfrom cid_derived_1m_am_all\n\n\nselect * from test_data_1 minus select * from xiaohua_data_1;\nselect count(*) from select cid\n     from xiaohua_data_1 minus select cid\n     from cid_derived_1m_am_all ;\n) t0;\n\n\n\nselect certno_dist_cid_1m_am\nfrom xiaohua_data_1 minus\nselect certno_dist_cid_1m_am\nfrom cid_derived_1m_am_all\n\nselect certno_dist_cid_1m_am,\n       certno_dist_mobile_1m_am,\n       certno_dist_bankCardNo_1m_am,\n       certno_dist_bankCardMobile_1m_am,\n       certno_dist_deviceId_1m_am,\n       certno_dist_imei_1m_am,\n       certno_dist_idfa_1m_am\nfrom xiaohua_data_1 minus\nselect\n       certno_dist_cid_1m_am,\n       certno_dist_mobile_1m_am,\n       certno_dist_bankCardNo_1m_am,\n       certno_dist_bankCardMobile_1m_am,\n       certno_dist_deviceId_1m_am,\n       certno_dist_imei_1m_am,\n       certno_dist_idfa_1m_am\n\nfrom cid_derived_1m_am_all;\n\nselect event_cid,\n       cid_apply_1m_hf,\n       cid_bind_bankcardno_1m_hf,\n       mobile_apply_1m_hf,\n       mobile_bind_bankcardno_1m_hf,\n       certno_bind_cid_1m_hf,\n       bankcardno_bind_cid_1m_hf\nfrom train_data_2 minus\nselect\n       event_cid,\n       cid_apply_1m_hf,\n       cid_bind_bankcardno_1m_hf,\n       mobile_apply_1m_hf,\n       mobile_bind_bankcardno_1m_hf,\n       certno_bind_cid_1m_hf,\n       bankcardno_bind_cid_1m_hf\n\nfrom cid_derived_hs_1m;\n\nselect event_cid,\n       cid_apply_1m_hf,\n       cid_bind_bankcardno_1m_hf,\n       mobile_apply_1m_hf,\n       mobile_bind_bankcardno_1m_hf,\n       certno_bind_cid_1m_hf,\n       bankcardno_bind_cid_1m_hf\nfrom  cid_derived_hs_1m minus\nselect\n       event_cid,\n       cid_apply_1m_hf,\n       cid_bind_bankcardno_1m_hf,\n       mobile_apply_1m_hf,\n       mobile_bind_bankcardno_1m_hf,\n       certno_bind_cid_1m_hf,\n       bankcardno_bind_cid_1m_hf\n\nfrom train_data_2;\n\nselect  cid_apply_1m_hf,\n       cid_bind_bankcardno_1m_hf,\n       mobile_apply_1m_hf,\n       mobile_bind_bankcardno_1m_hf,\n       certno_bind_cid_1m_hf,\n       bankcardno_bind_cid_1m_hf\nfrom train_data_1 minus\nselect\n       cid_apply_1m_hf,\n       cid_bind_bankcardno_1m_hf,\n       mobile_apply_1m_hf,\n       mobile_bind_bankcardno_1m_hf,\n       certno_bind_cid_1m_hf,\n       bankcardno_bind_cid_1m_hf\n\nfrom  cid_derived_hs_1m;\n\ndrop table if exists cid_derived_hs_1m;\nselect event_cid, cast(event_cid as double) as ddd from cid_derived_hs_1m limit 9;\n\ncreate table cid_derived_hs_1m as\nselect t0.event_cid,\n       t1.cid_apply_1m_hf,\n       t2.cid_bind_bankcardno_1m_hf,\n       t3.mobile_apply_1m_hf,\n       t4.mobile_bind_bankcardno_1m_hf,\n       t5.certno_bind_cid_1m_hf,\n       t6.bankcardno_bind_cid_1m_hf\n\nselect cid from cid_derived_1m_am_all limit 10\n\ndrop table if exists cid_derived_1m_am_all ;\n\ncreate table cid_derived_1m_am_all as\nselect cast(t0.event_cid as int) as cid,\n       t1.certno_dist_cid_1m_am,\n       t1.certno_dist_mobile_1m_am,\n       t1.certno_dist_bankCardNo_1m_am,\n       t1.certno_dist_bankCardMobile_1m_am,\n       t1.certno_dist_deviceId_1m_am,\n       t1.certno_dist_imei_1m_am,\n       t1.certno_dist_idfa_1m_am,\n       t2.cid_dist_bankCardNo_1m_am,\n       t2.cid_dist_bankCardMobile_1m_am,\n       t2.cid_dist_deviceId_1m_am,\n       t2.cid_dist_idfa_1m_am,\n       t2.cid_dist_imei_1m_am,\n       t3.mobile_dist_cid_1m_am,\n       t3.mobile_dist_certNo_1m_am,\n       t3.mobile_dist_bankCardNo_1m_am,\n       t3.mobile_dist_deviceId_1m_am,\n       t3.mobile_dist_idfa_1m_am,\n       t3.mobile_dist_imei_1m_am,\n       t4.bankCardNo_dist_cid_1m_am,\n       t4.bankCardNo_dist_mobile_1m_am,\n       t4.bankCardNo_dist_deviceId_1m_am,\n       t4.bankCardNo_dist_idfa_1m_am,\n       t4.bankCardNo_dist_imei_1m_am,\n       t5.bankCardMobile_dist_cid_1m_am,\n       t5.bankCardMobile_dist_certNo_1m_am,\n       t5.bankCardMobile_dist_bankCardNo_1m_am,\n       t5.bankCardMobile_dist_deviceId_1m_am,\n       t5.bankCardMobile_dist_idfa_1m_am,\n       t5.bankCardMobile_dist_imei_1m_am\nfrom\n    (select event_cid\n     from cid_first_loan) t0\nleft outer join cid_certNo_derived_1m as t1 on t0.event_cid = t1.event_cid\nleft outer join cid_derived_1m as t2 on t0.event_cid = t2.event_cid\nleft outer join cid_mobile_derived_1m as t3 on t0.event_cid = t3.event_cid\nleft outer join cid_bankCardNo_derived_1m as t4 on t0.event_cid = t4.event_cid\nleft outer join cid_bankCardMobile_derived_1m as t5 on t0.event_cid = t5.event_cid;\n\nselect event_bankcardtype from xiaohua_data_2 limit 20;behavior_data_source_useful_flatten_2\ncid_first_loan_source_features\n\nselect cast(event_loanamount as int) from cid_first_loan_source_features limit 19;\nselect distinct event_srcChannel from behavior_data_source_useful_flatten_2;\nselect * from education_code;\n\ndrop table education_code if exists;\ncreate table education_code as\nselect t.dis_event_education,\n       row_number() over(\n                         order by t.dis_event_education) as event_education_code\nfrom\n    (select distinct event_education as dis_event_education\n     from behavior_data_source_useful_flatten_2) t;\n\nselect event_productType,count(*) from behavior_data_source_useful_flatten_2 group by event_productType;\n\nselect * from workYears_code;\n\nselect event_cid as cid from xiaohua_feature_extract_all minus select cid from ml_labels;\nselect count(*) from (select cid from ml_labels  minus select event_cid as cid from xiaohua_feature_extract_all) t;\n\n\nselect max(dand_id), min(dand_id) from xiaohua_data_2;\n\nselect max(collector_tstamp), min(collector_tstamp), count(*) from xiaohua_feature_extract_all where collector_tstamp > \"2017-10-01 0:0:0\";\n\n\nselect count(distinct event_deviceId) from behavior_data_source_useful_flatten_2 where event_name = \"app_loan\";\n\ncreate table behavior_data_source_useful_flatten_2 as\nselect *\nfrom default.behavior_data_source_useful_flatten_2;\n\ncreate table sinjor_test_data_1 as\nselect *\nfrom sinjor_db.sinjor_test_data_1;\n\ndrop table if exists sinjor_train_data_1;\ncreate table sinjor_train_data_1 as\nselect *\nfrom\n    (select row_number() over(\n                              order by rand()) as rand_id,\n            event_cid\n     from\n         (select distinct event_cid\n          from behavior_data_source_useful_flatten_2) t1)t2\nleft outer join behavior_data_source_useful_flatten_2 as t3 on t2.event_cid = t3.event_cid\nwhere rand_id <70000 limit 10;\n\nselect count(*)\nfrom\n    (select row_number() over(\n                              order by rand()) as rand_id,\n            event_cid\n     from\n         (select distinct event_cid\n          from behavior_data_source_useful_flatten_2) t1)t2\n \n create table \n\n\n\n\n\n  drop table if exists education_code;\n\n\ncreate table education_code as\nselect *\nfrom sinjor_db.education_code;\n\n\ndrop table if exists position_code;\n\n\ncreate table position_code as\nselect *\nfrom sinjor_db.position_code;\n\n\ndrop table if exists workYears_code;\n\n\ncreate table workYears_code as\nselect *\nfrom sinjor_db.workYears_code;\n\n\ndrop table if exists contactsRelationship_code;\n\n\ncreate table contactsRelationship_code as\nselect *\nfrom sinjor_db.contactsRelationship_code;\n\n\ndrop table if exists bankCardName_code;\n\n\ncreate table bankCardName_code as\nselect *\nfrom sinjor_db.bankCardName_code;\n\n\ndrop table if exists ipCity_code;\n\n\ncreate table ipCity_code as\nselect *\nfrom sinjor_db.ipCity_code;\n\n\ndrop table if exists mobileCity_code;\n\n\ncreate table mobileCity_code as\nselect *\nfrom sinjor_db.mobileCity_code;\n\n\ndrop table if exists ipProvince_code;\n\n\ncreate table ipProvince_code as\nselect *\nfrom sinjor_db.ipProvince_code;\n\n\nset train_table=aaaaaaaaaaaa;\nset train_database=bbbbbbbbbb;\nset original_table=behavior_data_source_useful_flatten_2;\n\ndrop database if exists ${hiveconf:train_database} cascade;\n\n\ncreate database ${hiveconf:train_database};\n\nuse ${hiveconf:train_database};\n\n\ndrop table if exists ${hiveconf:train_table};\n\n\ncreate table ${hiveconf:train_table} as\nselect * from default.${hiveconf:original_table} limit 1;\n\n\n\n\nselect event_cid, collector_tstamp from cid_first_loan\nminus\n\n\nselect count(*)\nfrom(\nselect event_cid,\n       min(collector_tstamp) as collector_tstamp\nfrom behavior_data_source_useful_flatten_2\nwhere event_name = \"app_loan\"\n      and collector_tstamp is not null\n      and length(collector_tstamp) > 0\ngroup by event_cid) t1\nleft outer join\nbehavior_data_source_useful_flatten_2 as t2 on t1.event_cid = t2.event_cid\nwhere t1.collector_tstamp < \"2017-10-01 00:00:00\";\n\n\n\n\nselect distinct event_cid, collector_tstamp from cid_first_loan where event_cid=\"\";\nselect min(collector_tstamp), max(collector_tstamp) from behavior_data_source_useful_flatten_2;\n\n\nNumberOfMissingValues是什么？？？\n\nevent_bankcardtype    string                                    \nevent_bankcardcode    string                                    \nevent_bankcardname_code int                                       \nevent_srcchannel      string                                    \nevent_fptokenid       string                                    \nevent_fingerprint     string   \n\nselect event_cid,\n       event_loanamount,\n       cid_dist_deviceid_3m_am,\n       event_loanterm,\n       --event_contactsrelationship_code,\n       --event_ipprovince_code,\n       event_srcchannel,\n       event_bankcardcode,\n       cid_bind_bankcardno_1m_hf,\n       cid_dist_bankcardno_1m_am,\n       --event_education_code,\n       mobile_dist_certno_1m_am,\n       bankcardmobile_dist_bankcardno_1m_am,\n       event_bankcardtype,\n       certno_dist_bankcardno_1m_am,\n       bankcardmobile_dist_imei_3m_am,\n       event_iplongitude_flag,\n       bankcardmobile_dist_idfa_1m_am,\n       bankcardmobile_dist_deviceid_1m_am,\n       cid_dist_bankcardmobile_1m_am,\n       bankcardno_dist_deviceid_1m_am,\n       event_iplatitude_flag\n       --event_bankcardname_code,\n       --event_position_code,\n       --event_workyears_code\nfrom xiaohua_feature_extract_all minus\nselect event_cid,\n       event_loanamount,\n       cid_dist_deviceid_3m_am,\n       event_loanterm,\n       --event_contactsrelationship_code,\n       --event_ipprovince_code,\n       event_srcchannel,\n       event_bankcardcode,\n       cid_bind_bankcardno_1m_hf,\n       cid_dist_bankcardno_1m_am,\n       --event_education_code,\n       mobile_dist_certno_1m_am,\n       bankcardmobile_dist_bankcardno_1m_am,\n       event_bankcardtype,\n       certno_dist_bankcardno_1m_am,\n       bankcardmobile_dist_imei_3m_am,\n       event_iplongitude_flag,\n       bankcardmobile_dist_idfa_1m_am,\n       bankcardmobile_dist_deviceid_1m_am,\n       cid_dist_bankcardmobile_1m_am,\n\n       bankcardno_dist_deviceid_1m_am,\n       event_iplatitude_flag\n       --event_bankcardname_code,\n       --event_position_code,\n       --event_workyears_code\nfrom sinjor_db_train_time.train_data_2_time ;\n\nselect event_cid,\n       event_loanamount,\n       cid_dist_deviceid_3m_am,\n       event_loanterm,\n       --event_contactsrelationship_code,\n       --event_ipprovince_code,\n       event_srcchannel,\n       event_bankcardcode,\n       cid_bind_bankcardno_1m_hf,\n       cid_dist_bankcardno_1m_am,\n       --event_education_code,\n       mobile_dist_certno_1m_am,\n       bankcardmobile_dist_bankcardno_1m_am,\n       event_bankcardtype,\n       certno_dist_bankcardno_1m_am,\n       bankcardmobile_dist_imei_3m_am,\n       event_iplongitude_flag,\n       bankcardmobile_dist_idfa_1m_am,\n       bankcardmobile_dist_deviceid_1m_am,\n       cid_dist_bankcardmobile_1m_am,\n       bankcardno_dist_deviceid_1m_am,\n       event_iplatitude_flag\n       --event_bankcardname_code,\n       --event_position_code,\n       --event_workyears_code\nfrom train_data_2_time where event_cid = \"20170928000014693984\";\n\n除了中英文转码code之外另有聚合变量存在差异；如下三个id，第一个为 自己的，第二个为陈少梦的\n20170803000012819659  14202 3 15  APPSTORE  102 NULL  2 1 1 DEBIT 2 1 1 1 1 2 1 1\n20170803000012819659  14202 3 15  APPSTORE  102 NULL  2 1 2 DEBIT 2 1 1 1 1 2 1 1\n20170816000013243178  NULL  2 NULL  APPSTORE_XHJK   1 2 1 1   2 5282  1 12394 18436 2 18436 1\n20170816000013243178  NULL  2 NULL  APPSTORE_XHJK   1 2 1 1   2 5388  1 12616 18784 2 18784 1\n\n20170928000014693984  NULL  3 NULL  APPSTORE    NULL  1 1 1   1 16716 0 15912 24644 1 24644 0\n20170928000014693984  NULL  3 NULL  APPSTORE    NULL  1 1 1   1 17456 0 17438 26813 1 26813 0\n\n\n\nselect bankcardno_dist_deviceid_1m_am\nfrom cid_bankCardNo_derived_1m\nwhere event_cid=\"20170816000013243178\";\n\n\n--30.银行卡对应的设备id\nselect event_bankcardno,\n       collector_tstamp\nfrom cid_first_loan\nwhere event_cid=\"20170816000013243178\";>>d41d8cd98f00b204e9800998ecf8427e 2017-08-16 16:00:00\n\n最后从特征集划分的结果\nselect distinct event_deviceid\nfrom default.behavior_data_source_useful_flatten_2\nwhere event_bankCardNo = \"d41d8cd98f00b204e9800998ecf8427e\"\n      and collector_tstamp < \"2017-08-16 16:00:00\"; >>18784\n\n在原始数据就划分的结果\nselect distinct event_deviceid\nfrom sinjor_train_data_time\nwhere event_bankCardNo = \"d41d8cd98f00b204e9800998ecf8427e\"\n      and collector_tstamp < \"2017-08-16 16:00:00\"; >>18436\n\nselect event_cid,\n       event_loanamount,\n       cid_dist_deviceid_3m_am,\n       event_loanterm,\n       event_contactsrelationship_code,\n       event_ipprovince_code,\n       event_srcchannel,\n       event_bankcardcode,\n       cid_bind_bankcardno_1m_hf,\n       cid_dist_bankcardno_1m_am,\n       event_education_code,\n       mobile_dist_certno_1m_am,\n       bankcardmobile_dist_bankcardno_1m_am,\n       event_bankcardtype,\n       certno_dist_bankcardno_1m_am,\n       bankcardmobile_dist_imei_3m_am,\n       event_iplongitude_flag,\n       bankcardmobile_dist_idfa_1m_am,\n       bankcardmobile_dist_deviceid_1m_am,\n       cid_dist_bankcardmobile_1m_am,\n       bankcardno_dist_deviceid_1m_am,\n       event_iplatitude_flag,\n       event_bankcardname_code,\n       event_position_code,\n       event_workyears_code\nfrom xiaohua_feature_extract_all where event_cid = \"20170801000012728178\";\n\n\n\nselect event_cid, event_loanAmount from train_data_2_time where event_cid = \"20171001000014767842\";\n\nselect collector_tstamp from cid_first_loan where event_cid = \"20171001000014767842\";\n\n\n\nvariable,weights\n\nevent_loanamount,\ncid_dist_deviceid_3m_am,\nevent_loanterm,\nNumberOfMissingValues,\nevent_contactsrelationship_code,\nevent_ipprovince_code,\nevent_srcchannel,\nevent_bankcardcode,\ncid_bind_bankcardno_1m_hf,\ncid_dist_bankcardno_1m_am,\nevent_education_code,\nmobile_dist_certno_1m_am,\nbankcardmobile_dist_bankcardno_1m_am,\nevent_bankcardtype.\ncertno_dist_bankcardno_1m_am,\nbankcardmobile_dist_imei_3m_am,\nevent_iplongitude_flag,\nbankcardmobile_dist_idfa_1m_am,\nbankcardmobile_dist_deviceid_1m_am,\ncid_dist_bankcardmobile_1m_am,\nbankcardno_dist_deviceid_1m_am,\nevent_iplatitude_flag,\nevent_bankcardname_code,\nevent_position_code,\nevent_workyears_code\n\nevent_srcchannel\n\ndrop table if exists train_data_2_time;\ncreate table train_data_2_time (\nrand_id int,\nevent_cid string,\nlabel int,\ncertNo_dist_cid_1m_am int,\ncertNo_dist_mobile_1m_am int,\ncertNo_dist_bankCardNo_1m_am int,\ncertNo_dist_bankCardMobile_1m_am int,\ncertNo_dist_deviceId_1m_am int,\ncertNo_dist_imei_1m_am int,\ncertNo_dist_idfa_1m_am int,\ncertNo_dist_cid_3m_am int,\ncertNo_dist_mobile_3m_am int,\ncertNo_dist_bankCardNo_3m_am int,\ncertNo_dist_bankCardMobile_3m_am int,\ncertNo_dist_deviceId_3m_am int,\ncertNo_dist_imei_3m_am int,\ncertNo_dist_idfa_3m_am int,\ncid_dist_bankCardNo_1m_am int,\ncid_dist_bankCardMobile_1m_am int,\ncid_dist_deviceId_1m_am int,\ncid_dist_imei_1m_am int,\ncid_dist_idfa_1m_am int,\ncid_dist_bankCardNo_3m_am int,\ncid_dist_bankCardMobile_3m_am int,\ncid_dist_deviceId_3m_am int,\ncid_dist_imei_3m_am int,\ncid_dist_idfa_3m_am int,\nmobile_dist_cid_1m_am int,\nmobile_dist_certNo_1m_am int,\nmobile_dist_bankCardNo_1m_am int,\nmobile_dist_deviceId_1m_am int,\nmobile_dist_imei_1m_am int,\nmobile_dist_idfa_1m_am int,\nmobile_dist_cid_3m_am int,\nmobile_dist_certNo_3m_am int,\nmobile_dist_bankCardNo_3m_am int,\nmobile_dist_deviceId_3m_am int,\nmobile_dist_imei_3m_am int,\nmobile_dist_idfa_3m_am int,\nbankCardNo_dist_cid_1m_am int,\nbankCardNo_dist_certNo_1m_am int,\nbankCardNo_dist_mobile_1m_am int,\nbankCardNo_dist_deviceId_1m_am int,\nbankCardNo_dist_imei_1m_am int,\nbankCardNo_dist_idfa_1m_am int,\nbankCardNo_dist_cid_3m_am int,\nbankCardNo_dist_certNo_3m_am int,\nbankCardNo_dist_mobile_3m_am int,\nbankCardNo_dist_deviceId_3m_am int,\nbankCardNo_dist_imei_3m_am int,\nbankCardNo_dist_idfa_3m_am int,\nbankCardMobile_dist_cid_1m_am int,\nbankCardMobile_dist_certNo_1m_am int,\nbankCardMobile_dist_bankCardNo_1m_am int,\nbankCardMobile_dist_deviceId_1m_am int,\nbankCardMobile_dist_imei_1m_am int,\nbankCardMobile_dist_idfa_1m_am int,\nbankCardMobile_dist_cid_3m_am int,\nbankCardMobile_dist_certNo_3m_am int,\nbankCardMobile_dist_bankCardNo_3m_am int,\nbankCardMobile_dist_deviceId_3m_am int,\nbankCardMobile_dist_imei_3m_am int,\nbankCardMobile_dist_idfa_3m_am int,\ndeviceId_dist_cid_1m_am int,\ndeviceId_dist_certNo_1m_am int,\ndeviceId_dist_bankCardNo_1m_am int,\ndeviceId_dist_mobile_1m_am int,\ndeviceId_dist_bankCardMobile_1m_am int,\ndeviceId_dist_cid_3m_am int,\ndeviceId_dist_certNo_3m_am int,\ndeviceId_dist_bankCardNo_3m_am int,\ndeviceId_dist_mobile_3m_am int,\ndeviceId_dist_bankCardMobile_3m_am int,\ncid_apply_1m_hf int,\nmobile_apply_1m_hf int,\ncid_bind_bankcardno_1m_hf int,\nmobile_bind_bankcardno_1m_hf int,\ncertno_bind_cid_1m_hf int,\nbankcardno_bind_cid_1m_hf int,\ncid_apply_3m_hf int,\nmobile_apply_3m_hf int,\ncid_bind_bankcardno_3m_hf int,\nmobile_bind_bankcardno_3m_hf int,\ncertno_bind_cid_3m_hf int,\nbankcardno_bind_cid_3m_hf int,\nevent_certNo_flag int,\nevent_residence_flag int,\nevent_education_code int,\nevent_organization_flag int,\nevent_companyPhone_flag int,\nevent_position_code int,\nevent_workYears_code int,\nevent_contactsName_flag int,\nevent_contactsMobile_flag int,\nevent_contactsRelationship_code int,\nevent_bankCardType string,\nevent_bankCardCode string,\nevent_bankCardName_code int,\nevent_srcChannel string,\nevent_fpTokenID int,\nevent_fingerprint int,\nevent_ipCity_code int,\nevent_mobileCity_code int,\nevent_ipProvince_code int,\nevent_longitude_flag int,\nevent_latitude_flag int,\nevent_ipLongitude_flag int,\nevent_ipLatitude_flag int,\nevent_gps_ip_longitude_latitude_flag int,\nevent_loanAmount int,\nevent_loanTerm int,\nevent_productType int)\nrow format delimited fields terminated by \",\" stored as textfile;\n\nload data local inpath \"/home/hadoop/pre_Oct_train/000000_0\"into table train_data_2_time;\nselect * from xiaohua_feature_extract_all where collector_tstamp < \"2017-10-01 00:00:00\"\nselect event_bankcardcode from sinjor_train_data_rand where event_bankcardcode = 304;\n\nselect distinct( event_gps_ip_longitude_latitude_flag) from sinjor_train_data_rand;\n\nselect count(event_ipLongitude), count(event_ipLatitude), count(event_longitude), count(event_latitude) from cid_first_loan;\n \n select count(event_latitude) from cid_first_loan where length(event_latitude) >0; >>1927\n\n\nselect count(event_latitude)\nfrom default.behavior_data_source_useful_flatten_2\nwhere length(event_latitude) >0\n    and event_name = \"app_loan\";--3408\n\nselect count(event_latitude)\nfrom default.behavior_data_source_useful_flatten_2\nwhere length(event_longitude) >0\n    and event_name = \"app_loan\";--3408\n\nselect count(event_latitude)\nfrom default.behavior_data_source_useful_flatten_2\nwhere (length(event_longitude) >0) and (length(event_Latitude)>0)\n    and event_name = \"app_loan\";--3408\n\nselect count(event_iplatitude)\nfrom cid_first_loan\nwhere (length(event_iplongitude) >0) and (length(event_ipLatitude)>0)\n    and event_name = \"app_loan\";--66612\n\nselect count(event_iplatitude)\nfrom cid_first_loan\nwhere (length(event_iplongitude) >0);--66612\n\nselect count(event_trueip)\nfrom cid_first_loan\nwhere (length(event_trueip)>0);--93520\n\nselect count(distinct event_trueip)\nfrom cid_first_loan\nwhere(length(event_trueip)>0);  --79099\n\nselect count(event_bankcardmobile)\nfrom cid_first_loan\nwhere(length(event_bankcardmobile)>0); --93520\n\nselect count(*)\nfrom cid_first_loan\nwhere event_bankcardmobile = event_mobile;--86976\n\nselect count(*)\nfrom cid_first_loan\nwhere length(event_mobileCity) >0;--93398\n\nselect count(*)\nfrom cid_first_loan\nwhere length(event_gpsCity) > 0;--0\n\nselect count(*)\nfrom default.behavior_data_source_useful_flatten_2\nwhere length(event_gpsCity) > 0;--264185\n\nselect distinct event_platform\nfrom default.behavior_data_source_useful_flatten_2;\n\nselect count(*)\nfrom cid_first_loan where length(event_platform) >0; \n\nselect distinct event_useragent\nfrom cid_first_loan;--7697\n\nselect distinct event_producttype\nfrom cid_first_loan;\n\n\nselect event_gpsCity\nfrom behavior_data_source_useful_flatten_2;\n\nselect count(event_latitude) from default\n\n\nselect event_ipLongitude, event_ipLatitude, event_longitude, event_latitude from cid_first_loan limit 10;\n\n\n\nhive -e \"set hive.cli.print.header=true;select * from default.behavior_data_source_useful_flatten_2;\" | sed -e 's/behavior_data_source_useful_flatten_2.//g' >>behavior_data_source_useful_flatten_2.csv\n\n\ncreate table count2_table (name char(32), count int);\n\ninsert into count2_table (name, count) values (\"User_id\", select count(User_id) from o2o_train_data);\n  insert into count2_table (name, count) values (\"User_id\", 55);\n  insert into count2_table (\"User_id\", 2);\n\n\ninsert into count2_table (name, count)\nselect case\n           when 1 then \"User_id\"\n       end as name,\n       count(User_id) as count\nfrom o2o_train_data\nunion all\nselect case\n           when 1 then \"Date\"\n       end as name,\n       count(Date) as count\nfrom o2o_train_data ;\n\nselect count(User_id) from o2o_train_data;\nselect count(Merchant_id) from o2o_train_data;\nselect count(Date) from o2o_train_data\n\n\n\nselect count(event_mobile) as count,\n       count(distinct event_mobile)\nfrom behavior_data_source_useful_flatten_2\nwhere (length(event_mobile)>0);--2774146  100872\n\nselect event_cid,count(distinct event_mobile)\nfrom behavior_data_source_useful_flatten_2\nwhere length(event_mobile) > 0\ngroup by event_cid limit 9;\n20170801000012728242  2\n20170801000012728380  2\n20170801000012728632  2\n20170801000012728644  2\n20170801000012728725  2\n20170801000012728728  2\n20170801000012728791  2\n20170801000012728818  2\n20170801000012728842  2\nselect event_cid,event_mobile,event_name\nfrom behavior_data_source_useful_flatten_2\nwhere length(event_mobile) > 0 and event_cid = \"20170801000012728242\";\n\nselect count(*)\nfrom behavior_data_source_useful_flatten_2\nwhere event_mobile = event_bankcardmobile;\n\nselect count(event_cid) as count,\n       count(distinct event_cid)\nfrom behavior_data_source_useful_flatten_2\nwhere (length(event_cid)>0);--2774146 98283\n\nselect event_name,\ncount(event_cli_name) as count,\n       count(distinct event_cli_name)\nfrom behavior_data_source_useful_flatten_2\nwhere (length(event_cli_name)>0) group by event_name;\n--app_apply 132098  74353\n--app_bindcard  50858 22010\n--app_bindidcard  106401  74531\n--app_loan  137355  75517\n\n\nselect count(*) from behavior_data_source_useful_flatten_2;--2774148\n\nselect event_name,\ncount(event_residence) as count,\n       count(distinct event_residence)\nfrom behavior_data_source_useful_flatten_2\nwhere (length(event_residence)>0) group by event_name;\n--app_apply 132098  91626\n--app_bindidcard  106401  91050\n\n\nselect event_name,\ncount(event_education) as count,\n       count(distinct event_education)\nfrom behavior_data_source_useful_flatten_2\nwhere (length(event_education)>0) group by event_name;--app_apply 2531  4\n\nselect event_name,\ncount(event_organization) as count,\n       count(distinct event_organization)\nfrom behavior_data_source_useful_flatten_2\nwhere (length(event_organization)>0) group by event_name;--app_apply  132098  88775\n\nselect event_organization\nfrom behavior_data_source_useful_flatten_2\nwhere (length(event_organization)>0) limit 9 ;\n\nselect event_name,\ncount(event_position) as count,\n       count(distinct event_position)\nfrom behavior_data_source_useful_flatten_2\nwhere (length(event_position)>0) group by event_name;--app_apply  2531  4\n\nselect event_name,\ncount(event_workyears) as count,\n       count(distinct event_workyears)\nfrom behavior_data_source_useful_flatten_2\nwhere (length(event_workyears)>0) group by event_name;--app_apply 2531  5\n\n\nselect event_name,\ncount(event_contactsName) as count,\n       count(distinct event_contactsName)\nfrom behavior_data_source_useful_flatten_2\nwhere (length(event_contactsName)>0) group by event_name;--app_apply  132098  32984\n\nselect event_contactsname\nfrom behavior_data_source_useful_flatten_2\nwhere (length(event_contactsName)>0) limit 10; \n\nselect event_name,\ncount(event_contactsmobile) as count,\n       count(distinct event_contactsmobile)\nfrom behavior_data_source_useful_flatten_2\nwhere (length(event_contactsmobile)>0) group by event_name;--app_apply  132098  94447\n\nselect event_name,\ncount(event_contactsrelationship) as count,\n       count(distinct event_contactsrelationship)\nfrom behavior_data_source_useful_flatten_2\nwhere (length(event_contactsrelationship)>0) group by event_name;--app_apply  132098  14\n\nselect distinct event_contactsrelationship\nfrom behavior_data_source_useful_flatten_2;\n\n\n\nselect event_name,\ncount(event_srcchannel) as count,\n       count(distinct event_srcchannel)\nfrom behavior_data_source_useful_flatten_2\nwhere (length(event_srcchannel)>0) group by event_name;\n--login 2252450 60\n--app_apply 132086  38\n--app_bindcard  50846 41\n--app_bindidcard  106394  38\n--app_resetpwd  1185  20\n--app_loan  137340  43\n--register  93396 650\nselect event_srcchannel\nfrom behavior_data_source_useful_flatten_2\nwhere (length(event_srcchannel)>0) ;\n\nselect event_name,\ncount(event_platform) as count,\n       count(distinct event_platform)\nfrom behavior_data_source_useful_flatten_2\nwhere (length(event_platform)>0) group by event_name;\n--login 2252703 147\n--app_apply 132098  3\n--app_bindcard  50858 3\n--app_bindidcard  106401  3\n--app_resetpwd  1185  2\n--app_loan  137355  1\n--register  77908 619\n\nselect event_platform\nfrom behavior_data_source_useful_flatten_2\nwhere (length(event_platform)>0) and event_name = \"register\"limit 10;\n\nselect event_name,\ncount(event_deviceid) as count,\n       count(distinct event_deviceid)\nfrom behavior_data_source_useful_flatten_2\nwhere (length(event_deviceid)>0) group by event_name;\n--login 2252703 154380\n--app_apply 132098  94070\n--app_bindcard  50858 25174\n--app_bindidcard  106401  96003\n--app_resetpwd  1185  1097\n--app_loan  137355  2\n--register  93546 91774\nselect event_name,\ncount(event_fptokenid) as count,\n       count(distinct event_fptokenid)\nfrom behavior_data_source_useful_flatten_2\nwhere (length(event_fptokenid)>0) group by event_name;\n--login 223 188\n--app_apply 36  36\n--app_bindcard  11  11\n--app_bindidcard  31  28\n--app_resetpwd  1 1\n--app_loan  26  25\n--register  7 7\n\nselect event_name,\ncount(event_fingerprint) as count,\n       count(distinct event_fingerprint)\nfrom behavior_data_source_useful_flatten_2\nwhere (length(event_fingerprint)>0) group by event_name;\n--login 223 188\n--app_apply 36  36\n--app_bindcard  11  11\n--app_bindidcard  31  28\n--app_resetpwd  1 1\n--app_loan  26  25\n--register  7 7\n\nselect event_name,\ncount(event_useragent) as count,\n       count(distinct event_useragent)\nfrom behavior_data_source_useful_flatten_2\nwhere (length(event_useragent)>0) group by event_name;\n--login 2252703 13298\n--app_apply 132098  7994\n--app_bindcard  50858 5603\n--app_bindidcard  106401  8234\n--app_resetpwd  1185  387\n--app_loan  137355  8124\n--register  91618 15424\n\nselect event_name,\ncount(event_idfa) as count,\n       count(distinct event_idfa)\nfrom behavior_data_source_useful_flatten_2\nwhere (length(event_idfa)>0) group by event_name;\n--login 2252703 68351\n--app_apply 132098  56895\n--app_bindcard  50858 14024\n--app_bindidcard  106401  57012\n--app_resetpwd  1185  800\n--app_loan  137355  2\n--register  93546 15510\n\nselect event_name,\ncount(event_imei) as count,\n       count(distinct event_imei)\nfrom behavior_data_source_useful_flatten_2\nwhere (length(event_imei)>0) group by event_name;\n--login 2252703 39072\n--app_apply 132098  30102\n--app_bindcard  50858 9641\n--app_bindidcard  106401  30292\n--app_resetpwd  1185  252\n--app_loan  137355  2\n--register  93546 9407\n\nselect event_name,\ncount(event_longitude) as count,\n       count(distinct event_longitude)\nfrom behavior_data_source_useful_flatten_2\nwhere (length(event_longitude)>0) group by event_name;\n--app_apply 132098  103980\n--app_bindcard  31235 26605\n--app_bindidcard  103462  97214\n--app_resetpwd  1048  979\n--app_loan  3408  1757\n--register  391 164\n\nselect event_name,\ncount(event_latitude) as count,\n       count(distinct event_latitude)\nfrom behavior_data_source_useful_flatten_2\nwhere (length(event_latitude)>0) group by event_name;\n--login 7037  1153\n--app_apply 132098  103894\n--app_bindcard  31235 26600\n--app_bindidcard  103462  97110\n--app_resetpwd  1048  981\n--app_loan  3408  1760\n--register  391 166\n\n\nselect event_name,\ncount(event_gpsCity) as count,\n       count(distinct event_gpsCity)\nfrom behavior_data_source_useful_flatten_2\nwhere (length(event_gpsCity)>0) group by event_name;\n--OK\n--app_apply 129254  237\n--app_bindcard  30482 247\n--app_bindidcard  103423  268\n--app_resetpwd  1026  147\n\nselect event_name,\ncount(event_mobileCity) as count,\n       count(distinct event_mobileCity)\nfrom behavior_data_source_useful_flatten_2\nwhere (length(event_mobileCity)>0) group by event_name;\n--OK\n--login 2249702 348\n--app_apply 131901  347\n--app_bindcard  50793 334\n--app_bindidcard  17409 336\n--app_resetpwd  177 91\n--app_loan  137167  348\n--register  93288 347\nselect event_name,\ncount(event_trueip) as count,\n       count(distinct event_trueip)\nfrom behavior_data_source_useful_flatten_2\nwhere (length(event_trueip)>0) group by event_name;\n--app_apply 132098  84484\n--app_bindcard  50858 33735\n--app_bindidcard  106401  85974\n--app_resetpwd  1185  1111\n--app_loan  137355  99604\n\nselect event_name,\ncount(event_ipCity) as count,\n       count(distinct event_ipCity)\nfrom behavior_data_source_useful_flatten_2\nwhere (length(event_ipCity)>0) group by event_name;\n--app_apply 92843 248\n--app_bindcard  35267 241\n--app_bindidcard  74855 259\n--app_resetpwd  797 120\n--app_loan  93536 295\n--register  56945 258\n\nselect event_ipCity,\n       event_gpsCity,\n       event_mobileCity\nfrom behavior_data_source_useful_flatten_2\nwhere (length(event_ipCity)>0)\n    and length(event_gpsCity)>0\n    and length(event_mobileCity)>0\n    and event_ipcity is not null\n    and event_mobileCity is not null\n    and event_gpscity is not null limit 10;\n--深圳市 深圳市 中国\n--北京市 北京市 黑龙江省哈尔滨市\n--南京市 青岛市 山东省青岛市\n--济南市 日照市 山东省日照市\n--连云港市  连云港市  江苏省连云港市\n--大连市 大连市 辽宁省大连市\n--大连市 大连市 辽宁省大连市\n--青岛市 青岛市 山东省青岛市\n--岳阳市 岳阳市 湖南省岳阳市\n--哈尔滨市  哈尔滨市  黑龙江省哈尔滨市\n\nselect count(*)\nfrom behavior_data_source_useful_flatten_2\nwhere (length(event_ipCity)>0)\n    and length(event_gpsCity)>0\n    and length(event_mobileCity)>0\n    and event_ipcity is not null\n    and event_mobileCity is not null\n    and event_gpscity is not null limit;\n\nselect event_name,\ncount(event_ipLatitude) as count,\n       count(distinct event_ipLatitude)\nfrom behavior_data_source_useful_flatten_2\nwhere (length(event_ipLatitude)>0) group by event_name;\n--login 1641346 384\n--app_apply 94920 269\n--app_bindcard  35981 260\n--app_bindidcard  76494 279\n--app_resetpwd  810 126\n--app_loan  95784 318\n--register  67657 279\n\nselect * from cid_new_feature_derived_all limit 50;\nselect count(*) from cid_last_apply_before_loan;\nselect * from cid_last_apply_before_loan limit 50;\nselect count(*) from cid_first_loan;\nselect event_cid,event_deviceid from cid_first_loan limit 9;\nselect count(distinct event_cid_t1),\n       count(distinct event_cid)\nfrom\n    (select row_number() over(partition by t2.event_cid\n                              order by t2.collector_tstamp desc) as cid_apply_order,\n            t1.event_cid as event_cid_t1,\n            t2.event_cid\n     from\n         (select event_cid,\n                 collector_tstamp\n          from cid_first_loan) t1\n     inner join\n         (select event_cid,\n                 event_residence,\n                 event_education,\n                 event_organization,\n                 event_companyPhone,\n                 event_position,\n                 event_workYears,\n                 event_contactsName,\n                 event_contactsMobile,\n                 event_contactsRelationship,\n                 event_ipCity,\n                 event_mobilecity,\n                 event_gpsCity,\n                 event_longitude,\n                 event_latitude,\n                 event_iplatitude,\n                 event_ipLongitude,\n                 collector_tstamp\n          from behavior_data_source_useful_flatten_2\n          where event_name='app_apply'\n              and event_cid is not null\n              and length(event_cid) > 0\n              and collector_tstamp is not  null\n              and length(collector_tstamp) > 0 ) as t2 on t1.event_cid = t2.event_cid)t;\n     where t2.event_cid is not null\n         and t1.collector_tstamp >= t2.collector_tstamp)t;\n          ;\nwhere cid_apply_order = 1;\n     where t1.collector_tstamp >= t2.collector_tstamp and t2.collector_tstamp is null)t;\n\n\ndrop table if exists deviceid_tmp;\n\n\ncreate table deviceid_tmp as\nselect t1.event_cid,\n       t1.loan_collector_tstamp,\n       t1.event_deviceid,\n       t2.event_cid as event_cid_t2,\n       t2.event_certno,\n       t2.event_mobile,\n       t2.event_bankcardno,\n       t2.event_bankcardmobile,\n       t2.collector_tstamp\nfrom\n    (select event_cid,\n            loan_collector_tstamp,\n            event_deviceid\n     from cid_last_apply_before_loan\n     where loan_collector_tstamp < \"2017-09-01 00:00:00\") t1\nleft outer join\n    (select event_deviceid,\n            collector_tstamp,\n            event_cid,\n            event_certno,\n            event_mobile,\n            event_bankcardno,\n            event_bankcardmobile\n     from behavior_data_source_useful_flatten_2\n     where collector_tstamp is not null\n         and length(collector_tstamp) > 0\n         and event_deviceid is not null\n         and length(event_deviceid)>0 ) t2 on t1.event_deviceid = t2.event_deviceid\nwhere t1.loan_collector_tstamp >t2.collector_tstamp\n    and (date_sub(t1.loan_collector_tstamp,30) <= substring(t2.collector_tstamp, 1,10))\ngroup by t1.event_deviceid,\n         t1.loan_collector_tstamp\nlimit 9;\n\nselect count(distinct event_deviceid)\n     from cid_last_apply_before_loan minus\n\n     select t1.event_cid,\n       t1.event_mobile,\n       t2.mobile_dist_certNo_3m_am,\n       t2.mobile_dist_cid_3m_am,\n       t2.mobile_dist_bankCardNo_3m_am,\n       t2.mobile_dist_deviceId_3m_am,\n       t2.mobile_dist_imei_3m_am,\n       t2.mobile_dist_idfa_3m_am\nfrom\n    (select event_cid,\n            event_mobile,\n            collector_tstamp\n     from cid_first_loan) t1\nleft outer join\n    (select t3.event_mobile,\n            t3.collector_tstamp,\n            size(collect_set(t4.event_certNo)) as mobile_dist_certNo_3m_am,\n            size(collect_set(t4.event_cid)) as mobile_dist_cid_3m_am,\n            size(collect_set(t4.event_bankCardNo)) as mobile_dist_bankCardNo_3m_am,\n            size(collect_set(t4.event_deviceId)) as mobile_dist_deviceId_3m_am,\n            size(collect_set(t4.event_imei)) as mobile_dist_imei_3m_am,\n            size(collect_set(t4.event_idfa)) as mobile_dist_idfa_3m_am\n     from\n         (select event_cid,\n                 event_mobile,\n                 collector_tstamp\n          from cid_first_loan) t3\n     left outer join\n         (select distinct event_mobile,\n                          collector_tstamp,\n                          event_certNo,\n                          event_cid,\n                          event_bankCardNo,\n                          event_deviceId,\n                          event_imei,\n                          event_idfa\n          from behavior_data_source_useful_flatten_2\n          where event_mobile is not null\n              and length(event_mobile) > 0\n              and collector_tstamp is not null\n              and length(collector_tstamp) > 0) t4 on t3.event_mobile = t4.event_mobile\n     where (t3.collector_tstamp >= t4.collector_tstamp)\n         and (date_sub(t3.collector_tstamp,90) <= substring(t4.collector_tstamp, 1,10))\n     group by t3.event_mobile,\n              t3.collector_tstamp)t2 on t1.event_mobile = t2.event_mobile\nand t1.collector_tstamp = t2.collector_tstamp limit 9;\n\nselect collector_tstamp,\n       case\n           when collector_tstamp is not null then collector_tstamp - \"2017-08-02 04:16:20\"\n           else 0\n       end as mobile_same_bankcardmobile_flag\nfrom cid_first_loan t1 limit 9;\n\nselect collector_tstamp,\n       datediff(collector_tstamp,\"2017-08-02 04:16:20\")\nfrom cid_first_loan\nlimit 9;\n\nselect t1.event_cid,\n       t2.loan_collector_tstamp,\n       t2.collector_tstamp,\n       case\n           when t2.event_cid is not null then 1\n           else 0\n       end as loan_first_without_apply_flag,\n       case\n           when t2.event_cid is not null then datediff(t2.loan_collector_tstamp, t2.collector_tstamp)\n           else null\n       end as loan_apply_time_interval_day,\n       case\n           when t2.event_cid is not null then cast((unix_timestamp(t2.loan_collector_tstamp)-unix_timestamp(t2.collector_tstamp))/60 as int)\n           else null\n       end as loan_apply_time_interval_second\nfrom cid_first_loan t1\nleft outer join cid_last_apply_before_loan t2 on t1.event_cid = t2.event_cid\nlimit 50;\n\nselect event_cid,\n       min(collector_tstamp)\nfrom behavior_data_source_useful_flatten_2\ngroup by event_cid\nlimit 9;\n\nselect event_name, count(*)\nfrom\n    (select row_number() over(partition by event_cid\n                              order by collector_tstamp asc) as cid_event_time_order,\n            event_cid,\n            event_name,\n            collector_tstamp\n     from behavior_data_source_useful_flatten_2)t\nwhere cid_event_time_order = 1\ngroup by event_name;\nlimit 9; \n\nselect t1.event_cid,\n       t1.collector_tstamp,\n       t2.collector_tstamp_first_register,\n       case\n           when t2.collector_tstamp_first_register is not null then datediff(t1.collector_tstamp, t2.collector_tstamp_first_register)\n           else null\n       end as loan_register_time_interval_day\nfrom\n    (select event_cid,\n            collector_tstamp\n     from cid_first_loan) t1\nleft outer join\n    (select event_cid,\n            min(collector_tstamp) as collector_tstamp_first_register\n     from behavior_data_source_useful_flatten_2\n     where event_name = \"register\"\n     group by event_cid) t2 on t1.event_cid = t2.event_cid;\n\n    select event_deviceid,\n                 collector_tstamp,\n                 event_cid,\n                 event_certno,\n                 event_mobile,\n                 event_bankcardno,\n                 event_bankcardmobile\n          from behavior_data_source_useful_flatten_2\n          where collector_tstamp is not null\n              and length(collector_tstamp) > 0\n              and event_deviceid is not null\n              and length(event_deviceid)>0 ) t2 on t1.event_deviceid = t2.event_deviceid\n     where t1.loan_collector_tstamp >t2.collector_tstamp\n         and (date_sub(t1.loan_collector_tstamp,30) <= substring(t2.collector_tstamp, 1,10)",
-			"file": "/C/Users/Administrator/Desktop/myhive.sql",
-			"file_size": 66000,
-			"file_write_time": 131605771542909968,
+			"file": "/C/Users/Administrator/Desktop/module/test.py",
 			"settings":
 			{
-				"buffer_size": 65373,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "/G/taodata/scripe/python/hive_general.py",
-			"settings":
-			{
-				"buffer_size": 1199,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "/G/taodata/scripe/python/asdf2.sql",
-			"settings":
-			{
-				"buffer_size": 22271,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "/G/taodata/scripe/python/asdf.sql",
-			"settings":
-			{
-				"buffer_size": 10288,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "/C/Users/Administrator/Desktop/数据划分对特征提取的影响.sql",
-			"settings":
-			{
-				"buffer_size": 3185,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "divide.sql",
-			"settings":
-			{
-				"buffer_size": 2444,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "/G/taodata/project/xiaohua_finance/data_0110_sinjor_d2time/input/xh_dict - 副本.csv",
-			"settings":
-			{
-				"buffer_size": 2622,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "/C/Users/Administrator/Desktop/compare.sql",
-			"settings":
-			{
-				"buffer_size": 12562,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "/C/Users/Administrator/Desktop/数据差异原因分析.sql",
-			"settings":
-			{
-				"buffer_size": 4018,
+				"buffer_size": 6302,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -649,49 +565,19 @@
 			}
 		},
 		{
-			"file": "hive_xiaohua_am_3m.sql",
+			"file": "/G/taodata/scripe/python/dict_general.py",
 			"settings":
 			{
-				"buffer_size": 13678,
+				"buffer_size": 3090,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "hive_xiaohua_high_freq_1m.sql",
+			"file": "/G/taodata/scripe/python/hive_general.py",
 			"settings":
 			{
-				"buffer_size": 7680,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "hive_xiaohua_am_1m.sql",
-			"settings":
-			{
-				"buffer_size": 13720,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"contents": "--客户事件标示出现次数\n\ndrop table if exists cid_event_count_derived_all;\n\n\ncreate table cid_event_count_derived_all as\nselect event_cid,\n       max(case event_name\n               when \"register\" then count\n               else 0\n           end) register_count,\n       max(case event_name\n               when \"app_bindidcard\" then count\n               else 0\n           end) app_bindidcard_count,\n       max(case event_name\n               when \"app_resetpwd\" then count\n               else 0\n           end) app_resetpwd_count,\n       max(case event_name\n               when \"app_bindcard\" then count\n               else 0\n           end) app_bindcard_count,\n       max(case event_name\n               when \"app_apply\" then count\n               else 0\n           end) app_apply_count,\n       max(case event_name\n               when \"login\" then count\n               else 0\n           end) login_count\nfrom\n    (select t1.event_cid,\n            t2.event_name,\n            count(*) as count\n     from\n         (select event_cid,\n                 collector_tstamp\n          from cid_first_loan) t1\n     left outer join\n         (select event_cid,\n                 event_name,\n                 collector_tstamp\n          from behavior_data_source_useful_flatten_2) t2 on t1.event_cid = t2.event_cid\n     where t1.collector_tstamp >=t2.collector_tstamp\n     group by t1.event_cid,\n              t2.event_name) t\ngroup by event_cid;\n\n--借款前最近一次获额\n\ndrop table if exists cid_last_apply_before_loan;\n\n\ncreate table cid_last_apply_before_loan as\nselect *\nfrom\n    (select row_number() over(partition by t2.event_cid\n                              order by t2.collector_tstamp desc) as cid_apply_order,\n            t1.collector_tstamp as loan_collector_tstamp,\n            t2.*\n     from\n         (select event_cid,\n                 collector_tstamp\n          from cid_first_loan) t1\n     inner join\n         (select event_cid,\n                 event_residence,\n                 event_education,\n                 event_organization,\n                 event_companyPhone,\n                 event_position,\n                 event_workYears,\n                 event_contactsName,\n                 event_contactsMobile,\n                 event_contactsRelationship,\n                 event_ipCity,\n                 event_mobilecity,\n                 event_gpsCity,\n                 event_longitude,\n                 event_latitude,\n                 event_iplatitude,\n                 event_ipLongitude,\n                 collector_tstamp,\n                 event_deviceid,\n                 event_idfa,\n                 event_imei\n          from behavior_data_source_useful_flatten_2\n          where event_name='app_apply'\n              and event_cid is not null\n              and length(event_cid) > 0\n              and collector_tstamp is not  null\n              and length(collector_tstamp) > 0 ) as t2 on t1.event_cid = t2.event_cid\n     where t1.collector_tstamp >= t2.collector_tstamp) t3\nwhere cid_apply_order = 1;\n\n--客户在loan之前使用的不同deviceid idfa ieme trueip event_id 个数\n\ndrop table if exists cid_dis_before_loan_derived_1m;\n\n\ncreate table cid_dis_before_loan_derived_1m as\nselect t2.event_cid,\n       count(distinct event_deviceid) as cid_dis_deviceid_1m,\n       count(distinct event_imei) as cid_dis_event_imei_1m,\n       count(distinct event_idfa) as cid_dis_event_idfa_1m,\n       count(distinct event_useragent) as cid_dis_event_useragent_1m,\n       count(distinct event_trueip) as cid_dis_event_trueip_1m,\n       count(distinct event_id) as cid_dis_event_id_1m,\n       count(distinct event_id)/count(distinct event_trueip) as cid_dis_id_div_dis_trueip_1m\nfrom\n    (select event_cid,\n            collector_tstamp\n     from cid_first_loan) t1\nleft outer join\n    (select event_cid,\n            collector_tstamp,\n            event_imei,\n            event_idfa,\n            event_deviceid,\n            event_useragent,\n            event_trueip,\n            event_id\n     from behavior_data_source_useful_flatten_2\n     where collector_tstamp is not null\n         and length(collector_tstamp) >0)t2 on t1.event_cid = t2.event_cid\nwhere t1.collector_tstamp >= t2.collector_tstamp\n    and date_sub(t1.collector_tstamp, 30) <= substring(t2.collector_tstamp, 1,10)\ngroup by t2.event_cid;\n\n\ndrop table if exists cid_dis_before_loan_derived_3m;\n\n\ncreate table cid_dis_before_loan_derived_3m as\nselect t2.event_cid,\n       count(distinct event_deviceid) as cid_dis_deviceid_3m,\n       count(distinct event_imei) as cid_dis_event_imei_3m,\n       count(distinct event_idfa) as cid_dis_event_idfa_3m,\n       count(distinct event_useragent) as cid_dis_event_useragent_3m,\n       count(distinct event_trueip) as cid_dis_event_trueip_3m,\n       count(distinct event_id) as cid_dis_event_id_3m,\n       count(distinct event_id)/count(distinct event_trueip) as cid_dis_id_div_dis_trueip_3m\nfrom\n    (select event_cid,\n            collector_tstamp\n     from cid_first_loan) t1\nleft outer join\n    (select event_cid,\n            collector_tstamp,\n            event_imei,\n            event_idfa,\n            event_deviceid,\n            event_useragent,\n            event_trueip,\n            event_id\n     from behavior_data_source_useful_flatten_2\n     where collector_tstamp is not null\n         and length(collector_tstamp) >0)t2 on t1.event_cid = t2.event_cid\nwhere t1.collector_tstamp >= t2.collector_tstamp\n    and date_sub(t1.collector_tstamp, 90) <= substring(t2.collector_tstamp, 1,10)\ngroup by t2.event_cid;\n\n--apply手机号城市和ip城市是否相等\n--apply gps城市和ip城市是否相等\n--apply gps城市和手机号城市是否相等\n\ndrop table if exists cid_apply_city_same_derived_all;\n\n\ncreate table cid_apply_city_same_derived_all as\nselect event_gpsCity,\n       event_ipcity,\n       event_mobileCity,\n       event_cid,\n       case\n           when event_ipcity = event_gpsCity\n                and event_ipcity is not null\n                and length(event_ipcity) > 0\n                and event_gpsCity is not null\n                and length(event_gpsCity) > 0 then 2\n           when event_ipcity != event_gpsCity\n                and event_ipcity is not null\n                and length(event_ipcity) > 0\n                and event_gpsCity is not null\n                and length(event_gpsCity) > 0 then 1\n           else 0\n       end as apply_ipcity_same_gpscity_flag,\n       case\n           when substring_index(event_mobileCity, event_ipcity, 1) = event_mobileCity\n                and event_ipcity is not null\n                and length(event_ipcity) > 0\n                and event_mobileCity is not null\n                and length(event_mobileCity) > 0 then 1\n           when substring_index(event_mobileCity, event_ipcity, 1) != event_mobileCity\n                and event_ipcity is not null\n                and length(event_ipcity) > 0\n                and event_mobileCity is not null\n                and length(event_mobileCity) > 0 then 2\n           else 0\n       end as apply_ipcity_same_mobilecity_flag,\n       case\n           when substring_index(event_mobileCity, event_gpscity, 1) = event_mobileCity\n                and event_gpscity is not null\n                and length(event_gpscity) > 0\n                and event_mobileCity is not null\n                and length(event_mobileCity) > 0 then 1\n           when substring_index(event_mobileCity, event_gpscity, 1) != event_mobileCity\n                and event_gpscity is not null\n                and length(event_gpscity) > 0\n                and event_mobileCity is not null\n                and length(event_mobileCity) > 0 then 2\n           else 0\n       end as apply_gpscity_same_mobilecity_flag\nfrom cid_last_apply_before_loan;\n\n--在loan前的ip对应存在的不同客户个数（1天内，7天内 一月内,三月内）\ndrop table if exists trueip_dist_cid_derived_1day;\n\n\ncreate table trueip_dist_cid_derived_1day as\nselect t3.event_cid,\n       t4.trueip_dist_cid_1day\nfrom\n    (select event_cid,\n            collector_tstamp,\n            event_trueip\n     from cid_first_loan) t3\nleft outer join\n    (select t1.event_trueip,\n            t1.collector_tstamp,\n            count(distinct t2.event_cid) as trueip_dist_cid_1day\n     from\n         (select event_cid,\n                 collector_tstamp,\n                 event_trueip\n          from cid_first_loan) t1\n     left outer join\n         (select event_cid,\n                 event_trueip,\n                 collector_tstamp\n          from behavior_data_source_useful_flatten_2\n          where collector_tstamp is not null\n              and length(collector_tstamp) > 0\n              and event_trueip is not null\n              and length(event_trueip)>0 ) t2 on t1.event_trueip = t2.event_trueip\n     where t1.collector_tstamp >t2.collector_tstamp\n         and (date_sub(t1.collector_tstamp,1) <= substring(t2.collector_tstamp, 1,10))\n     group by t1.event_trueip,\n              t1.collector_tstamp) t4 on t3.event_trueip = t4.event_trueip\nand t3.collector_tstamp = t4.collector_tstamp ;\n\n\ndrop table if exists trueip_dist_cid_derived_7day;\n\n\ncreate table trueip_dist_cid_derived_7day as\nselect t3.event_cid,\n       t4.trueip_dist_cid_7day\nfrom\n    (select event_cid,\n            collector_tstamp,\n            event_trueip\n     from cid_first_loan) t3\nleft outer join\n    (select t1.event_trueip,\n            t1.collector_tstamp,\n            count(distinct t2.event_cid) as trueip_dist_cid_7day\n     from\n         (select event_cid,\n                 collector_tstamp,\n                 event_trueip\n          from cid_first_loan) t1\n     left outer join\n         (select event_cid,\n                 event_trueip,\n                 collector_tstamp\n          from behavior_data_source_useful_flatten_2\n          where collector_tstamp is not null\n              and length(collector_tstamp) > 0\n              and event_trueip is not null\n              and length(event_trueip)>0 ) t2 on t1.event_trueip = t2.event_trueip\n     where t1.collector_tstamp >t2.collector_tstamp\n         and (date_sub(t1.collector_tstamp,7) <= substring(t2.collector_tstamp, 1,10))\n     group by t1.event_trueip,\n              t1.collector_tstamp) t4 on t3.event_trueip = t4.event_trueip\nand t3.collector_tstamp = t4.collector_tstamp ;\n\n\ndrop table if exists trueip_dist_cid_derived_1m;\n\n\ncreate table trueip_dist_cid_derived_1m as\nselect t3.event_cid,\n       t4.trueip_dist_cid_1m\nfrom\n    (select event_cid,\n            collector_tstamp,\n            event_trueip\n     from cid_first_loan) t3\nleft outer join\n    (select t1.event_trueip,\n            t1.collector_tstamp,\n            count(distinct t2.event_cid) as trueip_dist_cid_1m\n     from\n         (select event_cid,\n                 collector_tstamp,\n                 event_trueip\n          from cid_first_loan) t1\n     left outer join\n         (select event_cid,\n                 event_trueip,\n                 collector_tstamp\n          from behavior_data_source_useful_flatten_2\n          where collector_tstamp is not null\n              and length(collector_tstamp) > 0\n              and event_trueip is not null\n              and length(event_trueip)>0 ) t2 on t1.event_trueip = t2.event_trueip\n     where t1.collector_tstamp >t2.collector_tstamp\n         and (date_sub(t1.collector_tstamp,30) <= substring(t2.collector_tstamp, 1,10))\n     group by t1.event_trueip,\n              t1.collector_tstamp) t4 on t3.event_trueip = t4.event_trueip\nand t3.collector_tstamp = t4.collector_tstamp ;\n\n\ndrop table if exists trueip_dist_cid_derived_3m;\n\n\ncreate table trueip_dist_cid_derived_3m as\nselect t3.event_cid,\n       t4.trueip_dist_cid_3m\nfrom\n    (select event_cid,\n            collector_tstamp,\n            event_trueip\n     from cid_first_loan) t3\nleft outer join\n    (select t1.event_trueip,\n            t1.collector_tstamp,\n            count(distinct t2.event_cid) as trueip_dist_cid_3m\n     from\n         (select event_cid,\n                 collector_tstamp,\n                 event_trueip\n          from cid_first_loan) t1\n     left outer join\n         (select event_cid,\n                 event_trueip,\n                 collector_tstamp\n          from behavior_data_source_useful_flatten_2\n          where collector_tstamp is not null\n              and length(collector_tstamp) > 0\n              and event_trueip is not null\n              and length(event_trueip)>0 ) t2 on t1.event_trueip = t2.event_trueip\n     where t1.collector_tstamp >t2.collector_tstamp\n         and (date_sub(t1.collector_tstamp,90) <= substring(t2.collector_tstamp, 1,10))\n     group by t1.event_trueip,\n              t1.collector_tstamp) t4 on t3.event_trueip = t4.event_trueip\nand t3.collector_tstamp = t4.collector_tstamp ;\n\n\ndrop table if exists cid_loan_derived_all;\n\n\ncreate table cid_loan_derived_all as\nselect t1.event_cid,\n       case\n           when t1.event_mobile is not null\n                and length(t1.event_mobile) >0\n                and t1.event_bankcardmobile is not null\n                and length(t1.event_bankcardmobile) >0\n                and t1.event_mobile = t1.event_bankcardmobile then 1\n           else 0\n       end as mobile_same_bankcardmobile_flag,\n       case\n           when substring_index(t1.event_mobileCity, t1.event_ipcity, 1) = t1.event_mobileCity\n                and t1.event_ipcity is not null\n                and length(t1.event_ipcity) > 0\n                and t1.event_mobileCity is not null\n                and length(t1.event_mobileCity) > 0 then 1\n           when substring_index(t1.event_mobileCity, t1.event_ipcity, 1) != t1.event_mobileCity\n                and t1.event_ipcity is not null\n                and length(t1.event_ipcity) > 0\n                and t1.event_mobileCity is not null\n                and length(t1.event_mobileCity) > 0 then 2\n           else 0\n       end as loan_ipcity_same_mobilecity_flag,\n       case\n           when t2.event_cid is not null then 1\n           else 0\n       end as loan_first_without_apply_flag,\n       case when t2.event_cid is not null then datediff(t2.loan_collector_tstamp, t2.collector_tstamp)\n       else null\n       end as loan_apply_time_interval_day,\n       case\n           when t2.event_cid is not null then cast((unix_timestamp(t2.loan_collector_tstamp)-unix_timestamp(t2.collector_tstamp))/60 as int)\n           else null\n       end as loan_apply_time_interval_second\nfrom cid_first_loan t1\nleft outer join cid_last_apply_before_loan t2 on t1.event_cid = t2.event_cid;\n\n\n--40.设备id对应的身份证号\n--41.设备id对应的客户号\n--42.设备id对应的微信\n--43.设备id对应的手机号\n--44.设备id对应的银行卡\n--45.设备id对应的银行预留手机号\n\ndrop table if exists apply_deviceid_derived_1m;\n\n\ncreate table apply_deviceid_derived_1m as\nselect t3.event_cid,\n       t4.apply_deviceid_dist_cid_1m,\n       t4.apply_deviceid_dist_certno_1m,\n       t4.apply_deviceid_dist_mobile_1m,\n       t4.apply_deviceid_dist_bankcardno_1m,\n       t4.apply_deviceid_dist_bankcardmobile_1m\nfrom\n    (select event_cid,\n            collector_tstamp,\n            event_deviceid\n     from cid_last_apply_before_loan) t3\nleft outer join\n    (select t1.event_deviceid,\n            t1.loan_collector_tstamp,\n            count(distinct t2.event_cid) as apply_deviceid_dist_cid_1m,\n            count(distinct t2.event_certno) as apply_deviceid_dist_certno_1m,\n            count(distinct t2.event_mobile) as apply_deviceid_dist_mobile_1m,\n            count(distinct t2.event_bankcardno) as apply_deviceid_dist_bankcardno_1m,\n            count(distinct t2.event_bankcardmobile) as apply_deviceid_dist_bankcardmobile_1m\n     from\n         (select event_cid,\n                 loan_collector_tstamp,\n                 event_deviceid\n          from cid_last_apply_before_loan where collector_tstamp < \"2017-09-01 00:00:00\") t1\n     left outer join\n         (select event_deviceid,\n                 collector_tstamp,\n                 event_cid,\n                 event_certno,\n                 event_mobile,\n                 event_bankcardno,\n                 event_bankcardmobile\n          from behavior_data_source_useful_flatten_2\n          where collector_tstamp is not null\n              and length(collector_tstamp) > 0\n              and event_deviceid is not null\n              and length(event_deviceid)>0 ) t2 on t1.event_deviceid = t2.event_deviceid\n     where t1.loan_collector_tstamp >t2.collector_tstamp\n         and (date_sub(t1.loan_collector_tstamp,30) <= substring(t2.collector_tstamp, 1,10))\n     group by t1.event_deviceid,\n              t1.loan_collector_tstamp) t4 on t3.event_deviceid = t4.event_deviceid\nand t3.collector_tstamp = t4.loan_collector_tstamp ;\n\ndrop table if exists apply_deviceid_derived_3m;\n\n\ncreate table apply_deviceid_derived_3m as\nselect t3.event_cid,\n       t4.apply_deviceid_dist_cid_3m,\n       t4.apply_deviceid_dist_certno_3m,\n       t4.apply_deviceid_dist_mobile_3m,\n       t4.apply_deviceid_dist_bankcardno_3m,\n       t4.apply_deviceid_dist_bankcardmobile_3m\nfrom\n    (select event_cid,\n            collector_tstamp,\n            event_deviceid\n     from cid_last_apply_before_loan) t3\nleft outer join\n    (select t1.event_deviceid,\n            t1.loan_collector_tstamp,\n            count(distinct t2.event_cid) as apply_deviceid_dist_cid_3m,\n            count(distinct t2.event_certno) as apply_deviceid_dist_certno_3m,\n            count(distinct t2.event_mobile) as apply_deviceid_dist_mobile_3m,\n            count(distinct t2.event_bankcardno) as apply_deviceid_dist_bankcardno_3m,\n            count(distinct t2.event_bankcardmobile) as apply_deviceid_dist_bankcardmobile_3m\n     from\n         (select event_cid,\n                 loan_collector_tstamp,\n                 event_deviceid\n          from cid_last_apply_before_loan) t1\n     left outer join\n         (select event_deviceid,\n                 collector_tstamp,\n                 event_cid,\n                 event_certno,\n                 event_mobile,\n                 event_bankcardno,\n                 event_bankcardmobile\n          from behavior_data_source_useful_flatten_2\n          where collector_tstamp is not null\n              and length(collector_tstamp) > 0\n              and event_deviceid is not null\n              and length(event_deviceid)>0 ) t2 on t1.event_deviceid = t2.event_deviceid\n     where t1.loan_collector_tstamp >t2.collector_tstamp\n         and (date_sub(t1.loan_collector_tstamp,90) <= substring(t2.collector_tstamp, 1,10))\n     group by t1.event_deviceid,\n              t1.loan_collector_tstamp) t4 on t3.event_deviceid = t4.event_deviceid\nand t3.collector_tstamp = t4.loan_collector_tstamp ;\n--客户注册与首次贷款的时间间隔 单位天\ndrop table if exists loan_register_time_interval_day_derived_all;\n\n\ncreate table loan_register_time_interval_day_derived_all as\nselect t1.event_cid,\n       t1.collector_tstamp,\n       t2.collector_tstamp_first_register,\n       case\n           when t2.collector_tstamp_first_register is not null then datediff(t1.collector_tstamp, t2.collector_tstamp_first_register)\n           else null\n       end as loan_register_time_interval_day\nfrom\n    (select event_cid,\n            collector_tstamp\n     from cid_first_loan) t1\nleft outer join\n    (select event_cid,\n            min(collector_tstamp) as collector_tstamp_first_register\n     from behavior_data_source_useful_flatten_2\n     where event_name = \"register\"\n     group by event_cid) t2 on t1.event_cid = t2.event_cid;\n\n\ndrop table cid_new_feature_derived_all;\n\n\ncreate table cid_new_feature_derived_all as\nselect t0.event_cid,\n       t1.register_count,\n       t1.login_count,\n       t1.app_apply_count,\n       t1.app_bindcard_count,\n       t1.app_resetpwd_count,\n       t2.cid_dis_deviceid_1m,\n       t2.cid_dis_event_imei_1m,\n       t2.cid_dis_event_idfa_1m,\n       t2.cid_dis_event_useragent_1m,\n       t2.cid_dis_event_trueip_1m,\n       t2.cid_dis_event_id_1m,\n       t2.cid_dis_id_div_dis_trueip_1m,--2\n       t3.cid_dis_deviceid_3m,\n       t3.cid_dis_event_imei_3m,\n       t3.cid_dis_event_idfa_3m,\n       t3.cid_dis_event_useragent_3m,\n       t3.cid_dis_event_trueip_3m,\n       t3.cid_dis_event_id_3m,\n       t3.cid_dis_id_div_dis_trueip_3m,--2\n       t4.apply_ipcity_same_gpscity_flag,\n       t4.apply_ipcity_same_mobilecity_flag,\n       t4.apply_gpscity_same_mobilecity_flag,\n       t5.trueip_dist_cid_1day,\n       t6.trueip_dist_cid_7day,\n       t7.trueip_dist_cid_1m,\n       t8.trueip_dist_cid_3m,\n       t9.mobile_same_bankcardmobile_flag,\n       t9.loan_ipcity_same_mobilecity_flag,--2\n       t9.loan_first_without_apply_flag,--2\n       t9.loan_apply_time_interval_day,--2\n       t9.loan_apply_time_interval_second,--2\n       t10.loan_register_time_interval_day--2\nfrom\n    (select event_cid\n     from cid_first_loan) t0\nleft outer join cid_event_count_derived_all as t1 on t0.event_cid = t1.event_cid\nleft outer join cid_dis_before_loan_derived_1m as t2 on t0.event_cid = t2.event_cid\nleft outer join cid_dis_before_loan_derived_3m as t3 on t0.event_cid = t3.event_cid\nleft outer join cid_apply_city_same_derived_all as t4 on t0.event_cid = t4.event_cid\nleft outer join trueip_dist_cid_derived_1day as t5 on t0.event_cid = t5.event_cid\nleft outer join trueip_dist_cid_derived_7day as t6 on t0.event_cid = t6.event_cid\nleft outer join trueip_dist_cid_derived_1m as t7 on t0.event_cid = t7.event_cid\nleft outer join trueip_dist_cid_derived_3m as t8 on t0.event_cid = t8.event_cid\nleft outer join cid_loan_derived_all as t9 on t0.event_cid = t9.event_cid\nleft outer join loan_register_time_interval_day_derived_all as t10 on t0.event_cid = t10.event_cid;\n",
-			"file": "new_features.sql",
-			"file_size": 22137,
-			"file_write_time": 131605794328771251,
-			"settings":
-			{
-				"buffer_size": 21244,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "hive_xiaohua_abnormal.sql",
-			"settings":
-			{
-				"buffer_size": 3773,
+				"buffer_size": 1199,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -744,10 +630,14 @@
 	"build_varint": "",
 	"command_palette":
 	{
-		"height": 161.0,
-		"last_filter": "Package Control: in",
+		"height": 336.0,
+		"last_filter": "view",
 		"selected_items":
 		[
+			[
+				"view",
+				"View: Toggle Menu"
+			],
 			[
 				"Package Control: in",
 				"Package Control: Install Package"
@@ -801,10 +691,68 @@
 	],
 	"file_history":
 	[
+		"/C/Users/Administrator/Desktop/csm.sql",
+		"/C/Users/Administrator/Desktop/xiaohua_summary.sql",
+		"/G/taodata/project/xiaohua_finance/xiaohua/xiaohua_feature_extract_all.sql",
+		"/G/taodata/project/xiaohua_finance/xiaohua/hive_xiaohua_am_1m.sql",
+		"/G/taodata/project/xiaohua_finance/data_0122_sinjor_rand_v3_atom_7.2_b1/gbm_onehot_50/modle_analyse.py",
+		"/G/taodata/project/xiaohua_finance/data_0122_sinjor_rand_v3_atom_7.2_b1/input/modle_analyse.py",
+		"/G/taodata/project/xiaohua_finance/data_0122_sinjor_rand_v3_atom_7.2_b1/input/xh_dict_used_all.csv",
+		"/G/taodata/scripe/python/atom7.2_change_v2.py",
+		"/G/taodata/project/xiaohua_finance/data_0116_sinjor_rand_v3_atom7.2/go/atom7.2_change.py",
+		"/G/taodata/project/xiaohua_finance/data_0116_sinjor_rand_v3_atom7.2/go/atom7.2_change_v2.py",
 		"/G/taodata/project/xiaohua_finance/data_0116_sinjor_rand_v3/input/xh_dict.csv",
+		"/G/taodata/project/xiaohua_finance/xiaohua/xiaohua_other.sql",
+		"/C/Users/Administrator/Desktop/module/o2o.sql",
+		"/C/Users/Administrator/Desktop/myhive.sql",
+		"/C/Users/Administrator/Desktop/compare.sql",
+		"/G/taodata/project/xiaohua_finance/data_0116_sinjor_rand_v3/GBM/get_feature_from_weight.py",
+		"/G/taodata/project/xiaohua_finance/data_0116_sinjor_rand_v3/GBM/analyse.py",
+		"/C/Users/Administrator/Desktop/module/autoplot.py",
+		"/C/Users/Administrator/Desktop/数据划分对特征提取的影响.sql",
+		"/G/taodata/project/xiaohua_finance/xiaohua/new_features.sql",
+		"/G/taodata/project/xiaohua_finance/xiaohua/divide.sql",
+		"/E/atom7.2/GermanCredit3/test.py",
+		"/G/taodata/project/xiaohua_finance/atom7.2/GermanCredit/autoplot.py",
+		"/G/taodata/project/xiaohua_finance/atom7.2/GermanCredit/test.py",
+		"/C/Users/Administrator/Desktop/数据差异原因分析.sql",
+		"/C/ProgramData/MySQL/MySQL Server 5.7/my.ini",
+		"/G/taodata/project/xiaohua_finance/data_0122_sinjor_rand_v3_atom_7.2_b1_true/input/xh_dict.csv",
+		"/G/taodata/project/xiaohua_finance/data_0122_sinjor_rand_v3_atom_7.2_b2/input/xh_dict.csv",
+		"/G/taodata/project/xiaohua_finance/data_0122_sinjor_rand_v3_atom_7.2_b1_true/input/xh_dict_used_all.csv",
+		"/G/taodata/project/xiaohua_finance/behavior_data_source_useful_flatten_2/behavior_data_source_useful_flatten_2.csv",
+		"/C/Users/Administrator/Desktop/behavior_data_source_useful_flatten_2.sql",
+		"/C/Users/Administrator/Desktop/behavior_data_source_useful_flatten_2.txt",
+		"/G/taodata/project/xiaohua_finance/data_0122_sinjor_rand_v3_atom_7.2_b2/gbm_onehot_50/conf/atom_act.json",
+		"/G/taodata/project/xiaohua_finance/data_0116_sinjor_rand_v3_atom7.2/modle_analyse.py",
+		"/C/Users/Administrator/Desktop/module/deal.py",
+		"/G/taodata/project/xiaohua_finance/xiaohua/hive_xiaohua_high_freq_3m.sql",
+		"/G/taodata/project/xiaohua_finance/xiaohua/hive_xiaohua_am_3m.sql",
+		"/G/taodata/project/xiaohua_finance/xiaohua/hive_xiaohua_high_freq_1m.sql",
+		"/G/taodata/scripe/python/asdf.sql",
+		"/G/taodata/scripe/python/asdf2.sql",
+		"/G/taodata/project/xiaohua_finance/data_0116_sinjor_rand_v3_atom7.2/go/Atom.bat",
+		"/G/taodata/project/xiaohua_finance/data_0116_sinjor_rand_v3/GBM/Output/Learn/Model_VariableWeights.csv",
+		"/G/taodata/project/xiaohua_finance/data_0116_sinjor_rand_v3_atom7.2/gbm/conf/atom_explore.json",
+		"/G/taodata/project/xiaohua_finance/data_0110_sinjor_d2time/input/xh_dict - 副本.csv",
+		"/G/taodata/project/xiaohua_finance/data_0116_sinjor_rand_v3_atom7.2/gbm/Atom.bat",
+		"/G/taodata/project/xiaohua_finance/data_0116_sinjor_rand_v3_atom7.2/gbm_onehot_50/conf/atom_explore.json",
+		"/G/taodata/project/xiaohua_finance/data_0116_sinjor_rand_v3_atom7.2/gbm_factor_50/conf/atom_explore.json",
+		"/G/taodata/project/xiaohua_finance/data_0116_sinjor_rand_v3_atom7.2/gbm_onehot_50/Output/Explore/Explore.txt",
+		"/G/taodata/project/xiaohua_finance/data_0116_sinjor_rand_v3_atom7.2/gbm_factor_50/conf/atom_test.json",
+		"/E/atom7.2/conf/atom_go.json",
+		"/G/taodata/project/xiaohua_finance/data_0116_sinjor_rand_v3_atom7.2/go/conf/atom_go.json",
+		"/G/taodata/project/xiaohua_finance/data_0116_sinjor_rand_v3_atom7.2/gbm/change.py",
+		"/G/taodata/project/xiaohua_finance/data_0116_sinjor_rand_v3_atom7.2/gbm/atom7.2_change.py",
+		"/G/taodata/project/xiaohua_finance/data_0116_sinjor_rand_v3_atom7.2/gbm_onehot_1000/conf/atom_explore.json",
+		"/G/taodata/project/xiaohua_finance/data_0116_sinjor_rand_v3_atom7.2/gbm/conf/atom_act.json",
+		"/G/taodata/project/xiaohua_finance/data_0116_sinjor_rand_v3_atom7.2/gbm/conf/atom_test.json",
+		"/G/taodata/project/xiaohua_finance/data_0116_sinjor_rand_v3_atom7.2/gbm/conf/atom_learn.json",
+		"/G/taodata/project/xiaohua_finance/data_0116_sinjor_rand_v3_atom7.2/gbm/conf/atom_go.json",
+		"/G/taodata/project/xiaohua_finance/data_0116_sinjor_rand_v3_atom7.2/gbm_onehot/conf/atom_explore.json",
+		"/C/Users/Administrator/Desktop/module/extract_feature.py",
 		"/G/taodata/project/xiaohua_finance/data_0116_sinjor_rand_v2/input/xh_dict.csv",
 		"/G/taodata/project/xiaohua_finance/xiaohua/hive_xiaohua_abnormal.sql",
-		"/G/taodata/project/xiaohua_finance/xiaohua/new_features.sql",
 		"/G/taodata/project/xiaohua_finance/xiaohua/xiaohua.sh",
 		"/G/taodata/project/xiaohua_finance/xiaohua/xiaohua_code_from_train.sql",
 		"/G/taodata/project/xiaohua_finance/xiaohua/xiaohua.sublime-project",
@@ -813,14 +761,9 @@
 		"/G/taodata/project/xiaohua_finance/data_0108_sinjor_d1/GBM/change.py",
 		"/G/taodata/project/xiaohua_finance/data_0112_sinjor_d1time/GBM/change.py",
 		"/C/Users/Administrator/Desktop/数据差异原因分析.txt",
-		"/G/taodata/project/xiaohua_finance/xiaohua/hive_xiaohua_am_1m.sql",
 		"/G/program_monkey/ML/tianchi/O2O-Coupon-Usage-Forecast-4ec68dab5ef6ca68131fd2e31f1a2021a5e4e633/O2O-Coupon-Usage-Forecast-4ec68dab5ef6ca68131fd2e31f1a2021a5e4e633/code/wepon/season two/blending/level1_gbdt1.sql",
 		"/C/Users/Administrator/Desktop/xiaohua/xiaohua_other.sql",
-		"/C/Users/Administrator/Desktop/compare.sql",
-		"/C/Users/Administrator/Desktop/myhive.sql",
 		"/G/program_monkey/ML/tianchi/O2O-Coupon-Usage-Forecast-4ec68dab5ef6ca68131fd2e31f1a2021a5e4e633/O2O-Coupon-Usage-Forecast-4ec68dab5ef6ca68131fd2e31f1a2021a5e4e633/code/wepon/season two/blending/process.sql",
-		"/C/Users/Administrator/Desktop/module/o2o.sql",
-		"/C/Users/Administrator/Desktop/module/deal.py",
 		"/C/Users/Administrator/Desktop/module/test.py",
 		"/C/Users/Administrator/Desktop/module/数据说明.txt",
 		"/G/program_monkey/ML/tianchi/O2O-Coupon-Usage-Forecast-4ec68dab5ef6ca68131fd2e31f1a2021a5e4e633/O2O-Coupon-Usage-Forecast-4ec68dab5ef6ca68131fd2e31f1a2021a5e4e633/code/wepon/season two/extract_feature.sql",
@@ -828,13 +771,11 @@
 		"/E/Sublime_Text3_Stable_Build_3143_x64_Chs/Sublime Text/Data/Packages/User/Preferences.sublime-settings",
 		"/G/taodata/project/xiaohua_finance/Atom6.3exe/code/AtomConf_Learn.xml",
 		"/G/taodata/project/xiaohua_finance/Atom6.3exe_win/conf/learn.xml",
-		"/C/Users/Administrator/Desktop/csm.sql",
 		"/C/Users/Administrator/Desktop/hive_xiaohua_high_freq_1m.sql",
 		"/C/Users/Administrator/Desktop/hive_xiaohua_abnormal.sql",
 		"/G/program_monkey/ML/tianchi/O2O/main_o2o.py",
 		"/C/Users/Administrator/Desktop/python_pandas.py",
 		"/C/Users/Administrator/Desktop/module/xiaohua.py",
-		"/C/Users/Administrator/Desktop/module/autoplot.py",
 		"/G/program_monkey/ML/tianchi/O2O-Coupon-Usage-Forecast-4ec68dab5ef6ca68131fd2e31f1a2021a5e4e633/O2O-Coupon-Usage-Forecast-4ec68dab5ef6ca68131fd2e31f1a2021a5e4e633/code/wepon/season one/extract_feature.py",
 		"/G/taodata/project/xiaohua_finance/new_path/LR/change.py",
 		"/G/taodata/project/xiaohua_finance/data_0104_d2/input/xh_dict.csv",
@@ -877,62 +818,11 @@
 		"/C/Users/Administrator/Desktop/hive.sql",
 		"/E/Sublime_Text3_Stable_Build_3143_x64_Chs/Sublime Text/Data/Packages/User/SublimeREPL.sublime-settings",
 		"/E/Sublime_Text3_Stable_Build_3143_x64_Chs/Sublime Text/Data/Packages/SublimeREPL/SublimeREPL.sublime-settings",
-		"/E/Sublime_Text3_Stable_Build_3143_x64_Chs/Sublime Text/Data/Packages/Default/Default (Windows).sublime-keymap",
-		"/C/Users/Administrator/Desktop/module/deal",
-		"/C/Users/Administrator/Desktop/test.py",
-		"/C/Users/Administrator/Desktop/autoplot.py",
-		"/C/Users/Administrator/Desktop/plt.py",
-		"/G/taodata/robotx/pure/pack.bat",
-		"/G/taodata/robotx/pure/robotx.py",
-		"/E/Sublime_Text3_Stable_Build_3143_x64_Chs/Sublime Text/Data/Packages/SublimeCodeIntel/Default (Windows).sublime-keymap",
-		"/E/Sublime_Text3_Stable_Build_3143_x64_Chs/Sublime Text/Data/Packages/Jedi - Python autocompletion/Default.sublime-keymap",
-		"/E/Sublime_Text3_Stable_Build_3143_x64_Chs/Sublime Text/Data/Packages/Anaconda/Default (Windows).sublime-keymap",
-		"/E/Sublime_Text3_Stable_Build_3143_x64_Chs/Sublime Text/Data/Packages/User/sublime_jedi.sublime-settings",
-		"/E/Sublime_Text3_Stable_Build_3143_x64_Chs/Sublime Text/Data/Packages/User/Default.sublime-keymap",
-		"/E/Sublime_Text3_Stable_Build_3143_x64_Chs/Sublime Text/Data/Packages/User/Anaconda.sublime-settings",
-		"/E/Sublime_Text3_Stable_Build_3143_x64_Chs/Sublime Text/Data/Packages/User/Python.sublime-settings",
-		"/E/Sublime_Text3_Stable_Build_3143_x64_Chs/Sublime Text/Data/Packages/User/Default (Windows).sublime-mousemap",
-		"/E/Sublime_Text3_Stable_Build_3143_x64_Chs/Sublime Text/Data/Packages/Anaconda/README.md",
-		"/G/taodata/robotx/pure/config_gupiao.json",
-		"/E/Sublime_Text3_Stable_Build_3143_x64_Chs/Sublime Text/Data/Packages/Anaconda/Anaconda.sublime-settings",
-		"/E/Sublime_Text3_Stable_Build_3143_x64_Chs/Sublime Text/Data/Packages/Jedi - Python autocompletion/sublime_jedi.sublime-settings",
-		"/G/taodata/robotx/pure/run1.py",
-		"/E/Sublime_Text3_Stable_Build_3143_x64_Chs/Sublime Text/Data/Packages/User/SublimeCodeIntel.sublime-settings",
-		"/E/Sublime_Text3_Stable_Build_3143_x64_Chs/Sublime Text/Data/Packages/SublimeCodeIntel/SublimeCodeIntel.sublime-settings",
-		"/E/Sublime_Text3_Stable_Build_3143_x64_Chs/Sublime Text/Data/Packages/User/Default.sublime-mousemap",
-		"/F/迅雷下载/sublimetext/Sublime_Text3_Stable_Build_3143_x64_Chs/Sublime Text/Data/Packages/Jedi - Python autocompletion/Default.sublime-keymap",
-		"/F/迅雷下载/sublimetext/Sublime_Text3_Stable_Build_3143_x64_Chs/Sublime Text/Data/Packages/Jedi - Python autocompletion/sublime_jedi.sublime-settings",
-		"/F/迅雷下载/sublimetext/Sublime_Text3_Stable_Build_3143_x64_Chs/Sublime Text/Data/Packages/SublimeCodeIntel/SublimeCodeIntel.sublime-settings",
-		"/F/迅雷下载/sublimetext/Sublime_Text3_Stable_Build_3143_x64_Chs/Sublime Text/Data/Packages/User/sublime_jedi.sublime-settings",
-		"/F/迅雷下载/sublimetext/Sublime_Text3_Stable_Build_3143_x64_Chs/Sublime Text/Data/Packages/User/Anaconda.sublime-settings",
-		"/F/迅雷下载/sublimetext/Sublime_Text3_Stable_Build_3143_x64_Chs/Sublime Text/Data/Packages/User/SublimeCodeIntel.sublime-settings",
-		"/F/迅雷下载/sublimetext/Sublime_Text3_Stable_Build_3143_x64_Chs/Sublime Text/Data/Packages/SublimeCodeIntel/Default (Windows).sublime-keymap",
-		"/F/迅雷下载/sublimetext/Sublime_Text3_Stable_Build_3143_x64_Chs/Sublime Text/Data/Packages/User/Default (Windows).sublime-keymap",
-		"/F/迅雷下载/sublimetext/Sublime_Text3_Stable_Build_3143_x64_Chs/Sublime Text/Data/Packages/Anaconda/Anaconda.sublime-settings",
-		"/F/迅雷下载/sublimetext/Sublime_Text3_Stable_Build_3143_x64_Chs/Sublime Text/Data/Packages/Anaconda/README.md",
-		"/F/迅雷下载/sublimetext/Sublime_Text3_Stable_Build_3143_x64_Chs/Sublime Text/Data/Packages/User/anaconda3_python.sublime-build",
-		"/F/迅雷下载/sublimetext/Sublime_Text3_Stable_Build_3143_x64_Chs/Sublime Text/Data/Packages/User/anaconda3_python",
-		"/E/python/lib/site-packages/pandas/core/frame.py",
-		"/E/python/lib/site-packages/pandas/core/base.py",
-		"/G/taodata/robotx/pure/ff/relational_features.py",
-		"/G/taodata/robotx/pure/ff/function_create.py",
-		"/G/taodata/robotx/pure/qe/query_executor.py",
-		"/G/taodata/robotx/pure/ff/entity_features.py",
-		"/E/python/lib/copy.py",
-		"/G/taodata/robotx/pure/cfg/cfg_parser.py",
-		"/G/taodata/robotx/pure/cfg/data_source.py",
-		"/G/taodata/robotx/pure/cfg/data_describe.py",
-		"/G/taodata/robotx/pure/cfg/process.py",
-		"/G/taodata/robotx/pure/db/dbload.py",
-		"/G/taodata/robotx/pure/qe/__init__.py",
-		"/G/taodata/robotx/pure/ap/EntityFeatureGenerator.py",
-		"/G/taodata/robotx/pure/ff/util.py",
-		"/E/python/Lib/pickle.py",
-		"/F/迅雷下载/sublimetext/Sublime_Text3_Stable_Build_3143_x64_Chs/Sublime Text/Data/Packages/Jedi - Python autocompletion/Default.sublime-mousemap"
+		"/E/Sublime_Text3_Stable_Build_3143_x64_Chs/Sublime Text/Data/Packages/Default/Default (Windows).sublime-keymap"
 	],
 	"find":
 	{
-		"height": 27.0
+		"height": 26.0
 	},
 	"find_in_files":
 	{
@@ -947,6 +837,24 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"${hiveconf:source_table}",
+			"30",
+			") as",
+			"size(collect_set(",
+			"query",
+			"修改锁缓存为1G",
+			",char(64)",
+			",",
+			"\t",
+			"[",
+			"str",
+			"prinvince",
+			"atom_conf",
+			"model_path",
+			"pwd",
+			",char(32)",
+			"numeric",
+			"factor",
 			"--2",
 			"sinjor_test_data_rand_v2",
 			"sinjor_train_data_rand_v2",
@@ -1056,25 +964,7 @@
 			"event_imii",
 			"event_certNo",
 			"dist",
-			"event_deviCeId",
-			"event_certNo",
-			"dist",
-			"event_certNo",
-			"dist",
-			"cid_certNo_derived_1m",
-			"event_certNo",
-			"event_cid",
-			"cid_bankCardNo_derived_1m",
-			"dist_cid_",
-			"event_im",
-			"cid_certNo_derived_1m",
-			"cid_first_loan",
-			"get_label",
-			"&",
-			"tab",
-			"interpreter",
-			"out_put_path",
-			"feature"
+			"event_deviCeId"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -1082,6 +972,21 @@
 		"regex": false,
 		"replace_history":
 		[
+			"behavior_data_source_useful_flatten_2",
+			"INTERVAL 30 DAY",
+			" as",
+			"count(distinct ",
+			" varchar(64),",
+			"varchar(64),",
+			",char(64)",
+			",\n",
+			"[:,",
+			"atom_conf_path",
+			"input_data_path",
+			"model_path",
+			"model",
+			" char(32),",
+			"char(32)",
 			"",
 			"sinjor_test_data_rand_v3",
 			"sinjor_train_data_rand_v3",
@@ -1194,18 +1099,7 @@
 			"graph_file_path",
 			"feature_header",
 			"label_header",
-			"cloumns_data",
-			"cloumns_header",
-			"train_data",
-			"bar_file_path",
-			"current_time",
-			"label_name",
-			"factor_dic",
-			"factor_name",
-			"factor_name_list",
-			"sample",
-			"factors",
-			"feature_name"
+			"cloumns_data"
 		],
 		"reverse": false,
 		"show_context": true,
@@ -1216,24 +1110,68 @@
 	"groups":
 	[
 		{
-			"selected": 1,
+			"selected": 0,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "xiaohua_feature_extract_all.sql",
+					"file": "/G/taodata/scripe/python/atom_like.py",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 8279,
+						"buffer_size": 1611,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								4839,
-								4714
+								1052,
+								1052
+							]
+						],
+						"settings":
+						{
+							"auto_complete_triggers":
+							[
+								{
+									"characters": ".",
+									"selector": "source.python - string - comment - constant.numeric"
+								},
+								{
+									"characters": ".",
+									"selector": "source.python - string - constant.numeric"
+								},
+								{
+									"characters": ".",
+									"selector": "source.python - string - constant.numeric"
+								}
+							],
+							"origin_encoding": "UTF-8",
+							"syntax": "Packages/Python/Python.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 270.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "/C/Users/Administrator/Desktop/behavior_data_source_useful_flatten_2.sql",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 8153,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3028,
+								3028
 							]
 						],
 						"settings":
@@ -1242,79 +1180,80 @@
 							"syntax": "Packages/SQL/SQL.sublime-syntax"
 						},
 						"translation.x": 0.0,
-						"translation.y": 2106.0,
+						"translation.y": 1350.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 1,
 					"type": "text"
 				},
 				{
-					"buffer": 1,
-					"file": "/G/taodata/project/xiaohua_finance/data_0116_sinjor_rand_v3/input/xh_dict.csv",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 4359,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								3892,
-								3892
-							]
-						],
-						"settings":
-						{
-							"origin_encoding": "ASCII",
-							"syntax": "Packages/Text/Plain text.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 1944.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				},
-				{
 					"buffer": 2,
-					"file": "xiaohua_other.sql",
+					"file": "/C/Users/Administrator/Desktop/python_pandas.py",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 4787,
+						"buffer_size": 5449,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1461,
-								1477
+								2870,
+								2656
 							]
 						],
 						"settings":
 						{
-							"origin_encoding": "ASCII",
-							"syntax": "Packages/SQL/SQL.sublime-syntax",
-							"tab_size": 2,
+							"origin_encoding": "UTF-8",
+							"syntax": "Packages/Python/Python.sublime-syntax",
+							"tab_size": 4,
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 972.0,
+						"translation.y": 1458.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 6,
+					"stack_index": 2,
 					"type": "text"
 				},
 				{
 					"buffer": 3,
-					"file": "/C/Users/Administrator/Desktop/module/o2o.sql",
+					"file": "/C/Users/Administrator/Desktop/module/test.py",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 4860,
+						"buffer_size": 6302,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"origin_encoding": "ASCII",
+							"syntax": "Packages/Python/Python.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "hive_xiaohua_high_freq_3m.sql",
+					"semi_transient": true,
+					"settings":
+					{
+						"buffer_size": 7680,
 						"regions":
 						{
 						},
@@ -1333,45 +1272,44 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 1458.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 15,
+					"stack_index": 4,
 					"type": "text"
 				},
 				{
-					"buffer": 4,
-					"file": "/C/Users/Administrator/Desktop/myhive.sql",
+					"buffer": 5,
+					"file": "/G/taodata/scripe/python/dict_general.py",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 65373,
+						"buffer_size": 3090,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								50939,
-								50736
+								0,
+								0
 							]
 						],
 						"settings":
 						{
 							"origin_encoding": "UTF-8",
-							"syntax": "Packages/SQL/SQL.sublime-syntax",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
+							"syntax": "Packages/Python/Python.sublime-syntax",
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 28146.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 3,
+					"stack_index": 5,
 					"type": "text"
 				},
 				{
-					"buffer": 5,
+					"buffer": 6,
 					"file": "/G/taodata/scripe/python/hive_general.py",
 					"semi_transient": false,
 					"settings":
@@ -1407,402 +1345,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 9,
-					"type": "text"
-				},
-				{
-					"buffer": 6,
-					"file": "/G/taodata/scripe/python/asdf2.sql",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 22271,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								396,
-								411
-							]
-						],
-						"settings":
-						{
-							"origin_encoding": "ASCII",
-							"syntax": "Packages/SQL/SQL.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 751.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 13,
-					"type": "text"
-				},
-				{
-					"buffer": 7,
-					"file": "/G/taodata/scripe/python/asdf.sql",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 10288,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								694,
-								694
-							]
-						],
-						"settings":
-						{
-							"origin_encoding": "ASCII",
-							"syntax": "Packages/SQL/SQL.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 14,
-					"type": "text"
-				},
-				{
-					"buffer": 8,
-					"file": "/C/Users/Administrator/Desktop/数据划分对特征提取的影响.sql",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 3185,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1895,
-								1895
-							]
-						],
-						"settings":
-						{
-							"origin_encoding": "UTF-8",
-							"syntax": "Packages/SQL/SQL.sublime-syntax",
-							"tab_size": 7,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 17,
-					"type": "text"
-				},
-				{
-					"buffer": 9,
-					"file": "divide.sql",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 2444,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								325,
-								325
-							]
-						],
-						"settings":
-						{
-							"origin_encoding": "ASCII",
-							"syntax": "Packages/SQL/SQL.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 4,
-					"type": "text"
-				},
-				{
-					"buffer": 10,
-					"file": "/G/taodata/project/xiaohua_finance/data_0110_sinjor_d2time/input/xh_dict - 副本.csv",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 2622,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								12,
-								2622
-							]
-						],
-						"settings":
-						{
-							"origin_encoding": "ASCII",
-							"syntax": "Packages/Text/Plain text.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 270.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 18,
-					"type": "text"
-				},
-				{
-					"buffer": 11,
-					"file": "/C/Users/Administrator/Desktop/compare.sql",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 12562,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								3656,
-								3568
-							]
-						],
-						"settings":
-						{
-							"origin_encoding": "UTF-8",
-							"syntax": "Packages/SQL/SQL.sublime-syntax",
-							"tab_size": 7,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 12,
-					"type": "text"
-				},
-				{
-					"buffer": 12,
-					"file": "/C/Users/Administrator/Desktop/数据差异原因分析.sql",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 4018,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								86,
-								0
-							]
-						],
-						"settings":
-						{
-							"origin_encoding": "UTF-8",
-							"syntax": "Packages/SQL/SQL.sublime-syntax",
-							"tab_size": 7,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 16,
-					"type": "text"
-				},
-				{
-					"buffer": 13,
-					"file": "hive_xiaohua_high_freq_3m.sql",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 7680,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								52,
-								52
-							]
-						],
-						"settings":
-						{
-							"origin_encoding": "UTF-8",
-							"syntax": "Packages/SQL/SQL.sublime-syntax",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 8,
-					"type": "text"
-				},
-				{
-					"buffer": 14,
-					"file": "hive_xiaohua_am_3m.sql",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 13678,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								7763,
-								5826
-							]
-						],
-						"settings":
-						{
-							"origin_encoding": "UTF-8",
-							"syntax": "Packages/SQL/SQL.sublime-syntax",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 3709.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 7,
-					"type": "text"
-				},
-				{
-					"buffer": 15,
-					"file": "hive_xiaohua_high_freq_1m.sql",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 7680,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								309,
-								309
-							]
-						],
-						"settings":
-						{
-							"origin_encoding": "UTF-8",
-							"syntax": "Packages/SQL/SQL.sublime-syntax",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 3447.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 10,
-					"type": "text"
-				},
-				{
-					"buffer": 16,
-					"file": "hive_xiaohua_am_1m.sql",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 13720,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								10046,
-								10046
-							]
-						],
-						"settings":
-						{
-							"origin_encoding": "UTF-8",
-							"syntax": "Packages/SQL/SQL.sublime-syntax",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 5762.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 5,
-					"type": "text"
-				},
-				{
-					"buffer": 17,
-					"file": "new_features.sql",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 21244,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								20321,
-								20352
-							]
-						],
-						"settings":
-						{
-							"origin_encoding": "UTF-8",
-							"syntax": "Packages/SQL/SQL.sublime-syntax",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 8798.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
-					"type": "text"
-				},
-				{
-					"buffer": 18,
-					"file": "hive_xiaohua_abnormal.sql",
-					"semi_transient": true,
-					"settings":
-					{
-						"buffer_size": 3773,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"origin_encoding": "UTF-8",
-							"syntax": "Packages/SQL/SQL.sublime-syntax",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 540.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 11,
+					"stack_index": 6,
 					"type": "text"
 				}
 			]
@@ -1810,7 +1353,7 @@
 	],
 	"incremental_find":
 	{
-		"height": 27.0
+		"height": 26.0
 	},
 	"input":
 	{
@@ -1841,7 +1384,7 @@
 	"menu_visible": true,
 	"output.exec":
 	{
-		"height": 59.0
+		"height": 30.0
 	},
 	"output.find_results":
 	{
@@ -1851,7 +1394,7 @@
 	"project": "xiaohua.sublime-project",
 	"replace":
 	{
-		"height": 68.0
+		"height": 48.0
 	},
 	"save_all_on_build": true,
 	"select_file":
@@ -1897,7 +1440,7 @@
 	"show_open_files": true,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 251.0,
+	"side_bar_width": 221.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{
