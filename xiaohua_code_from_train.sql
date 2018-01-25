@@ -11,104 +11,103 @@ use ${hiveconf:source_database};
 
 
 drop table if exists education_code;
-
+set @row_number = 0;
 
 create table education_code as
 select t.event_education,
-       row_number() over(
-                         order by t.event_education) as event_education_code
+       (@row_number:=@row_number + 1) as event_education_code
 from
     (select distinct event_education as event_education
-     from ${hiveconf:source_table}
-     where event_education is not null) t;
+     from behavior_data_source_useful_flatten_2
+     where event_education is not null) t
+    order by t.event_education;
 
 
 drop table if exists position_code;
-
+set @row_number = 0;
 
 create table position_code as
 select t.event_position,
-       row_number() over(
-                         order by t.event_position) as event_position_code
+       (@row_number:=@row_number + 1) as event_position_code
 from
     (select distinct event_position as event_position
-     from ${hiveconf:source_table}
-     where event_position is not null) t;
+     from behavior_data_source_useful_flatten_2
+     where event_position is not null) t
+    order by t.event_position;
 
 
 drop table if exists workYears_code;
-
+set @row_number = 0;
 
 create table workYears_code as
 select t.event_workyears,
-       row_number() over(
-                         order by t.event_workyears) as event_workyears_code
+       (@row_number:=@row_number + 1) as event_workyears_code
 from
     (select distinct event_workyears as event_workyears
-     from ${hiveconf:source_table}
-     where event_workyears is not null) t;
+     from behavior_data_source_useful_flatten_2
+     where event_workyears is not null) t
+    order by t.event_workyears;
 
 
 drop table if exists contactsRelationship_code;
-
+set @row_number = 0;
 
 create table contactsRelationship_code as
 select t.event_contactsrelationship,
-       row_number() over(
-                         order by t.event_contactsrelationship) as event_contactsrelationship_code
+       (@row_number:=@row_number + 1) as event_contactsrelationship_code
 from
     (select distinct event_contactsrelationship as event_contactsrelationship
-     from ${hiveconf:source_table}
-     where event_contactsrelationship is not null) t;
+     from behavior_data_source_useful_flatten_2
+     where event_contactsrelationship is not null) t
+    order by t.event_contactsrelationship;
 
 
 drop table if exists bankCardName_code;
-
+set @row_number = 0;
 
 create table bankCardName_code as
-select t.event_bankCardName,
-       row_number() over(
-                         order by t.event_bankcardname) as event_bankcardname_code
+select t.event_bankcardname,
+       (@row_number:=@row_number + 1) as event_bankcardname_code
 from
     (select distinct event_bankcardname as event_bankcardname
-     from ${hiveconf:source_table}
-     where event_bankcardname is not null) t;
+     from behavior_data_source_useful_flatten_2
+     where event_bankcardname is not null) t
+    order by t.event_bankcardname;
 
 
 drop table if exists ipCity_code;
-
+set @row_number = 0;
 
 create table ipCity_code as
-select t.event_ipCity,
-       row_number() over(
-                         order by t.event_ipcity) as event_ipcity_code
+select t.event_ipcity,
+       (@row_number:=@row_number + 1) as event_ipcity_code
 from
     (select distinct event_ipcity as event_ipcity
-     from ${hiveconf:source_table}
-     where event_ipcity is not null) t;
+     from behavior_data_source_useful_flatten_2
+     where event_ipcity is not null) t
+    order by t.event_ipcity;
 
 
 drop table if exists mobileCity_code;
-
+set @row_number = 0;
 
 create table mobileCity_code as
-select t.event_mobileCity,
-       row_number() over(
-                         order by t.event_mobilecity) as event_mobilecity_code
+select t.event_mobilecity,
+       (@row_number:=@row_number + 1) as event_mobilecity_code
 from
     (select distinct event_mobilecity as event_mobilecity
-     from ${hiveconf:source_table}
-     where event_mobilecity is not null) t;
-
+     from behavior_data_source_useful_flatten_2
+     where event_mobilecity is not null) t
+order by t.event_mobilecity;
 
 drop table if exists ipProvince_code;
-
+set @row_number = 0;
 
 create table ipProvince_code as
 select t.event_ipprovince,
-       row_number() over(
-                         order by t.event_ipprovince) as event_ipprovince_code
+       (@row_number:=@row_number + 1) as event_ipprovince_code
 from
     (select distinct event_ipprovince as event_ipprovince
-     from ${hiveconf:source_table}
-     where event_ipprovince is not null) t;
+     from behavior_data_source_useful_flatten_2
+     where event_ipprovince is not null) t
+    order by t.event_ipprovince;

@@ -1,16 +1,16 @@
-set source_database=sinjor_db_time;
-set label_database=default;
-set label_table=ml_labels;
-set train_table=sinjor_train_data_rand_v3;
-set test_table=sinjor_test_data_rand_v3;
-set feature_table=xiaohua_feature_extract_all_v3;
-use ${hiveconf:source_database};
+alter table cid_derived_hs_1m add index index_event_cid (event_cid);
+alter table cid_derived_hs_3m add index index_event_cid (event_cid);
+alter table cid_derived_1m_am_all add index index_event_cid (event_cid);
+alter table cid_derived_3m_am_all add index index_event_cid (event_cid);
+alter table cid_derived_abn_all add index index_event_cid (event_cid);
+alter table cid_first_loan_source_features add index index_event_cid (event_cid);
+alter table cid_new_feature_derived_all add index index_event_cid (event_cid);
 
-
-drop table if exists ${hiveconf:feature_table};
-
-create table ${hiveconf:feature_table} as
-select row_number() over(order by rand()) as cid,*
+#生成最终的特征表
+drop table if exists xiaohua_feature_extract_all_v3;
+set @row_number = 0;
+create table xiaohua_feature_extract_all_v3 as
+select (@row_number:=@row_number + 1) as cid, t.*
 from 
 (select t0.cid as event_cid,
        t0.label,
@@ -133,14 +133,14 @@ from
        t7.cid_dis_event_useragent_1m,
        t7.cid_dis_event_trueip_1m,
        t7.cid_dis_event_id_1m,
-       t7.cid_dis_id_div_dis_trueip_1m,--2
+       t7.cid_dis_id_div_dis_trueip_1m,#--2
        t7.cid_dis_deviceid_3m,
        t7.cid_dis_event_imei_3m,
        t7.cid_dis_event_idfa_3m,
        t7.cid_dis_event_useragent_3m,
        t7.cid_dis_event_trueip_3m,
        t7.cid_dis_event_id_3m,
-       t7.cid_dis_id_div_dis_trueip_3m,--2
+       t7.cid_dis_id_div_dis_trueip_3m,#--2
        t7.apply_ipcity_same_gpscity_flag,
        t7.apply_ipcity_same_mobilecity_flag,
        t7.apply_gpscity_same_mobilecity_flag,
@@ -149,40 +149,59 @@ from
        t7.trueip_dist_cid_1m,
        t7.trueip_dist_cid_3m,
        t7.mobile_same_bankcardmobile_flag,
-       t7.loan_ipcity_same_mobilecity_flag,--2
-       t7.loan_first_without_apply_flag,--2
-       t7.loan_apply_time_interval_day,--2
-       t7.loan_apply_time_interval_second,--2
-       t7.loan_register_time_interval_day,--2
+       t7.loan_ipcity_same_mobilecity_flag,#--2
+       t7.loan_first_without_apply_flag,#--2
+       t7.loan_apply_time_interval_day,#--2
+       t7.loan_apply_time_interval_second,#--2
+       t7.loan_register_time_interval_day,#--2
 
        t8.collector_tstamp
 from
-    ${hiveconf:label_database}.${hiveconf:label_table} t0 
+    ml_lables t0 
 right outer join cid_derived_hs_1m as t1 on t0.cid = t1.event_cid
 left outer join cid_derived_hs_3m as t2 on t1.event_cid = t2.event_cid
 left outer join cid_derived_1m_am_all as t3 on t1.event_cid = t3.event_cid
 left outer join cid_derived_3m_am_all as t4 on t1.event_cid = t4.event_cid
 left outer join cid_derived_abn_all as t5 on t1.event_cid = t5.event_cid
 left outer join cid_first_loan_source_features as t6 on t1.event_cid = t6.event_cid
-left outer join default.cid_new_feature_derived_all as t7 on t1.event_cid = t7.event_cid
+left outer join cid_new_feature_derived_all as t7 on t1.event_cid = t7.event_cid
 left outer join cid_first_loan as t8 on t1.event_cid = t8.event_cid) t;
 
-drop table if exists ${hiveconf:train_table};
+/*
+
+select count(event_cid) from cid_derived_hs_1m;
+select count(event_cid) from cid_derived_hs_3m;
+select count(event_cid) from cid_derived_1m_am_all;
+select count(event_cid) from cid_derived_3m_am_all;
+select count(event_cid) from cid_derived_abn_all;
+select count(event_cid) from cid_first_loan_source_features;
+select count(event_cid) from cid_new_feature_derived_all;
+select count(event_cid) from cid_first_loan;
+
+*/
 
 
-create table ${hiveconf:train_table} as
+drop table if exists sinjor_train_data_rand_v3_b2;
+
+
+create table sinjor_train_data_rand_v3_b2 as
 select *
-from ${hiveconf:feature_table}
+from xiaohua_feature_extract_all_v3
 where cid < 70000;
 
 
-drop table if exists ${hiveconf:test_table};
+drop table if exists sinjor_test_data_rand_v3_b2;
 
 
-create table ${hiveconf:test_table} as
+create table sinjor_test_data_rand_v3_b2 as
 select *
-from ${hiveconf:feature_table}
+from xiaohua_feature_extract_all_v3
 where cid >= 70000;
+
+
+mysql -h127.0.0.1 -uroot -proot -e"select * from sinjor_train_data_rand_v3_b2" xiaohua | sed -e "s/\t/,/g" -e "1s/[A-Z]/\l&/g" > "G:/mysql/MySQL Server 5.7/output/xiaohua/sinjor_train_data_rand_v3_b2.csv" 
+mysql -h127.0.0.1 -uroot -proot -e"select * from sinjor_test_data_rand_v3_b2" xiaohua | sed -e "s/\t/,/g" -e "1s/[A-Z]/\l&/g" > "G:/mysql/MySQL Server 5.7/output/xiaohua/sinjor_test_data_rand_v3_b2.csv" 
+
 
 hive -e "set hive.cli.print.header=true;select * from sinjor_db_time.sinjor_train_data_rand_v3;" | sed -e 's/sinjor_train_data_rand_v3.//g' -e 's/\t/,/g' >>sinjor_train_data_rand_v3.csv
 hive -e "set hive.cli.print.header=true;select * from sinjor_db_time.sinjor_test_data_rand_v3;" | sed -e 's/sinjor_test_data_rand_v3.//g' -e 's/\t/,/g' >>sinjor_test_data_rand_v3.csv

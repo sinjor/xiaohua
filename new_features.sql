@@ -47,55 +47,8 @@ from
               t2.event_name) t
 group by event_cid;
 
---借款前最近一次获额
-
-drop table if exists cid_last_apply_before_loan;
-
-
-create table cid_last_apply_before_loan as
-select *
-from
-    (select row_number() over(partition by t2.event_cid
-                              order by t2.collector_tstamp desc) as cid_apply_order,
-            t1.collector_tstamp as loan_collector_tstamp,
-            t2.*
-     from
-         (select event_cid,
-                 collector_tstamp
-          from cid_first_loan) t1
-     inner join
-         (select event_cid,
-                 event_residence,
-                 event_education,
-                 event_organization,
-                 event_companyPhone,
-                 event_position,
-                 event_workYears,
-                 event_contactsName,
-                 event_contactsMobile,
-                 event_contactsRelationship,
-                 event_ipCity,
-                 event_mobilecity,
-                 event_gpsCity,
-                 event_longitude,
-                 event_latitude,
-                 event_iplatitude,
-                 event_ipLongitude,
-                 collector_tstamp,
-                 event_deviceid,
-                 event_idfa,
-                 event_imei
-          from behavior_data_source_useful_flatten_2
-          where event_name='app_apply'
-              and event_cid is not null
-              and length(event_cid) > 0
-              and collector_tstamp is not  null
-              and length(collector_tstamp) > 0 ) as t2 on t1.event_cid = t2.event_cid
-     where t1.collector_tstamp >= t2.collector_tstamp) t3
-where cid_apply_order = 1;
 
 --客户在loan之前使用的不同deviceid idfa ieme trueip event_id 个数
-
 drop table if exists cid_dis_before_loan_derived_1m;
 
 
@@ -125,7 +78,7 @@ left outer join
      where collector_tstamp is not null
          and length(collector_tstamp) >0)t2 on t1.event_cid = t2.event_cid
 where t1.collector_tstamp >= t2.collector_tstamp
-    and date_sub(t1.collector_tstamp, 30) <= substring(t2.collector_tstamp, 1,10)
+    and date_sub(t1.collector_tstamp, INTERVAL 30 DAY) <= substring(t2.collector_tstamp, 1,10)
 group by t2.event_cid;
 
 
@@ -158,7 +111,7 @@ left outer join
      where collector_tstamp is not null
          and length(collector_tstamp) >0)t2 on t1.event_cid = t2.event_cid
 where t1.collector_tstamp >= t2.collector_tstamp
-    and date_sub(t1.collector_tstamp, 90) <= substring(t2.collector_tstamp, 1,10)
+    and date_sub(t1.collector_tstamp, interval 90 day) <= substring(t2.collector_tstamp, 1,10)
 group by t2.event_cid;
 
 --apply手机号城市和ip城市是否相等
@@ -245,7 +198,7 @@ left outer join
               and event_trueip is not null
               and length(event_trueip)>0 ) t2 on t1.event_trueip = t2.event_trueip
      where t1.collector_tstamp >t2.collector_tstamp
-         and (date_sub(t1.collector_tstamp,1) <= substring(t2.collector_tstamp, 1,10))
+         and (date_sub(t1.collector_tstamp, interval 1 day) <= substring(t2.collector_tstamp, 1,10))
      group by t1.event_trueip,
               t1.collector_tstamp) t4 on t3.event_trueip = t4.event_trueip
 and t3.collector_tstamp = t4.collector_tstamp ;
@@ -281,7 +234,7 @@ left outer join
               and event_trueip is not null
               and length(event_trueip)>0 ) t2 on t1.event_trueip = t2.event_trueip
      where t1.collector_tstamp >t2.collector_tstamp
-         and (date_sub(t1.collector_tstamp,7) <= substring(t2.collector_tstamp, 1,10))
+         and (date_sub(t1.collector_tstamp,interval 7 day) <= substring(t2.collector_tstamp, 1,10))
      group by t1.event_trueip,
               t1.collector_tstamp) t4 on t3.event_trueip = t4.event_trueip
 and t3.collector_tstamp = t4.collector_tstamp ;
@@ -317,7 +270,7 @@ left outer join
               and event_trueip is not null
               and length(event_trueip)>0 ) t2 on t1.event_trueip = t2.event_trueip
      where t1.collector_tstamp >t2.collector_tstamp
-         and (date_sub(t1.collector_tstamp,30) <= substring(t2.collector_tstamp, 1,10))
+         and (date_sub(t1.collector_tstamp,interval 30 day) <= substring(t2.collector_tstamp, 1,10))
      group by t1.event_trueip,
               t1.collector_tstamp) t4 on t3.event_trueip = t4.event_trueip
 and t3.collector_tstamp = t4.collector_tstamp ;
@@ -353,7 +306,7 @@ left outer join
               and event_trueip is not null
               and length(event_trueip)>0 ) t2 on t1.event_trueip = t2.event_trueip
      where t1.collector_tstamp >t2.collector_tstamp
-         and (date_sub(t1.collector_tstamp,90) <= substring(t2.collector_tstamp, 1,10))
+         and (date_sub(t1.collector_tstamp,interval 90 day) <= substring(t2.collector_tstamp, 1,10))
      group by t1.event_trueip,
               t1.collector_tstamp) t4 on t3.event_trueip = t4.event_trueip
 and t3.collector_tstamp = t4.collector_tstamp ;
@@ -393,7 +346,7 @@ select t1.event_cid,
        else null
        end as loan_apply_time_interval_day,
        case
-           when t2.event_cid is not null then cast((unix_timestamp(t2.loan_collector_tstamp)-unix_timestamp(t2.collector_tstamp))/60 as int)
+           when t2.event_cid is not null then cast((unix_timestamp(t2.loan_collector_tstamp)-unix_timestamp(t2.collector_tstamp))/60 as signed)
            else null
        end as loan_apply_time_interval_second
 from cid_first_loan t1
@@ -406,7 +359,7 @@ left outer join cid_last_apply_before_loan t2 on t1.event_cid = t2.event_cid;
 --43.设备id对应的手机号
 --44.设备id对应的银行卡
 --45.设备id对应的银行预留手机号
-
+/*
 drop table if exists apply_deviceid_derived_1m;
 
 
@@ -500,7 +453,10 @@ left outer join
      group by t1.event_deviceid,
               t1.loan_collector_tstamp) t4 on t3.event_deviceid = t4.event_deviceid
 and t3.collector_tstamp = t4.loan_collector_tstamp ;
+*/
 --客户注册与首次贷款的时间间隔 单位天
+
+
 drop table if exists loan_register_time_interval_day_derived_all;
 
 
@@ -524,6 +480,20 @@ left outer join
      group by event_cid) t2 on t1.event_cid = t2.event_cid;
 
 
+
+
+alter table cid_event_count_derived_all add index index_event_cid (event_cid);
+alter table cid_dis_before_loan_derived_1m add index index_event_cid (event_cid);
+alter table cid_dis_before_loan_derived_3m add index index_event_cid (event_cid);
+alter table cid_apply_city_same_derived_all add index index_event_cid (event_cid);
+alter table trueip_dist_cid_derived_1day add index index_event_cid (event_cid);
+alter table trueip_dist_cid_derived_7day add index index_event_cid (event_cid);
+alter table trueip_dist_cid_derived_1m add index index_event_cid (event_cid);
+alter table trueip_dist_cid_derived_3m add index index_event_cid (event_cid);
+alter table cid_loan_derived_all add index index_event_cid (event_cid);
+alter table loan_register_time_interval_day_derived_all add index index_event_cid (event_cid);
+
+
 drop table cid_new_feature_derived_all;
 
 
@@ -540,14 +510,14 @@ select t0.event_cid,
        t2.cid_dis_event_useragent_1m,
        t2.cid_dis_event_trueip_1m,
        t2.cid_dis_event_id_1m,
-       t2.cid_dis_id_div_dis_trueip_1m,--2
+       t2.cid_dis_id_div_dis_trueip_1m,#--2
        t3.cid_dis_deviceid_3m,
        t3.cid_dis_event_imei_3m,
        t3.cid_dis_event_idfa_3m,
        t3.cid_dis_event_useragent_3m,
        t3.cid_dis_event_trueip_3m,
        t3.cid_dis_event_id_3m,
-       t3.cid_dis_id_div_dis_trueip_3m,--2
+       t3.cid_dis_id_div_dis_trueip_3m,#--2
        t4.apply_ipcity_same_gpscity_flag,
        t4.apply_ipcity_same_mobilecity_flag,
        t4.apply_gpscity_same_mobilecity_flag,
@@ -556,11 +526,11 @@ select t0.event_cid,
        t7.trueip_dist_cid_1m,
        t8.trueip_dist_cid_3m,
        t9.mobile_same_bankcardmobile_flag,
-       t9.loan_ipcity_same_mobilecity_flag,--2
-       t9.loan_first_without_apply_flag,--2
-       t9.loan_apply_time_interval_day,--2
-       t9.loan_apply_time_interval_second,--2
-       t10.loan_register_time_interval_day--2
+       t9.loan_ipcity_same_mobilecity_flag,#--2
+       t9.loan_first_without_apply_flag,#--2
+       t9.loan_apply_time_interval_day,#--2
+       t9.loan_apply_time_interval_second,#--2
+       t10.loan_register_time_interval_day#--2
 from
     (select event_cid
      from cid_first_loan) t0
@@ -574,3 +544,6 @@ left outer join trueip_dist_cid_derived_1m as t7 on t0.event_cid = t7.event_cid
 left outer join trueip_dist_cid_derived_3m as t8 on t0.event_cid = t8.event_cid
 left outer join cid_loan_derived_all as t9 on t0.event_cid = t9.event_cid
 left outer join loan_register_time_interval_day_derived_all as t10 on t0.event_cid = t10.event_cid;
+
+
+

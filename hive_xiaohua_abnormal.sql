@@ -1,4 +1,3 @@
-use ${hiveconf:source_database};
 
 /* 1.异地登录（近一天、一周、一个月、三个月，ip所属城市个数）*/ /* 1.异地登录（近三个月，ip所属城市个数）*/
 drop table if exists ipcity_count_derived_3m_abn;
@@ -15,13 +14,13 @@ left outer join
     (select event_cid,
             event_ipcity,
             collector_tstamp
-     from ${hiveconf:source_table}
+     from behavior_data_source_useful_flatten_2
      where event_ipcity is not null
          and length(event_ipcity) >0
          and collector_tstamp is not null
          and length(collector_tstamp) > 0) t2 on t1.event_cid = t2.event_cid
 where (t1.collector_tstamp >= t2.collector_tstamp)
-    and (date_sub(t1.collector_tstamp,90) <= substring(t2.collector_tstamp, 1,10))
+    and (date_sub(t1.collector_tstamp,INTERVAL 90 DAY) <= substring(t2.collector_tstamp, 1,10))
 group by t1.event_cid;
 
 /* 1.异地登录（近一个月、ip所属城市个数）*/
@@ -39,13 +38,13 @@ left outer join
     (select event_cid,
             event_ipcity,
             collector_tstamp
-     from ${hiveconf:source_table}
+     from behavior_data_source_useful_flatten_2
      where event_ipcity is not null
          and length(event_ipcity) >0
          and collector_tstamp is not null
          and length(collector_tstamp) > 0) t2 on t1.event_cid = t2.event_cid
 where (t1.collector_tstamp >= t2.collector_tstamp)
-    and (date_sub(t1.collector_tstamp,30) <= substring(t2.collector_tstamp, 1,10))
+    and (date_sub(t1.collector_tstamp,INTERVAL 30 DAY) <= substring(t2.collector_tstamp, 1,10))
 group by t1.event_cid;
 
 /* 1.异地登录（近7天、ip所属城市个数）*/
@@ -63,13 +62,13 @@ left outer join
     (select event_cid,
             event_ipcity,
             collector_tstamp
-     from ${hiveconf:source_table}
+     from behavior_data_source_useful_flatten_2
      where event_ipcity is not null
          and length(event_ipcity) >0
          and collector_tstamp is not null
          and length(collector_tstamp) > 0) t2 on t1.event_cid = t2.event_cid
 where (t1.collector_tstamp >= t2.collector_tstamp)
-    and (date_sub(t1.collector_tstamp,7) <= substring(t2.collector_tstamp, 1,10))
+    and (date_sub(t1.collector_tstamp,INTERVAL 7 DAY) <= substring(t2.collector_tstamp, 1,10))
 group by t1.event_cid;
 
 /* 1.异地登录（近1天、ip所属城市个数） 重点关注，1天的精度可能会出问题*/
@@ -87,15 +86,19 @@ left outer join
     (select event_cid,
             event_ipcity,
             collector_tstamp
-     from ${hiveconf:source_table}
+     from behavior_data_source_useful_flatten_2
      where event_ipcity is not null
          and length(event_ipcity) >0
          and collector_tstamp is not null
          and length(collector_tstamp) > 0) t2 on t1.event_cid = t2.event_cid
 where (t1.collector_tstamp >= t2.collector_tstamp)
-    and (date_sub(t1.collector_tstamp,1) <= substring(t2.collector_tstamp, 1,10))
+    and (date_sub(t1.collector_tstamp,INTERVAL 1 DAY) <= substring(t2.collector_tstamp, 1,10))
 group by t1.event_cid;
 
+alter table ipcity_count_derived_3m_abn add index index_event_cid (event_cid);
+alter table ipcity_count_derived_1m_abn add index index_event_cid (event_cid);
+alter table ipcity_count_derived_7d_abn add index index_event_cid (event_cid);
+alter table ipcity_count_derived_1d_abn add index index_event_cid (event_cid);
 
 drop table if exists cid_derived_abn_all;
 
@@ -113,3 +116,5 @@ left outer join ipcity_count_derived_3m_abn as t2 on t1.event_cid = t2.event_cid
 left outer join ipcity_count_derived_1m_abn as t3 on t1.event_cid = t3.event_cid
 left outer join ipcity_count_derived_7d_abn as t4 on t1.event_cid = t4.event_cid
 left outer join ipcity_count_derived_1d_abn as t5 on t1.event_cid = t5.event_cid;
+
+

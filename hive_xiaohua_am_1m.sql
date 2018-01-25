@@ -1,78 +1,4 @@
 /*
-  获取客户首次借款的时间点
- */
-use ${hiveconf:source_database};
---set source_table = sinjor_train_data_1;
-
-
-drop table if exists cid_first_loan;
-
-
-create table cid_first_loan as
-select *
-from
-    (select row_number() over(partition by event_cid
-                              order by collector_tstamp asc as cid_loan_order,
-            event_mobile,
-            event_cid,
-            event_cli_name,
-            event_certNo,
-            event_residence,
-            event_education,
-            event_organization,
-            event_companyPhone,
-            event_position,
-            event_workYears,
-            event_contactsName,
-            event_contactsMobile,
-            event_contactsRelationship,
-            event_openid,
-            event_wechatNickname,
-            event_bankBin,
-            event_bankCardNo,
-            event_bankCardType,
-            event_bankCardCode,
-            event_bankCardName,
-            event_bankCardMobile,
-            event_srcChannel,
-            event_platform,
-            event_deviceId,
-            event_smartId,
-            event_fpTokenID,
-            event_fingerprint,
-            event_userAgent,
-            event_isEmulator,
-            event_idfa,
-            event_mac,
-            event_imei,
-            event_ip,
-            event_longitude,
-            event_latitude,
-            event_gpsCity,
-            event_mobileCity,
-            event_trueIP,
-            event_ipProvince,
-            event_ipCity,
-            event_ipLongitude,
-            event_ipLatitude,
-            event_deviceBssid,
-            event_loanAmount,
-            event_loanTerm,
-            event_loanDate,
-            event_loanResult,
-            event_productType,
-            event_name,
-            event_id,
-            collector_tstamp
-     from behavior_data_source_useful_flatten_2
-     where event_name='app_loan'
-         and event_cid is not null
-         and length(event_cid) > 0
-         and collector_tstamp is not null
-         and length(collector_tstamp) > 0) t
-where cid_loan_order = 1 ;
-
-/*
 1.身份证号对应的客户号
 2.身份证号对应的注册手机号
 3.身份证号对应的绑定银行卡
@@ -353,6 +279,13 @@ group by t3.event_bankCardMobile,
          t3.collector_tstamp)t2 on t1.event_bankCardMobile = t2.event_bankCardMobile
 and t1.collector_tstamp = t2.collector_tstamp ;
 
+
+alter table cid_certNo_derived_1m add index index_event_cid (event_cid);
+alter table cid_derived_1m add index index_event_cid (event_cid);
+alter table cid_mobile_derived_1m add index index_event_cid (event_cid);
+alter table cid_bankCardNo_derived_1m add index index_event_cid (event_cid);
+alter table cid_bankCardMobile_derived_1m add index index_event_cid (event_cid);
+
 drop table if exists cid_derived_1m_am_all ;
 
 create table cid_derived_1m_am_all as
@@ -394,5 +327,6 @@ left outer join cid_derived_1m as t2 on t0.event_cid = t2.event_cid
 left outer join cid_mobile_derived_1m as t3 on t0.event_cid = t3.event_cid
 left outer join cid_bankCardNo_derived_1m as t4 on t0.event_cid = t4.event_cid
 left outer join cid_bankCardMobile_derived_1m as t5 on t0.event_cid = t5.event_cid;
+
 
 
