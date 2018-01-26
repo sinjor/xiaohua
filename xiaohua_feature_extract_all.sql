@@ -7,12 +7,14 @@ alter table cid_first_loan_source_features add index index_event_cid (event_cid)
 alter table cid_new_feature_derived_all add index index_event_cid (event_cid);
 
 #生成最终的特征表
-drop table if exists xiaohua_feature_extract_all_v3;
+drop table if exists xiaohua_feature_extract_all_v3_3;
 set @row_number = 0;
-create table xiaohua_feature_extract_all_v3 as
+create table xiaohua_feature_extract_all_v3_3 as
 select (@row_number:=@row_number + 1) as cid, t.*
 from 
-(select t0.cid as event_cid,
+(select 
+       rand()*100000 as rand,
+       t0.cid as event_cid,
        t0.label,
 
        t1.cid_apply_1m_hf,
@@ -165,7 +167,7 @@ left outer join cid_derived_3m_am_all as t4 on t1.event_cid = t4.event_cid
 left outer join cid_derived_abn_all as t5 on t1.event_cid = t5.event_cid
 left outer join cid_first_loan_source_features as t6 on t1.event_cid = t6.event_cid
 left outer join cid_new_feature_derived_all as t7 on t1.event_cid = t7.event_cid
-left outer join cid_first_loan as t8 on t1.event_cid = t8.event_cid) t;
+left outer join cid_first_loan as t8 on t1.event_cid = t8.event_cid order by rand) t;
 
 /*
 

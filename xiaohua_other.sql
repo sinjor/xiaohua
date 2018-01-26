@@ -1,6 +1,3 @@
-
-
-
 #对转换表加索引
 alter table education_code add index index_event_education (event_education);
 alter table position_code add index index_event_position (event_position);
