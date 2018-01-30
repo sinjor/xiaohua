@@ -215,12 +215,12 @@ drop table if exists cid_derived_hs_1m;
 
 create table cid_derived_hs_1m as
 select t0.event_cid,
-       t1.cid_apply_1m_hf,
-       t2.cid_bind_bankcardno_1m_hf,
-       t3.mobile_apply_1m_hf,
-       t4.mobile_bind_bankcardno_1m_hf,
-       t5.certno_bind_cid_1m_hf,
-       t6.bankcardno_bind_cid_1m_hf
+       ifnull(t1.cid_apply_1m_hf, 0) as cid_apply_1m_hf,
+       ifnull(t2.cid_bind_bankcardno_1m_hf, 0) as cid_bind_bankcardno_1m_hf,
+       ifnull(t3.mobile_apply_1m_hf, 0) as mobile_apply_1m_hf,
+       ifnull(t4.mobile_bind_bankcardno_1m_hf, 0) as mobile_bind_bankcardno_1m_hf,
+       ifnull(t5.certno_bind_cid_1m_hf, 0) as certno_bind_cid_1m_hf,
+       ifnull(t6.bankcardno_bind_cid_1m_hf, 0) as bankcardno_bind_cid_1m_hf
 from
     (select event_cid
      from cid_first_loan) t0

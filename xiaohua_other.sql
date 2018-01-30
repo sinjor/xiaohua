@@ -22,7 +22,7 @@ select t1.event_cid,
                 and length(t2.event_residence) > 0 then 1
            else 0
        end as event_residence_flag,
-       t3.event_education_code,
+       ifnull(t3.event_education_code, 0) as event_education_code,
        case
            when t2.event_organization is not null
                 and length(t2.event_organization) > 0 then 1
@@ -33,8 +33,8 @@ select t1.event_cid,
                 and length(t2.event_companyPhone) > 0 then 1
            else 0
        end as event_companyPhone_flag,
-       t4.event_position_code,
-       t5.event_workYears_code,
+       ifnull(t4.event_position_code, 0) as event_position_code,
+       ifnull(t5.event_workYears_code, 0) as event_workYears_code,
        case
            when t2.event_contactsName is not null
                 and length(t2.event_contactsName) > 0 then 1
@@ -45,7 +45,7 @@ select t1.event_cid,
                 and length(t2.event_contactsMobile) > 0 then 1
            else 0
        end as event_contactsMobile_flag,
-       t6.event_contactsRelationship_code,
+       ifnull(t6.event_contactsRelationship_code, 0) as event_contactsrelationship_code,
        t1.event_bankCardType,
        t1.event_bankCardCode,
        t7.event_bankCardName_code,

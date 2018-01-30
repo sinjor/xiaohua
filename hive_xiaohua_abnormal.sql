@@ -105,10 +105,10 @@ drop table if exists cid_derived_abn_all;
 
 create table cid_derived_abn_all as
 select t1.event_cid,
-       t2.ipcity_count_3m_abn,
-       t3.ipcity_count_1m_abn,
-       t4.ipcity_count_7d_abn,
-       t5.ipcity_count_1d_abn
+       ifnull(t2.ipcity_count_3m_abn, 0) as ipcity_count_3m_abn,
+       ifnull(t3.ipcity_count_1m_abn, 0) as ipcity_count_1m_abn,
+       ifnull(t4.ipcity_count_7d_abn, 0) as ipcity_count_7d_abn,
+       ifnull(t5.ipcity_count_1d_abn, 0) as ipcity_count_1d_abn
 from
     (select event_cid
      from cid_first_loan) t1

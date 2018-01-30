@@ -197,7 +197,7 @@ left outer join
               and length(collector_tstamp) > 0
               and event_trueip is not null
               and length(event_trueip)>0 ) t2 on t1.event_trueip = t2.event_trueip
-     where t1.collector_tstamp >t2.collector_tstamp
+     where t1.collector_tstamp >=t2.collector_tstamp
          and (date_sub(t1.collector_tstamp, interval 1 day) <= substring(t2.collector_tstamp, 1,10))
      group by t1.event_trueip,
               t1.collector_tstamp) t4 on t3.event_trueip = t4.event_trueip
@@ -233,7 +233,7 @@ left outer join
               and length(collector_tstamp) > 0
               and event_trueip is not null
               and length(event_trueip)>0 ) t2 on t1.event_trueip = t2.event_trueip
-     where t1.collector_tstamp >t2.collector_tstamp
+     where t1.collector_tstamp >= t2.collector_tstamp
          and (date_sub(t1.collector_tstamp,interval 7 day) <= substring(t2.collector_tstamp, 1,10))
      group by t1.event_trueip,
               t1.collector_tstamp) t4 on t3.event_trueip = t4.event_trueip
@@ -269,7 +269,7 @@ left outer join
               and length(collector_tstamp) > 0
               and event_trueip is not null
               and length(event_trueip)>0 ) t2 on t1.event_trueip = t2.event_trueip
-     where t1.collector_tstamp >t2.collector_tstamp
+     where t1.collector_tstamp >= t2.collector_tstamp
          and (date_sub(t1.collector_tstamp,interval 30 day) <= substring(t2.collector_tstamp, 1,10))
      group by t1.event_trueip,
               t1.collector_tstamp) t4 on t3.event_trueip = t4.event_trueip
@@ -305,7 +305,7 @@ left outer join
               and length(collector_tstamp) > 0
               and event_trueip is not null
               and length(event_trueip)>0 ) t2 on t1.event_trueip = t2.event_trueip
-     where t1.collector_tstamp >t2.collector_tstamp
+     where t1.collector_tstamp >= t2.collector_tstamp
          and (date_sub(t1.collector_tstamp,interval 90 day) <= substring(t2.collector_tstamp, 1,10))
      group by t1.event_trueip,
               t1.collector_tstamp) t4 on t3.event_trueip = t4.event_trueip
@@ -518,9 +518,9 @@ select t0.event_cid,
        t3.cid_dis_event_trueip_3m,
        t3.cid_dis_event_id_3m,
        t3.cid_dis_id_div_dis_trueip_3m,#--2
-       t4.apply_ipcity_same_gpscity_flag,
-       t4.apply_ipcity_same_mobilecity_flag,
-       t4.apply_gpscity_same_mobilecity_flag,
+       ifnull(t4.apply_ipcity_same_gpscity_flag, 0) as apply_ipcity_same_gpscity_flag,
+       ifnull(t4.apply_ipcity_same_mobilecity_flag, 0) as apply_ipcity_same_mobilecity_flag,
+       ifnull(t4.apply_gpscity_same_mobilecity_flag, 0) as apply_gpscity_same_mobilecity_flag,
        t5.trueip_dist_cid_1day,
        t6.trueip_dist_cid_7day,
        t7.trueip_dist_cid_1m,
@@ -545,5 +545,18 @@ left outer join trueip_dist_cid_derived_3m as t8 on t0.event_cid = t8.event_cid
 left outer join cid_loan_derived_all as t9 on t0.event_cid = t9.event_cid
 left outer join loan_register_time_interval_day_derived_all as t10 on t0.event_cid = t10.event_cid;
 
+/*
 
+确保每个表格的样本个数和测试样本个数一致，这样不会有空值
+select count(*) from cid_event_count_derived_all;
+select count(*) from cid_dis_before_loan_derived_1m;
+select count(*) from cid_dis_before_loan_derived_3m;
+select count(*) from cid_apply_city_same_derived_all;
+select count(*) from trueip_dist_cid_derived_1day;
+select count(*) from trueip_dist_cid_derived_7day;
+select count(*) from trueip_dist_cid_derived_1m;
+select count(*) from trueip_dist_cid_derived_3m;
+select count(*) from cid_loan_derived_all;
+select count(*) from loan_register_time_interval_day_derived_all;
+*/
 

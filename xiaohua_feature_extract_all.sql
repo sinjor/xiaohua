@@ -7,9 +7,9 @@ alter table cid_first_loan_source_features add index index_event_cid (event_cid)
 alter table cid_new_feature_derived_all add index index_event_cid (event_cid);
 
 #生成最终的特征表
-drop table if exists xiaohua_feature_extract_all_v3_3;
+drop table if exists xiaohua_feature_extract_all_v3_b6;
 set @row_number = 0;
-create table xiaohua_feature_extract_all_v3_3 as
+create table xiaohua_feature_extract_all_v3_b6 as
 select (@row_number:=@row_number + 1) as cid, t.*
 from 
 (select 
@@ -183,21 +183,21 @@ select count(event_cid) from cid_first_loan;
 */
 
 
-drop table if exists sinjor_train_data_rand_v3_b2;
+drop table if exists sinjor_train_data_rand_v3_b6;
 
 
-create table sinjor_train_data_rand_v3_b2 as
+create table sinjor_train_data_rand_v3_b6 as
 select *
-from xiaohua_feature_extract_all_v3
+from xiaohua_feature_extract_all_v3_b6
 where cid < 70000;
 
 
-drop table if exists sinjor_test_data_rand_v3_b2;
+drop table if exists sinjor_test_data_rand_v3_b6;
 
 
-create table sinjor_test_data_rand_v3_b2 as
+create table sinjor_test_data_rand_v3_b6 as
 select *
-from xiaohua_feature_extract_all_v3
+from xiaohua_feature_extract_all_v3_b6
 where cid >= 70000;
 
 
